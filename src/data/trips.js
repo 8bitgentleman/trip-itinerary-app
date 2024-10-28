@@ -1,4 +1,5 @@
 export const trips = [
+  // Egypt 2027
   {
     id: 'egypt-2027',
     title: 'Total Solar Eclipse over the Temple of Luxor: Hidden Tombs, Ancient Pyramids & Old Cairo',
@@ -193,6 +194,7 @@ export const trips = [
       }
     }
   },
+// Rome & Italy 2024
   {
     id: 'italy-rome-2024',
     title: 'Italy & Rome 2024',
@@ -211,34 +213,7 @@ export const trips = [
       'https://placehold.co/800x800',
       'https://placehold.co/800x800'
     ],
-    highlights: [
-      'Witness the epic sight of the Great Pyramids, the Tomb of Tutankhamun and the temple of Abu Simbel.',
-      'Enjoy exclusive after hours access to the Valley of The Kings without the crowds.',
-      'Discover the surprising existence of waterfalls, & whale skeletons in the Sahara.',
-      'Cruise the Nile in comfort on a traditional wooden Felucca.',
-      'Roam the back streets of Old Cairo and go behind the scenes of a goldsmith\'s studio.',
-      'Experience the warm hospitality of a local Nubian family.',
-      'Visit the ancient city of Memphis and the Step Pyramid of Saqqara.',
-      'Explore the bustling Khan el-Khalili bazaar for authentic souvenirs and local snacks.',
-      'Enjoy a sound and light show at the Pyramids of Giza.'
-    ],
-    included: [
-      'Accommodations throughout the trip',
-      'Most meals (as described in the itinerary)',
-      'Transportation (as described in the itinerary)',
-      'Admission/entry to activities',
-      'AO Trip Leader throughout the trip',
-      'Special access to places and experiences',
-      'All gratuities (not including AO Trip Leader)'
-    ],
-    notIncluded: [
-      'Flights to and from destination',
-      'Pre/Post trip accommodations', 
-      'Travel insurance',
-      'Visas and passport fees',
-      'Meals outside of those described',
-      'AO Trip Leader tip'
-    ],
+
     itinerary: [
       {
         day: 1,
@@ -259,51 +234,210 @@ export const trips = [
     activity: 'Easy',
     groupSize: 2,
     interest: ['History, Culture, Astronomy, & Food'],
-    additionalInfo: {
-      pricing: {
-        deposit: 250,
-        depositCurrency: 'USD',
-        balanceDueDays: 90,
-        notes: 'The listed price of the trip is per person based on double occupancy.',
-        fullDetails: 'Learn more about our pricing and payment plans...'  // Full text for expanded view
-      },
-      soloTraveler: {
-        privateRoomAvailable: true,
-        privateRoomFee: 800,
-        privateRoomCurrency: 'USD',
-        notes: "You're in good company. Many of our travelers join solo.",
-        fullDetails: 'Learn more about solo travel options and room arrangements...'
-      },
-      arrivalDeparture: {
-        airport: {
-          code: 'CAI',
-          name: 'Cairo International Airport'
-        },
-        recommendedArrival: 'Day 1 before 4:00 PM',
-        recommendedDeparture: 'Day 10 after 10:00 AM',
-        notes: 'Cairo airport (CAI) connects to a range of flight hubs in North America.',
-        fullDetails: 'Detailed arrival and departure information including transfer details...'
-      },
-      activityLevel: {
-        level: 'Moderate',
-        walkingDistance: {
-          min: 4,
-          max: 6,
-          unit: 'miles'
-        },
-        notes: 'This tour has a moderate activity level. Consider four to six miles of walking each day, with lots of time spent moving around historical sites.',
-        fullDetails: 'Complete details about physical requirements and accessibility...'
-      },
-      essentialInfo: {
-        tripInfoUrl: '/essential-trip-information',
-        faqUrl: '/faqs'
-      },
-      contact: {
-        phone: '+1 833-919-9154',
-        email: 'info@example.com'  // Add if available
-      }
-    }
+
   },
+  // Montreal Total Eclipse 2024
+  {
+    id: 'montreal-eclipse-2024',
+    title: '2024 Total Eclipse in Montreal',
+    subtitle: 'Experience the total eclipse and explore Montreal’s culture',
+    destination: 'Canada',
+    duration: {
+      days: 14,
+      nights: 13
+    },
+    price: {
+      amount: 3200,
+      currency: 'USD'
+    },
+    heroImage: 'https://placehold.co/1920x1080',
+    gallery: [
+      'https://placehold.co/800x800',
+      'https://placehold.co/800x800'
+    ],
+    
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrive in Montreal',
+        description: 'Welcome dinner and evening city tour.',
+        meals: ['Dinner'],
+        accommodation: 'Montreal downtown hotel'
+      },
+    ],
+    dates: [
+      {
+        startDate: '2025-02-05',
+        endDate: '2025-02-15',
+        price: 4825,
+        available: true
+      }
+    ],
+    activity: 'Easy',
+    groupSize: 2,
+    interest: ['History, Culture, Astronomy, & Food']
+  }, 
+  // New Zealand 2023
+  {
+    id: 'new-zealand-adventure-2023',
+    title: 'New Zealand North & South Island Adventure',
+    subtitle: 'Urban exploration in Auckland and campervan journey through the South Island',
+    destination: 'New Zealand',
+    duration: {
+      days: 46,
+      nights: 45
+    },
+    price: {
+      amount: 3200,
+      currency: 'USD'
+    },
+    heroImage: 'https://placehold.co/1920x1080',
+    gallery: [
+      'https://placehold.co/800x800',
+      'https://placehold.co/800x800'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        date: '2023-02-01',
+        title: 'Arrive in Auckland',
+        description: 'Land in Auckland and begin New Zealand adventure',
+        accommodation: 'Auckland accommodation'
+      },
+      {
+        day: 6,
+        date: '2023-02-06',
+        title: 'Hobbiton & Rotorua Tour',
+        description: 'Guided tour of the famous Hobbiton Movie Set and visit to Rotorua',
+        activities: ['Hobbiton Tour', 'Rotorua Visit']
+      },
+      {
+        day: 9,
+        date: '2023-02-09',
+        title: 'Mission Bay Beach',
+        description: 'E-scooter adventure to Mission Bay Beach after work',
+        activities: ['E-scooter riding', 'Beach visit']
+      },
+      {
+        day: 15,
+        date: '2023-02-15',
+        title: 'Maungauika North Head Historic Reserve',
+        description: 'Hiking at the historic Maungauika/North Head Reserve',
+        activities: ['Hiking', 'Historical site visit']
+      },
+      {
+        day: 25,
+        date: '2023-02-25',
+        title: 'Tapapa Hike',
+        description: 'Hiking experience in Tapapa, Waikato region',
+        activities: ['Hiking']
+      },
+      {
+        day: 26,
+        date: '2023-02-26',
+        title: 'Waiheke Island',
+        description: 'Day trip to Waiheke Island',
+        activities: ['Island exploration']
+      },
+      {
+        day: 27,
+        date: '2023-02-27',
+        title: 'Christchurch',
+        description: 'Explore Christchurch',
+        duration: '3 days',
+        endDate: '2023-03-01',
+        accommodation: 'Christchurch accommodation'
+      },
+      {
+        day: 31,
+        date: '2023-03-03',
+        title: 'Queenstown Arrival',
+        description: 'Fly to Queenstown',
+        accommodation: 'Queenstown accommodation'
+      },
+      {
+        day: 32,
+        date: '2023-03-04',
+        title: 'Queenstown Activities',
+        description: 'Experience the Queenstown Skyline Luge',
+        activities: ['Skyline Luge']
+      },
+      {
+        day: 35,
+        date: '2023-03-07',
+        title: 'Start Campervan Journey & Blue Pools',
+        description: 'Pick up campervan and visit the Blue Pools',
+        activities: ['Campervan pickup', 'Blue Pools visit']
+      },
+      {
+        day: 36,
+        date: '2023-03-08',
+        title: 'Lavender Fields & Mt Sefton',
+        description: 'Visit lavender fields and Mt Sefton Glacier',
+        activities: ['Lavender field visit', 'Glacier viewing']
+      },
+      {
+        day: 37,
+        date: '2023-03-09',
+        title: "Arthur's Pass & Motukiekie Beach",
+        description: "Hiking in Arthur's Pass and visit to Motukiekie Beach",
+        activities: ['Hiking', 'Beach visit']
+      },
+      {
+        day: 38,
+        date: '2023-03-10',
+        title: 'Punakaiki Pancake Rocks',
+        description: 'Visit the famous Pancake Rocks formation',
+        activities: ['Geological site visit']
+      },
+      {
+        day: 39,
+        date: '2023-03-11',
+        title: "Arthur's Pass Hiking",
+        description: "Return to Arthur's Pass for more hiking",
+        activities: ['Hiking']
+      },
+      {
+        day: 41,
+        date: '2023-03-13',
+        title: 'Akaroa',
+        description: 'Explore the French-inspired town of Akaroa',
+        activities: ['Town exploration']
+      },
+      {
+        day: 42,
+        date: '2023-03-14',
+        title: 'Tunnel Beach',
+        description: 'Visit the unique Tunnel Beach in Dunedin',
+        activities: ['Beach visit']
+      },
+      {
+        day: 43,
+        date: '2023-03-15',
+        title: 'Milford Sound',
+        description: 'Cruise through the magnificent Milford Sound',
+        activities: ['Scenic cruise']
+      },
+      {
+        day: 46,
+        date: '2023-03-18',
+        title: 'Queenstown Finale',
+        description: 'Final day in Queenstown',
+        accommodation: 'Queenstown accommodation'
+      }
+    ],
+    dates: [
+      {
+        startDate: '2023-02-01',
+        endDate: '2023-03-18',
+        available: false
+      }
+    ],
+    activity: 'Moderate',
+    groupSize: 1,
+    interest: ['Nature', 'Hiking', 'Adventure', 'Cultural Sites', 'Road Trip']
+  },
+  // France Rock Climbing 2017
   {
     id: 'france-rockclimbing-2024',
     title: 'Rock Climbing Adventure Through France',
@@ -322,34 +456,7 @@ export const trips = [
       'https://placehold.co/800x800',
       'https://placehold.co/800x800'
     ],
-    highlights: [
-      'Witness the epic sight of the Great Pyramids, the Tomb of Tutankhamun and the temple of Abu Simbel.',
-      'Enjoy exclusive after hours access to the Valley of The Kings without the crowds.',
-      'Discover the surprising existence of waterfalls, & whale skeletons in the Sahara.',
-      'Cruise the Nile in comfort on a traditional wooden Felucca.',
-      'Roam the back streets of Old Cairo and go behind the scenes of a goldsmith\'s studio.',
-      'Experience the warm hospitality of a local Nubian family.',
-      'Visit the ancient city of Memphis and the Step Pyramid of Saqqara.',
-      'Explore the bustling Khan el-Khalili bazaar for authentic souvenirs and local snacks.',
-      'Enjoy a sound and light show at the Pyramids of Giza.'
-    ],
-    included: [
-      'Accommodations throughout the trip',
-      'Most meals (as described in the itinerary)',
-      'Transportation (as described in the itinerary)',
-      'Admission/entry to activities',
-      'AO Trip Leader throughout the trip',
-      'Special access to places and experiences',
-      'All gratuities (not including AO Trip Leader)'
-    ],
-    notIncluded: [
-      'Flights to and from destination',
-      'Pre/Post trip accommodations', 
-      'Travel insurance',
-      'Visas and passport fees',
-      'Meals outside of those described',
-      'AO Trip Leader tip'
-    ],
+    
     itinerary: [
       {
         day: 1,
@@ -370,272 +477,6 @@ export const trips = [
     activity: 'Challenging',
     groupSize: 2,
     interest: ['History, Culture, Astronomy, & Food'],
-    additionalInfo: {
-      pricing: {
-        deposit: 250,
-        depositCurrency: 'USD',
-        balanceDueDays: 90,
-        notes: 'The listed price of the trip is per person based on double occupancy.',
-        fullDetails: 'Learn more about our pricing and payment plans...'  // Full text for expanded view
-      },
-      soloTraveler: {
-        privateRoomAvailable: true,
-        privateRoomFee: 800,
-        privateRoomCurrency: 'USD',
-        notes: "You're in good company. Many of our travelers join solo.",
-        fullDetails: 'Learn more about solo travel options and room arrangements...'
-      },
-      arrivalDeparture: {
-        airport: {
-          code: 'CAI',
-          name: 'Cairo International Airport'
-        },
-        recommendedArrival: 'Day 1 before 4:00 PM',
-        recommendedDeparture: 'Day 10 after 10:00 AM',
-        notes: 'Cairo airport (CAI) connects to a range of flight hubs in North America.',
-        fullDetails: 'Detailed arrival and departure information including transfer details...'
-      },
-      activityLevel: {
-        level: 'Moderate',
-        walkingDistance: {
-          min: 4,
-          max: 6,
-          unit: 'miles'
-        },
-        notes: 'This tour has a moderate activity level. Consider four to six miles of walking each day, with lots of time spent moving around historical sites.',
-        fullDetails: 'Complete details about physical requirements and accessibility...'
-      },
-      essentialInfo: {
-        tripInfoUrl: '/essential-trip-information',
-        faqUrl: '/faqs'
-      },
-      contact: {
-        phone: '+1 833-919-9154',
-        email: 'info@example.com'  // Add if available
-      }
-    }
+    
   },
-  {
-    id: 'montreal-eclipse-2024',
-    title: '2024 Total Eclipse in Montreal',
-    subtitle: 'Experience the total eclipse and explore Montreal’s culture',
-    destination: 'Canada',
-    duration: {
-      days: 14,
-      nights: 13
-    },
-    price: {
-      amount: 3200,
-      currency: 'USD'
-    },
-    heroImage: 'https://placehold.co/1920x1080',
-    gallery: [
-      'https://placehold.co/800x800',
-      'https://placehold.co/800x800'
-    ],
-    highlights: [
-      'Witness the epic sight of the Great Pyramids, the Tomb of Tutankhamun and the temple of Abu Simbel.',
-      'Enjoy exclusive after hours access to the Valley of The Kings without the crowds.',
-      'Discover the surprising existence of waterfalls, & whale skeletons in the Sahara.',
-      'Cruise the Nile in comfort on a traditional wooden Felucca.',
-      'Roam the back streets of Old Cairo and go behind the scenes of a goldsmith\'s studio.',
-      'Experience the warm hospitality of a local Nubian family.',
-      'Visit the ancient city of Memphis and the Step Pyramid of Saqqara.',
-      'Explore the bustling Khan el-Khalili bazaar for authentic souvenirs and local snacks.',
-      'Enjoy a sound and light show at the Pyramids of Giza.'
-    ],
-    included: [
-      'Accommodations throughout the trip',
-      'Most meals (as described in the itinerary)',
-      'Transportation (as described in the itinerary)',
-      'Admission/entry to activities',
-      'AO Trip Leader throughout the trip',
-      'Special access to places and experiences',
-      'All gratuities (not including AO Trip Leader)'
-    ],
-    notIncluded: [
-      'Flights to and from destination',
-      'Pre/Post trip accommodations', 
-      'Travel insurance',
-      'Visas and passport fees',
-      'Meals outside of those described',
-      'AO Trip Leader tip'
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrive in Montreal',
-        description: 'Welcome dinner and evening city tour.',
-        meals: ['Dinner'],
-        accommodation: 'Montreal downtown hotel'
-      },
-    ],
-    dates: [
-      {
-        startDate: '2025-02-05',
-        endDate: '2025-02-15',
-        price: 4825,
-        available: true
-      }
-    ],
-    activity: 'Easy',
-    groupSize: 2,
-    interest: ['History, Culture, Astronomy, & Food'],
-    additionalInfo: {
-      pricing: {
-        deposit: 250,
-        depositCurrency: 'USD',
-        balanceDueDays: 90,
-        notes: 'The listed price of the trip is per person based on double occupancy.',
-        fullDetails: 'Learn more about our pricing and payment plans...'  // Full text for expanded view
-      },
-      soloTraveler: {
-        privateRoomAvailable: true,
-        privateRoomFee: 800,
-        privateRoomCurrency: 'USD',
-        notes: "You're in good company. Many of our travelers join solo.",
-        fullDetails: 'Learn more about solo travel options and room arrangements...'
-      },
-      arrivalDeparture: {
-        airport: {
-          code: 'CAI',
-          name: 'Cairo International Airport'
-        },
-        recommendedArrival: 'Day 1 before 4:00 PM',
-        recommendedDeparture: 'Day 10 after 10:00 AM',
-        notes: 'Cairo airport (CAI) connects to a range of flight hubs in North America.',
-        fullDetails: 'Detailed arrival and departure information including transfer details...'
-      },
-      activityLevel: {
-        level: 'Moderate',
-        walkingDistance: {
-          min: 4,
-          max: 6,
-          unit: 'miles'
-        },
-        notes: 'This tour has a moderate activity level. Consider four to six miles of walking each day, with lots of time spent moving around historical sites.',
-        fullDetails: 'Complete details about physical requirements and accessibility...'
-      },
-      essentialInfo: {
-        tripInfoUrl: '/essential-trip-information',
-        faqUrl: '/faqs'
-      },
-      contact: {
-        phone: '+1 833-919-9154',
-        email: 'info@example.com'  // Add if available
-      }
-    }
-  },
-  {
-    id: 'new-zealand-campervan-2025',
-    title: 'New Zealand Work & Travel Adventure',
-    subtitle: 'Work in Auckland and road trip through the South Island',
-    destination: 'New Zealand',
-    duration: {
-      days: 60,
-      nights: 59
-    },
-    price: {
-      amount: 3200,
-      currency: 'USD'
-    },
-    heroImage: 'https://placehold.co/1920x1080',
-    gallery: [
-      'https://placehold.co/800x800',
-      'https://placehold.co/800x800'
-    ],
-    highlights: [
-      'Witness the epic sight of the Great Pyramids, the Tomb of Tutankhamun and the temple of Abu Simbel.',
-      'Enjoy exclusive after hours access to the Valley of The Kings without the crowds.',
-      'Discover the surprising existence of waterfalls, & whale skeletons in the Sahara.',
-      'Cruise the Nile in comfort on a traditional wooden Felucca.',
-      'Roam the back streets of Old Cairo and go behind the scenes of a goldsmith\'s studio.',
-      'Experience the warm hospitality of a local Nubian family.',
-      'Visit the ancient city of Memphis and the Step Pyramid of Saqqara.',
-      'Explore the bustling Khan el-Khalili bazaar for authentic souvenirs and local snacks.',
-      'Enjoy a sound and light show at the Pyramids of Giza.'
-    ],
-    included: [
-      'Accommodations throughout the trip',
-      'Most meals (as described in the itinerary)',
-      'Transportation (as described in the itinerary)',
-      'Admission/entry to activities',
-      'AO Trip Leader throughout the trip',
-      'Special access to places and experiences',
-      'All gratuities (not including AO Trip Leader)'
-    ],
-    notIncluded: [
-      'Flights to and from destination',
-      'Pre/Post trip accommodations', 
-      'Travel insurance',
-      'Visas and passport fees',
-      'Meals outside of those described',
-      'AO Trip Leader tip'
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: 'Arrive in Auckland',
-        description: 'Settle into Auckland, meet the group, and explore the city.',
-        meals: ['Dinner'],
-        accommodation: 'Auckland hostel'
-      },
-    ],
-    dates: [
-      {
-        startDate: '2025-02-05',
-        endDate: '2025-02-15',
-        price: 4825,
-        available: true
-      }
-    ],
-    activity: 'Easy',
-    groupSize: 2,
-    interest: ['History, Culture, Astronomy, & Food'],
-    additionalInfo: {
-      pricing: {
-        deposit: 250,
-        depositCurrency: 'USD',
-        balanceDueDays: 90,
-        notes: 'The listed price of the trip is per person based on double occupancy.',
-        fullDetails: 'Learn more about our pricing and payment plans...'  // Full text for expanded view
-      },
-      soloTraveler: {
-        privateRoomAvailable: true,
-        privateRoomFee: 800,
-        privateRoomCurrency: 'USD',
-        notes: "You're in good company. Many of our travelers join solo.",
-        fullDetails: 'Learn more about solo travel options and room arrangements...'
-      },
-      arrivalDeparture: {
-        airport: {
-          code: 'CAI',
-          name: 'Cairo International Airport'
-        },
-        recommendedArrival: 'Day 1 before 4:00 PM',
-        recommendedDeparture: 'Day 10 after 10:00 AM',
-        notes: 'Cairo airport (CAI) connects to a range of flight hubs in North America.',
-        fullDetails: 'Detailed arrival and departure information including transfer details...'
-      },
-      activityLevel: {
-        level: 'Moderate',
-        walkingDistance: {
-          min: 4,
-          max: 6,
-          unit: 'miles'
-        },
-        notes: 'This tour has a moderate activity level. Consider four to six miles of walking each day, with lots of time spent moving around historical sites.',
-        fullDetails: 'Complete details about physical requirements and accessibility...'
-      },
-      essentialInfo: {
-        tripInfoUrl: '/essential-trip-information',
-        faqUrl: '/faqs'
-      },
-      contact: {
-        phone: '+1 833-919-9154',
-        email: 'info@example.com'  // Add if available
-      }
-    }
-  },
-
 ];

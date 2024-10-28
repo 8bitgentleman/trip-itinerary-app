@@ -1,11 +1,19 @@
+import { hasProperty } from '../../utils/data-helpers';
+
 export default function TripHighlights({ trip }) {
+  if (!hasProperty(trip, 'highlights') || trip.highlights.length === 0) {
+    return null;
+  }
+
   return (
     <section className="bg-hermes-cream rounded-2xl p-8 my-16 mx-auto max-w-7xl">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-semibold text-gray-900 mb-4">Trip Highlights</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Experience the best of {trip.destination} with these carefully curated highlights
-        </p>
+        {hasProperty(trip, 'destination') && (
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Experience the best of {trip.destination} with these carefully curated highlights
+          </p>
+        )}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
