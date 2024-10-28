@@ -15,7 +15,6 @@ export default function Navigation() {
     ? [
         { name: 'Overview', href: '#overview' },
         { name: 'Itinerary', href: '#itinerary' },
-        { name: 'Dates', href: '#dates' },
         { name: 'Info', href: '#info' },
       ]
     : [
@@ -30,7 +29,7 @@ export default function Navigation() {
       <div className="container mx-auto flex h-20 px-4 md:justify-between">
         {/* Logo/Home Link */}
         <Link to="/" className="flex items-center">
-          <span className="font-serif text-xl">Trip Itinerary</span>
+          <span className="font-serif text-xl">Trips</span>
         </Link>
 
         {/* Mobile menu button */}
@@ -56,11 +55,11 @@ export default function Navigation() {
         <div className="flex w-full items-center justify-between md:w-auto md:justify-start md:gap-4">
           {currentTrip ? (
             <>
-              <div>
+              {/* <div>
                 <span className="block sm:inline">From</span>{' '}
                 <span className="font-bold">${currentTrip.price.amount.toLocaleString()}</span>{' '}
                 <span>{currentTrip.price.currency}</span>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-4">
                 <button className="bg-hermes-red text-white px-6 py-2 rounded-lg hover:bg-hermes-red-dark">

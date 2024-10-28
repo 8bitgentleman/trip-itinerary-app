@@ -198,7 +198,7 @@ export const trips = [
   {
     id: 'italy-rome-2024',
     title: 'Italy & Rome 2024',
-    subtitle: 'Work in Auckland and road trip through the South Island',
+    subtitle: 'A month in Rome working and exploring the city and surrounding areas',
     destination: 'Italy',
     duration: {
       days: 60,
@@ -208,7 +208,7 @@ export const trips = [
       amount: 3200,
       currency: 'USD'
     },
-    heroImage: 'https://img.atlasobscura.com/SLE0DDz2N6_zWs4h3FlkdK1tifaySPskryMqufLbes8/rs:fill:370:482:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2V2ZW50/X2ltYWdlcy8yOGNi/M2Y5Ni0xYjQzLTQ1/YWItOTdkZi1iN2U1/MTM5NmQwNWZkZjg4/ZmU2NjM5Njc0MDJi/NjFfSXRhbHkgVHJp/cCBMaXN0aW5nIEhl/cm8gSW1hZ2UucG5n.png',
+    heroImage: '/photos/florence-2024.jpg',
     gallery: [
       'https://placehold.co/800x800',
       'https://placehold.co/800x800'
@@ -225,10 +225,10 @@ export const trips = [
     ],
     dates: [
       {
-        startDate: '2025-02-05',
-        endDate: '2025-02-15',
+        startDate: '2024-08-30',
+        endDate: '2024-09-27',
         price: 4825,
-        available: true
+        available: false
       }
     ],
     activity: 'Easy',
@@ -250,7 +250,7 @@ export const trips = [
       amount: 3200,
       currency: 'USD'
     },
-    heroImage: 'https://placehold.co/1920x1080',
+    heroImage: '/photos/eclipse-2024.jpg',
     gallery: [
       'https://placehold.co/800x800',
       'https://placehold.co/800x800'
@@ -302,21 +302,37 @@ export const trips = [
         date: '2023-02-01',
         title: 'Arrive in Auckland',
         description: 'Land in Auckland and begin New Zealand adventure',
-        accommodation: 'Auckland accommodation'
+        accommodation: 'Auckland apartment',
+        images: [
+          'https://placehold.co/800x600',
+          'https://placehold.co/800x600',
+          'https://placehold.co/800x600',
+        ],
       },
       {
         day: 6,
         date: '2023-02-06',
         title: 'Hobbiton & Rotorua Tour',
         description: 'Guided tour of the famous Hobbiton Movie Set and visit to Rotorua',
-        activities: ['Hobbiton Tour', 'Rotorua Visit']
+        activities: ['Hobbiton Tour', 'Rotorua Visit'],
+        images: [
+          'https://placehold.co/800x600',
+          'https://placehold.co/800x600',
+        ],
       },
       {
         day: 9,
         date: '2023-02-09',
         title: 'Mission Bay Beach',
         description: 'E-scooter adventure to Mission Bay Beach after work',
-        activities: ['E-scooter riding', 'Beach visit']
+        activities: ['E-scooter riding', 'Beach visit'],
+        image: 'https://placehold.co/800x600',
+        accommodation: 'Auckland apartment',
+        iconIndex: {
+          accommodation: "Building2",    // Will use the Hotel icon instead of BedDouble
+          meals: "Coffee",          // Will use Coffee icon instead of Utensils
+          activities: "Bike"        // Will use Bike icon instead of Map
+        },
       },
       {
         day: 15,
