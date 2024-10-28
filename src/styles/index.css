@@ -17,3 +17,7 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.trip-grid{
+  margin-top:20px;
+}
