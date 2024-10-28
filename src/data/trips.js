@@ -293,7 +293,7 @@ export const trips = [
     },
     heroImage: 'https://placehold.co/1920x1080',
     gallery: [
-      'https://placehold.co/800x800',
+      '/photos/NZ-2023/PXL_20230203_215820437.jpg',
       'https://placehold.co/800x800'
     ],
     itinerary: [
@@ -304,8 +304,7 @@ export const trips = [
         description: 'Land in Auckland and begin New Zealand adventure',
         accommodation: 'Auckland apartment',
         images: [
-          'https://placehold.co/800x600',
-          'https://placehold.co/800x600',
+          '/photos/NZ-2023/PXL_20230203_215820437.jpg',
           'https://placehold.co/800x600',
         ],
       },
