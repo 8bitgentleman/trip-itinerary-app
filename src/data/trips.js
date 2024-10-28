@@ -201,14 +201,14 @@ export const trips = [
     subtitle: 'A month in Rome working and exploring the city and surrounding areas',
     destination: 'Italy',
     duration: {
-      days: 60,
-      nights: 59
+      days: 28,
+      // nights: 27
     },
     price: {
-      amount: 3200,
+      amount: 7200,
       currency: 'USD'
     },
-    heroImage: '/photos/florence-2024.jpg',
+    heroImage: '/photos/italy-2024/florence-2024.jpg',
     gallery: [
       'https://placehold.co/800x800',
       'https://placehold.co/800x800'
@@ -217,24 +217,168 @@ export const trips = [
     itinerary: [
       {
         day: 1,
-        title: 'Arrive in Auckland',
-        description: 'Settle into Auckland, meet the group, and explore the city.',
-        meals: ['Dinner'],
-        accommodation: 'Auckland hostel'
+        "date": "2024-08-30",
+        title: 'Flight NY - Rome',
+        description: 'Fly to Italy.',
+        image: "/photos/italy-2024/PXL_20240830_165131561.jpg"
+
+      },
+      {
+        "day": 5,
+        "date": "2024-09-03",
+        "title": "Municipio Roma I - Rome",
+        "description": "",
+        "activities": [],
+        "image": "/photos/italy-2024/PXL_20240903_101329251.MP~2.jpg",
+        
+      },
+      {
+        "day": 6,
+        "date": "2024-09-04",
+        "title": "Temple of Aesculapius - Rome",
+        "description": "Exploring the Villa Borghese Park",
+        "activities": ["Exploring"],
+        "image": "/photos/italy-2024/PXL_20240904_121601484.jpg",
+        iconIndex: {
+          accommodation: "Building2",    // Will use the Hotel icon instead of BedDouble
+          activities: "Footprints"
+        },
+      },
+      {
+        "day": 8,
+        "date": "2024-09-06",
+        "title": "Teatre de Marcel - Rome",
+        "description": "Exploring the ancient Theatre of Marcellus and surrounding area",
+        "activities": ["Walking"],
+        "images": [
+          "/photos/italy-2024/PXL_20240906_125219050~2(1).jpg",
+          "/photos/italy-2024/PXL_20240906_133439718.jpg",
+        ],
+        iconIndex: {
+          accommodation: "Building2",    // Will use the Hotel icon instead of BedDouble
+          activities: "Footprints"
+        },
+      },
+      {
+        "day": 14,
+        "date": "2024-09-12",
+        "title": "Villa D'Este - Tivoli",
+        "description": "",
+        "activities": ["Walking"],
+        "images": [
+          "/photos/italy-2024/PXL_20240912_084223800~2.jpg",
+          "/photos/italy-2024/PXL_20240912_083421857~2.jpg",
+          "/photos/italy-2024/PXL_20240912_084026850.MP.jpg",
+          "/photos/italy-2024/PXL_20240912_084329575.MP.jpg",
+        ],
+        iconIndex: {
+          accommodation: "Building2",    // Will use the Hotel icon instead of BedDouble
+          activities: "Footprints"
+        },
+      },
+      {
+        "day": 15,
+        "date": "2024-09-13",
+        "title": "Vicus Caprarius - The Water City - Rome",
+        "description": "Explored an underground Roman aquaduct",
+        "activities": [],
+        "image": "/photos/italy-2024/PXL_20240913_094551515.MP.jpg",
+      },
+      {
+        "day": 15,
+        "date": "2024-09-13",
+        "title": "The Colosseum - Rome",
+        "description": "Explored an underground Roman aquaduct",
+        "activities": [],
+        "image":        "/photos/italy-2024/PXL_20240913_120833899(1).jpg",
+      },
+      {
+        "day": 17,
+        "date": "2024-09-15",
+        "title": "Villa Gregoriana - Tivoli",
+        "description": "",
+        "activities": ["Hiking"],
+        "images": [
+          "/photos/italy-2024/PXL_20240915_080611228.jpg",
+
+          "/photos/italy-2024/PXL_20240915_092715518.jpg",
+        ],
+        iconIndex: {
+          accommodation: "Building2",    // Will use the Hotel icon instead of BedDouble
+          activities: "Footprints"
+        },
+      },
+      {
+        "day": 18,
+        "date": "2024-09-16",
+        "title": "Quartiere 1 - Florence",
+        "description": "",
+        "activities": [],
+        "images": [
+          "/photos/italy-2024/PXL_20240917_073304451.MP~2 (1).jpg",
+
+          "/photos/italy-2024/PXL_20240916_133107902.MP~2.jpg",
+          "/photos/italy-2024/PXL_20240916_171151474~2.jpg",
+
+        ]
       },
     ],
     dates: [
       {
         startDate: '2024-08-30',
         endDate: '2024-09-27',
-        price: 4825,
+        price: 7200,
         available: false
       }
     ],
     activity: 'Easy',
-    groupSize: 2,
-    interest: ['History, Culture, Astronomy, & Food'],
+    // groupSize: 1,
+    interest: ['History, Culture, & Food'],
 
+  },
+  // Seattle 2024
+  {
+    id: 'seattle-vancouver-2024',
+    title: 'Seattle & Vancouver',
+    subtitle: 'Hike through a rainforest with friends',
+    destination: 'Seattle',
+    duration: {
+      days: 8,
+      nights: 7
+    },
+    price: {
+      amount: 1200,
+      currency: 'USD'
+    },
+    heroImage: '/photos/seattle-2024/PXL_20240608_201346171.jpg',
+    gallery: [
+      '/photos/seattle-2024/PXL_20230203_215820437.jpg',
+      'https://placehold.co/800x800'
+    ],
+    itinerary: [
+      {
+        day: 1,
+        date: '2024-06-02',
+        title: 'Arrive in Auckland',
+        description: 'Land in Auckland and begin New Zealand adventure',
+        accommodation: 'Auckland apartment',
+        images: [
+          '/photos/NZ-2023/PXL_20230203_215820437.jpg',
+          'https://placehold.co/800x600',
+        ],
+      },
+      
+    ],
+    dates: [
+      {
+        startDate: '2024-06-02',
+        endDate: '2024-06-09',
+        available: false
+      }
+    ],
+    activity: 'Moderate',
+    groupSize: 1,
+    interest: ['Nature', 'Hiking', 'Adventure', 'Road Trip']
   },
   // Montreal Total Eclipse 2024
   {
@@ -250,7 +394,7 @@ export const trips = [
       amount: 3200,
       currency: 'USD'
     },
-    heroImage: '/photos/eclipse-2024.jpg',
+    heroImage: '/photos/eclipse-2024/PXL_20240408_172324899.jpg',
     gallery: [
       'https://placehold.co/800x800',
       'https://placehold.co/800x800'
@@ -291,7 +435,7 @@ export const trips = [
       amount: 3200,
       currency: 'USD'
     },
-    heroImage: 'https://placehold.co/1920x1080',
+    heroImage: '/photos/NZ-2023/PXL_20230314_194303657.jpg',
     gallery: [
       '/photos/NZ-2023/PXL_20230203_215820437.jpg',
       'https://placehold.co/800x800'
@@ -455,18 +599,18 @@ export const trips = [
   // France Rock Climbing 2017
   {
     id: 'france-rockclimbing-2024',
-    title: 'Rock Climbing Adventure Through France',
-    subtitle: 'Scale the cliffs of Normandy, and traverse the rugged terrain of Southern France',
+    title: 'Rock Climbing Through France',
+    subtitle: 'Scaled the cliffs of Normandy, and drove through the rugged terrain of Southern France',
     destination: 'France',
     duration: {
-      days: 14,
-      nights: 13
+      days: 15,
+      nights: 14
     },
     price: {
       amount: 3200,
       currency: 'USD'
     },
-    heroImage: 'https://placehold.co/1920x1080',
+    heroImage: '/photos/france-climbing-2017/IMG_2212.JPG',
     gallery: [
       'https://placehold.co/800x800',
       'https://placehold.co/800x800'
@@ -483,8 +627,8 @@ export const trips = [
     ],
     dates: [
       {
-        startDate: '2025-02-05',
-        endDate: '2025-02-15',
+        startDate: '2017-05-19',
+        endDate: '2017-06-02',
         price: 4825,
         available: true
       }
