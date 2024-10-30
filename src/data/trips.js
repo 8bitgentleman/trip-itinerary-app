@@ -194,6 +194,48 @@ export const trips = [
       }
     }
   },
+    // Puerto Rico 2025
+    {
+      id: 'puerto-rico-2025',
+      title: 'Puerto Rico',
+      subtitle: '',
+      destination: 'Puerto Rico',
+      duration: {
+        days: 5,
+        nights: 4
+      },
+      price: {
+        amount: 300,
+        currency: 'USD'
+      },
+      heroImage: '/photos/puerto-rico-2025/Puente-de-Piedra-Cabo-Rojo.jpg',
+      gallery: [
+        '/photos/seattle-2024/PXL_20230203_215820437.jpg',
+        'https://placehold.co/800x800'
+      ],
+      itinerary: [
+        {
+          day: 1,
+          date: '2025-02-07',
+          title: 'Arrive in Puerto Rico',
+          description: 'Leave early morning and arrive early afternoon',
+          accommodation: '??',
+          image: 'https://placehold.co/800x600',
+          
+        },
+        
+      ],
+      dates: [
+        {
+          startDate: '2025-02-07',
+          endDate: '2025-02-10',
+          available: true
+        }
+      ],
+      activity: 'Moderate',
+      groupSize: 4,
+      interest: ['Nature', 'Hiking']
+    },
 // Rome & Italy 2024
   {
     id: 'italy-rome-2024',
@@ -414,7 +456,7 @@ export const trips = [
         startDate: '2025-02-05',
         endDate: '2025-02-15',
         price: 4825,
-        available: true
+        available: false
       }
     ],
     activity: 'Easy',
@@ -630,7 +672,7 @@ export const trips = [
         startDate: '2017-05-19',
         endDate: '2017-06-02',
         price: 4825,
-        available: true
+        available: false
       }
     ],
     activity: 'Challenging',
