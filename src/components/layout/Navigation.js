@@ -18,10 +18,10 @@ export default function Navigation() {
         { name: 'Info', href: '#info' },
       ]
     : [
-        { name: 'Destinations', href: '#destinations' },
-        { name: 'Interests', href: '#interests' },
-        { name: 'About', href: '#about' },
-        { name: 'Contact', href: '#contact' },
+        // { name: 'Destinations', href: '#destinations' },
+        // { name: 'Interests', href: '#interests' },
+        // { name: 'About', href: '#about' },
+        // { name: 'Contact', href: '#contact' },
       ];
 
   return (
@@ -29,7 +29,12 @@ export default function Navigation() {
       <div className="container mx-auto flex h-20 px-4 md:justify-between">
         {/* Logo/Home Link */}
         <Link to="/" className="flex items-center">
-          <span className="font-serif text-xl">Trips</span>
+        {currentTrip ? (
+            <span className="font-serif text-xl">← ‎‎ ‎ See all trips</span>
+          ) : (
+            <span className="font-serif text-xl">Trips</span>
+          )}
+          
         </Link>
 
         {/* Mobile menu button */}

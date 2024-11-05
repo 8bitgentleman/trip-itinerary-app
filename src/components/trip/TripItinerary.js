@@ -29,6 +29,10 @@ import {
   Hotel,
   Camera,
   Footprints,
+  Caravan,
+  Car,
+  CarFront,
+  Worm,
   Image as ImageIcon
 } from 'lucide-react';
 
@@ -66,7 +70,11 @@ export default function TripItinerary({ trip }) {
     Hotel,
     Camera,
     Bike,
-    Footprints
+    Footprints,
+    Caravan,
+    Car,
+    CarFront,
+    Worm,
   };
 
   // Get icon function now uses the mapping

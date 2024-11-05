@@ -330,7 +330,7 @@ export const trips = [
         "day": 15,
         "date": "2024-09-13",
         "title": "The Colosseum - Rome",
-        "description": "Explored an underground Roman aquaduct",
+        "description": "Explored the Colosseum, wandering through the gallery and fighting pit.",
         "activities": [],
         "image":        "/photos/italy-2024/PXL_20240913_120833899(1).jpg",
       },
@@ -500,10 +500,16 @@ export const trips = [
         title: 'Hobbiton & Rotorua Tour',
         description: 'Guided tour of the famous Hobbiton Movie Set and visit to Rotorua',
         activities: ['Hobbiton Tour', 'Rotorua Visit'],
+        accommodation: 'Auckland apartment',
         images: [
           'https://placehold.co/800x600',
           'https://placehold.co/800x600',
         ],
+        iconIndex: {
+          accommodation: "Building2",
+          meals: "Coffee",          // Will use Coffee icon instead of Utensils
+          activities: "Bus"        // Will use Bike icon instead of Map
+        },
       },
       {
         day: 9,
@@ -523,52 +529,89 @@ export const trips = [
         day: 15,
         date: '2023-02-15',
         title: 'Maungauika North Head Historic Reserve',
-        description: 'Hiking at the historic Maungauika/North Head Reserve',
-        activities: ['Hiking', 'Historical site visit']
+        description: 'Took a boat to the North Head island and Hiked the mountain and historic fort',
+        activities: ['Hiking'],
+        iconIndex: {
+          accommodation: "Building2",
+          meals: "Coffee",          // Will use Coffee icon instead of Utensils
+          activities: "Footprints"        // Will use Bike icon instead of Map
+        },
       },
       {
         day: 25,
         date: '2023-02-25',
         title: 'Tapapa Hike',
         description: 'Hiking experience in Tapapa, Waikato region',
-        activities: ['Hiking']
+        activities: ['Hiking'],
+        iconIndex: {
+          accommodation: "Building2",
+          meals: "Coffee",          // Will use Coffee icon instead of Utensils
+          activities: "Footprints"        // Will use Bike icon instead of Map
+        },
       },
       {
         day: 26,
         date: '2023-02-26',
         title: 'Waiheke Island',
         description: 'Day trip to Waiheke Island',
-        activities: ['Island exploration']
+        activities: ['Island exploration'],
+        iconIndex: {
+          accommodation: "Building2",
+          meals: "Coffee",          // Will use Coffee icon instead of Utensils
+          activities: "Ship"        // Will use Bike icon instead of Map
+        },
       },
       {
         day: 27,
         date: '2023-02-27',
         title: 'Christchurch',
-        description: 'Explore Christchurch',
+        description: 'Flew to Christchurch for work and explored the city',
         duration: '3 days',
         endDate: '2023-03-01',
-        accommodation: 'Christchurch accommodation'
+        accommodation: 'Weird pizza hotel',
+        activities: ['Work and Flight'],
+        iconIndex: {
+          accommodation: "Building",
+          meals: "Coffee",         
+          activities: "Plane"      
+        },
       },
       {
         day: 31,
         date: '2023-03-03',
         title: 'Queenstown Arrival',
         description: 'Fly to Queenstown',
-        accommodation: 'Queenstown accommodation'
+        accommodation: 'Queenstown hotel',
+        iconIndex: {
+          accommodation: "Building",
+          meals: "Coffee",         
+          activities: "Plane"      
+        },
       },
       {
         day: 32,
         date: '2023-03-04',
         title: 'Queenstown Activities',
         description: 'Experience the Queenstown Skyline Luge',
-        activities: ['Skyline Luge']
+        activities: ['Skyline Luge'],
+        iconIndex: {
+          accommodation: "Building",
+          meals: "Coffee",         
+          activities: "Worm"      
+        },
       },
       {
         day: 35,
         date: '2023-03-07',
         title: 'Start Campervan Journey & Blue Pools',
-        description: 'Pick up campervan and visit the Blue Pools',
-        activities: ['Campervan pickup', 'Blue Pools visit']
+        description: 'Pick up camper van and visit the Blue Pools',
+        activities: ['Camper van pickup', 'Blue Pools visit'],
+        accommodation:"Camper van",
+        iconIndex: {
+          accommodation: "Caravan",
+          meals: "Coffee",         
+          activities: "Footprints"      
+        },
       },
       {
         day: 36,
