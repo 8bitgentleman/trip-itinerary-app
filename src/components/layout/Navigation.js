@@ -2,39 +2,40 @@ import { useState } from 'react';
 import { Menu as MenuIcon, X } from 'lucide-react';
 import { useLocation, Link } from 'react-router-dom';
 import { trips } from '../../data/trips';
+import CalendarButton from '../trip/CalendarButton';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const currentTripId = location.pathname.slice(1);
   const currentTrip = trips.find(trip => trip.id === currentTripId);
-  
+
   const isHomePage = location.pathname === '/';
 
-  const navLinks = currentTrip 
+  const navLinks = currentTrip
     ? [
-        { name: 'Overview', href: '#overview' },
-        { name: 'Itinerary', href: '#itinerary' },
-        { name: 'Info', href: '#info' },
-      ]
+      { name: 'Overview', href: '#overview' },
+      { name: 'Itinerary', href: '#itinerary' },
+      { name: 'Info', href: '#info' },
+    ]
     : [
-        // { name: 'Destinations', href: '#destinations' },
-        // { name: 'Interests', href: '#interests' },
-        // { name: 'About', href: '#about' },
-        // { name: 'Contact', href: '#contact' },
-      ];
+      // { name: 'Destinations', href: '#destinations' },
+      // { name: 'Interests', href: '#interests' },
+      // { name: 'About', href: '#about' },
+      // { name: 'Contact', href: '#contact' },
+    ];
 
   return (
     <div className="fixed bottom-0 z-20 w-full bg-white/50 shadow-[4px_0_4px_4px_rgba(64,64,64,0.03)] backdrop-blur md:sticky md:bottom-auto md:top-0">
       <div className="container mx-auto flex h-20 px-4 md:justify-between">
         {/* Logo/Home Link */}
         <Link to="/" className="flex items-center">
-        {currentTrip ? (
+          {currentTrip ? (
             <span className="font-serif text-xl">← ‎‎ ‎ Back to all trips</span>
           ) : (
             <span className="font-serif text-xl">Trips</span>
           )}
-          
+
         </Link>
 
         {/* Mobile menu button */}
@@ -66,14 +67,21 @@ export default function Navigation() {
                 <span>{currentTrip.price.currency}</span>
               </div> */}
 
-              {/* <div className="flex items-center gap-4">
-                <button className="bg-hermes-red text-white px-6 py-2 rounded-lg hover:bg-hermes-red-dark">
-                  See dates
-                </button>
-                <button className="border border-hermes-red text-hermes-red px-6 py-2 rounded-lg hover:bg-hermes-cream">
-                  Contact us
-                </button>
-              </div> */}
+              <div className="flex items-center gap-4">
+                {currentTrip?.dates?.[0]?.available && (
+                  <>
+                    <CalendarButton date={currentTrip.dates[0].startDate} />
+                    <button
+                      onClick={() => window.location.href = 'sms:?body=Your%20trip%20looks%20awesome%20and%20you%27ve%20clearly%20got%20great%20ideas%20and%20I%20wanna%20hang%20out%20:)'}
+                      className="border border-hermes-red text-hermes-red px-6 py-2 rounded-lg hover:bg-hermes-cream"
+                    >
+                      Wanna come? Text me yo
+                    </button>
+                  </>
+                )}
+
+
+              </div>
             </>
           ) : (
             <div className="flex items-center gap-4">
