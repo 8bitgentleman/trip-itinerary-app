@@ -30,7 +30,7 @@ export default function Navigation() {
         {/* Logo/Home Link */}
         <Link to="/" className="flex items-center">
         {currentTrip ? (
-            <span className="font-serif text-xl">← ‎‎ ‎ See all trips</span>
+            <span className="font-serif text-xl">← ‎‎ ‎ Back to all trips</span>
           ) : (
             <span className="font-serif text-xl">Trips</span>
           )}
@@ -38,12 +38,12 @@ export default function Navigation() {
         </Link>
 
         {/* Mobile menu button */}
-        <button
+        {/* <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden"
         >
           {isMenuOpen ? <X /> : <MenuIcon />}
-        </button>
+        </button> */}
 
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
@@ -66,14 +66,14 @@ export default function Navigation() {
                 <span>{currentTrip.price.currency}</span>
               </div> */}
 
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <button className="bg-hermes-red text-white px-6 py-2 rounded-lg hover:bg-hermes-red-dark">
                   See dates
                 </button>
                 <button className="border border-hermes-red text-hermes-red px-6 py-2 rounded-lg hover:bg-hermes-cream">
                   Contact us
                 </button>
-              </div>
+              </div> */}
             </>
           ) : (
             <div className="flex items-center gap-4">

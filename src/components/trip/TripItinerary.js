@@ -33,6 +33,10 @@ import {
   Car,
   CarFront,
   Worm,
+  Laptop,
+  Laptop2,
+  Pen,
+  BriefcaseBusiness,
   Image as ImageIcon
 } from 'lucide-react';
 
@@ -69,12 +73,15 @@ export default function TripItinerary({ trip }) {
     Castle,
     Hotel,
     Camera,
-    Bike,
     Footprints,
     Caravan,
     Car,
     CarFront,
     Worm,
+    Laptop,
+    Laptop2,
+    Pen,
+    BriefcaseBusiness,
   };
 
   // Get icon function now uses the mapping
@@ -164,22 +171,41 @@ export default function TripItinerary({ trip }) {
                 {/* Image Container */}
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pl-12' : 'pr-12'}`}>
                   {day.images ? (
-                    <div className="grid grid-cols-2 gap-2">
-                      {day.images.map((image, imgIndex) => (
-                        <div
-                          key={imgIndex}
-                          className="aspect-square cursor-pointer overflow-hidden rounded-lg"
-                          onClick={() => setSelectedImage(image)}
-                        >
-                          <img
-                            src={image}
-                            alt={`${day.title} - Image ${imgIndex + 1}`}
-                            className="h-full w-full object-cover transition-transform hover:scale-105"
-                          />
-                        </div>
-                      ))}
-                    </div>
+                    day.images.length === 1 ? (
+                      // Single image from images array - use same layout as day.image
+                      <div
+                        className="cursor-pointer"
+                        onClick={() => setSelectedImage(day.images[0])}
+                      >
+                        <img
+                          src={day.images[0]}
+                          alt={day.imageAlt || day.title}
+                          className="rounded-lg w-full h-64 object-cover"
+                        />
+                        {day.imageAlt && (
+                          <p className="text-sm text-gray-500 mt-2">{day.imageAlt}</p>
+                        )}
+                      </div>
+                    ) : (
+                      // Multiple images - use grid layout
+                      <div className="grid grid-cols-2 gap-2">
+                        {day.images.map((image, imgIndex) => (
+                          <div
+                            key={imgIndex}
+                            className="aspect-square cursor-pointer overflow-hidden rounded-lg"
+                            onClick={() => setSelectedImage(image)}
+                          >
+                            <img
+                              src={image}
+                              alt={`${day.title} - ${imgIndex + 1}`}
+                              className="h-full w-full object-cover transition-transform hover:scale-105"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    )
                   ) : day.image && (
+                    // Single image from day.image
                     <div
                       className="cursor-pointer"
                       onClick={() => setSelectedImage(day.image)}
@@ -227,7 +253,7 @@ export default function TripItinerary({ trip }) {
                           >
                             <img
                               src={image}
-                              alt={`${day.title} - Image ${imgIndex + 1}`}
+                              alt={`${day.title} - ${imgIndex + 1}`}
                               className="absolute inset-0 h-full w-full object-cover transition-transform hover:scale-105"
                             />
                           </div>
@@ -263,7 +289,7 @@ export default function TripItinerary({ trip }) {
                         >
                           <img
                             src={image}
-                            alt={`${day.title} - Image ${imgIndex + 1}`}
+                            alt={`${day.title} - ${imgIndex + 1}`}
                             className="absolute inset-0 h-full w-full object-cover"
                           />
                         </div>

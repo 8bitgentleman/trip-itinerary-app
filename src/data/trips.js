@@ -394,22 +394,115 @@ export const trips = [
     },
     heroImage: '/photos/seattle-2024/PXL_20240608_201346171.jpg',
     gallery: [
-      '/photos/seattle-2024/PXL_20230203_215820437.jpg',
-      'https://placehold.co/800x800'
+      // '/photos/seattle-2024/PXL_20230203_215820437.jpg',
+      // 'https://placehold.co/800x800'
     ],
     itinerary: [
       {
         day: 1,
         date: '2024-06-02',
-        title: 'Arrive in Auckland',
-        description: 'Land in Auckland and begin New Zealand adventure',
-        accommodation: 'Auckland apartment',
-        images: [
-          '/photos/NZ-2023/PXL_20230203_215820437.jpg',
-          'https://placehold.co/800x600',
-        ],
+        title: 'Arrive in Seattle',
+        description: 'Landed in Seattle',
+        accommodation: 'Seattle Airbnb',
+        activities: ["Flying"],
+        image:'/photos/Seattle-2024/PXL_20240603_152124315.jpg',
+        iconIndex: {
+          accommodation: "Building2",    // Will use the Hotel icon instead of BedDouble
+          activities: "Plane"
+        },
       },
-      
+      {
+        day: 2,
+        date: "2024-06-03",
+        title: "Studio hop",
+        description: "Worked with the Seattle team from the Seattle office and got dinner and drinks with Pelin",
+        activities: ["Working"],
+        accommodation: 'Seattle Airbnb',
+        image:'/photos/Seattle-2024/PXL_20240603_165123176.PANO.jpg',
+        iconIndex: {
+          accommodation: "Building2",
+          activities: "Laptop2"
+        },
+      },
+      {
+        day: 4,
+        date: "2024-06-05",
+        title: "Explored Fremont",
+        description: "Walked around with Pelin exploring the shops, restaurants and Gas Works park of Fremont",
+        activities: ["Walking"],
+        accommodation: 'Seattle Airbnb',
+        images:[
+          '/photos/Seattle-2024/PXL_20240605_212610391.jpg',
+          '/photos/Seattle-2024/PXL_20240605_212129482-EFFECTS.jpg'
+        ],
+        iconIndex: {
+          accommodation: "Building2",
+          activities: "Footprints"
+        },
+      },
+      {
+        day: 5,
+        date: "2024-06-06",
+        title: "Ferry to Victoria",
+        description: "Took the FRS Clipper ferry from Seattle to Victoria, CA to meet up with Andrea. Searched for nudibranchs under the docks, saw some crazy clouds and went to a concert.",
+        activities: ["Traveling"],
+        accommodation: "Andrea's couch",
+        images:[
+          '/photos/Seattle-2024/PXL_20240606_201105297~2.jpg',
+          '/photos/Seattle-2024/PXL_20240606_191606470.MP.jpg'
+        ],
+        iconIndex: {
+          accommodation: "House",
+          activities: "Ship"
+        },
+      },
+      {
+        day: 5,
+        date: "2024-06-07",
+        title: "Explored to Victoria",
+        description: "Biked around Victoria and got some ice cream while Andrea swam. Took the afternoon ferry to Port Angeles 🧛🏻 to meet back up with Pelin and Patrick.",
+        activities: ["Traveling"],
+        accommodation: "Port Angeles Airbnb",
+        images:[
+          '/photos/Seattle-2024/PXL_20240607_184003086.jpg'
+        ],
+        iconIndex: {
+          accommodation: "House",
+          activities: "Bike"
+        },
+      },
+      {
+        day: 7,
+        date: "2024-06-08",
+        title: "Olympic National Park",
+        description: "Drove to Olympic National Park and hiked through the rainforest with Andrea, Pelin, and Patrick.",
+        activities: ["Hiking"],
+        accommodation: "Port Angeles Airbnb",
+        images:[
+          '/photos/Seattle-2024/PXL_20240608_171604826.jpg',
+          '/photos/Seattle-2024/PXL_20240609_000732192.jpg',
+          '/photos/Seattle-2024/PXL_20240608_181756744.MP.jpg',
+          '/photos/Seattle-2024/PXL_20240609_032102636~2.jpg',
+
+        ],
+        iconIndex: {
+          accommodation: "House",
+          activities: "Footprints"
+        },
+      },
+      {
+        day: 8,
+        date: "2024-06-09",
+        title: "Flew to NYC",
+        description: "Drove back to Seattle and caught a plane home to New York",
+        activities: ["Traveling"],
+        accommodation: "Home",
+
+        iconIndex: {
+          accommodation: "Building2",
+          activities: "Plane"
+        },
+      },
     ],
     dates: [
       {
