@@ -1,9 +1,9 @@
 export const trips = [
-  // Egypt 2027
+  // // MARK: Egypt 2027
   {
     id: 'egypt-2027',
     title: 'Total Solar Eclipse over the Temple of Luxor: Hidden Tombs, Ancient Pyramids & Old Cairo',
-    subtitle: 'Explore pyramids, tombs, and local cuisine with your Egyptologist guide',
+    subtitle: 'Explore pyramids, tombs, and local cuisine with an Egyptologist guide',
     destination: 'Egypt',
     duration: {
       days: 10,
@@ -19,12 +19,12 @@ export const trips = [
       'https://placehold.co/800x800'
     ],
     highlights: [
-      'Witness the epic sight of the Great Pyramids, the Tomb of Tutankhamun and the temple of Abu Simbel.',
+      'Witness a once in a lifetime total solar eclipse from the Temple of Luxor',
+      'Explore the sight of the Great Pyramids, the Tomb of Tutankhamun and the temple of Abu Simbel.',
       'Enjoy exclusive after hours access to the Valley of The Kings without the crowds.',
       'Discover the surprising existence of waterfalls, & whale skeletons in the Sahara.',
       'Cruise the Nile in comfort on a traditional wooden Felucca.',
       'Roam the back streets of Old Cairo and go behind the scenes of a goldsmith\'s studio.',
-      'Experience the warm hospitality of a local Nubian family.',
       'Visit the ancient city of Memphis and the Step Pyramid of Saqqara.',
       'Explore the bustling Khan el-Khalili bazaar for authentic souvenirs and local snacks.',
       'Enjoy a sound and light show at the Pyramids of Giza.'
@@ -34,23 +34,20 @@ export const trips = [
       'Most meals (as described in the itinerary)',
       'Transportation (as described in the itinerary)',
       'Admission/entry to activities',
-      'AO Trip Leader throughout the trip',
-      'Special access to places and experiences',
-      'All gratuities (not including AO Trip Leader)'
+      'Special access to places and experiences'
     ],
     notIncluded: [
       'Flights to and from destination',
       'Pre/Post trip accommodations', 
       'Travel insurance',
       'Visas and passport fees',
-      'Meals outside of those described',
-      'AO Trip Leader tip'
+      'Meals outside of those described'
     ],
     itinerary: [
       {
         day: 1,
         title: 'Arrive Cairo',
-        description: 'Salām \'alaykum and welcome to Cairo! Your Atlas Obscura Guide will meet you at Cairo Airport and whisk you off via private transfer to your hotel in the heart of the city.',
+        description: 'Salām \'alaykum and welcome to Cairo! If flights line up we will meet at Cairo Airport and whisk off via private transfer to the hotel in the heart of the city.',
         image: 'https://placehold.co/800x800',
         imageAlt: 'Welcome to Egypt!',
         meals: ['Dinner'],
@@ -147,23 +144,23 @@ export const trips = [
       }
     ],
     activity: 'Moderate',
-    groupSize: 14,
+    groupSize: 5,
     interest: ['History, Culture, Astronomy, & Food'],
     additionalInfo: {
       pricing: {
-        deposit: 250,
+        deposit: "TBD",
         depositCurrency: 'USD',
         balanceDueDays: 90,
-        notes: 'The listed price of the trip is per person based on double occupancy.',
+        notes: 'The price of the trip is per person based on double occupancy.',
         fullDetails: 'Learn more about our pricing and payment plans...'  // Full text for expanded view
       },
-      soloTraveler: {
-        privateRoomAvailable: true,
-        privateRoomFee: 800,
-        privateRoomCurrency: 'USD',
-        notes: "You're in good company. Many of our travelers join solo.",
-        fullDetails: 'Learn more about solo travel options and room arrangements...'
-      },
+      // soloTraveler: {
+      //   privateRoomAvailable: true,
+      //   privateRoomFee: 800,
+      //   privateRoomCurrency: 'USD',
+      //   notes: "You're in good company. Many of our travelers join solo.",
+      //   fullDetails: 'Learn more about solo travel options and room arrangements...'
+      // },
       arrivalDeparture: {
         airport: {
           code: 'CAI',
@@ -184,21 +181,21 @@ export const trips = [
         notes: 'This tour has a moderate activity level. Consider four to six miles of walking each day, with lots of time spent moving around historical sites.',
         fullDetails: 'Complete details about physical requirements and accessibility...'
       },
-      essentialInfo: {
-        tripInfoUrl: '/essential-trip-information',
-        faqUrl: '/faqs'
-      },
+      // essentialInfo: {
+      //   tripInfoUrl: '/essential-trip-information',
+      //   faqUrl: '/faqs'
+      // },
       contact: {
-        phone: '+1 833-919-9154',
-        email: 'info@example.com'  // Add if available
+        // phone: '+1 833-919-9154',
+        // email: 'info@example.com'  // Add if available
       }
     }
   },
-    // Puerto Rico 2025
+    // // MARK: Puerto Rico 2025
     {
       id: 'puerto-rico-2025',
       title: 'Puerto Rico',
-      subtitle: '',
+      subtitle: 'Get some real Caribbean sun in the dead of winter',
       destination: 'Puerto Rico',
       duration: {
         days: 5,
@@ -216,14 +213,49 @@ export const trips = [
       itinerary: [
         {
           day: 1,
-          date: '2025-02-07',
-          title: 'Arrive in Puerto Rico',
-          description: 'Leave early morning and arrive early afternoon',
+          date: '2025-02-08',
+          title: 'Friday: Arrive in Puerto Rico',
+          description: 'Leave early morning and arrive early afternoon. Settle in and explore the local beach. Dinner on the water?',
           accommodation: '??',
-          image: 'https://placehold.co/800x600',
+          image: 'photos/puerto-rico-2025/shutterstock_2437600577.jpg',
           
         },
-        
+        {
+          day: 2,
+          date: '2025-02-09',
+          title: 'Saturday: Explore Old San Juan',
+          description: 'Explore the historic streets of Old San Juan, visit the forts, and take a boat tour of the surrounding bay.',
+          accommodation: '??',
+          image: 'photos/puerto-rico-2025/San-Juan.jpg',
+          
+        },
+        {
+          day: 3,
+          date: '2025-02-10',
+          title: 'Sunday: Drive to El Yunque National Forest',
+          description: 'Rent a car and drive to El Yunque National Forest (~1hr). Hike to La Mina Falls through the rainforest. Drive to Rincón and stay for the night.',
+          accommodation: '??',
+          image: 'photos/puerto-rico-2025/El-Yunque.jpg',
+          
+        },
+        {
+          day: 4,
+          date: '2025-02-11',
+          title: 'Monday: ',
+          description: 'Surf lesson or scuba diving in Rincón. Drive back to San Juan for the night.',
+          accommodation: '??',
+          image: 'photos/puerto-rico-2025/rincon-diving-153181.jpg',
+          
+        },
+        {
+          day: 5,
+          date: '2025-02-12',
+          title: 'Tuesday: Fly back to NYC',
+          description: 'Sleep in and enjoy a leisurely breakfast. Return the rental car and fly back to NYC.',
+          accommodation: '??',
+          image: 'photos/puerto-rico-2025/San-Juan.jpg',
+          
+        },
       ],
       dates: [
         {
@@ -233,10 +265,10 @@ export const trips = [
         }
       ],
       activity: 'Moderate',
-      groupSize: 4,
+      groupSize: 2,
       interest: ['Nature', 'Hiking']
     },
-// Rome & Italy 2024
+// MARK: Rome & Italy 2024
   {
     id: 'italy-rome-2024',
     title: 'Italy & Rome 2024',
@@ -515,7 +547,7 @@ export const trips = [
     groupSize: 1,
     interest: ['Nature', 'Hiking', 'Adventure', 'Road Trip']
   },
-  // Montreal Total Eclipse 2024
+  // MARK: Montreal Total Eclipse 2024
   {
     id: 'montreal-eclipse-2024',
     title: '2024 Total Eclipse in Montreal',

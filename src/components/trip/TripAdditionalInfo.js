@@ -7,12 +7,12 @@ const InfoSection = ({ title, children, defaultExpanded = false }) => {
 
   return (
     <div className="mb-6">
-      <div 
-        className="flex items-center justify-between cursor-pointer" 
+      <div
+        className="flex items-center justify-between cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <h3 className="text-xl font-medium">{title}</h3>
-        <ChevronDown 
+        <ChevronDown
           className={`w-5 h-5 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
         />
       </div>
@@ -29,7 +29,7 @@ export default function TripAdditionalInfo({ trip }) {
   }
 
   const info = trip.additionalInfo;
-  
+
   return (
     <section id="info" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -135,17 +135,27 @@ export default function TripAdditionalInfo({ trip }) {
         {hasProperty(info, 'contact') && (
           <div className="mt-16 text-center">
             <h3 className="text-2xl font-serif mb-4">Any questions about this trip?</h3>
-            <p className="text-xl mb-8">Don't hesitate to reach out</p>
-            
+
             <div className="flex flex-col md:flex-row justify-center gap-8">
+              <button
+                onClick={() => window.location.href = 'sms:?body=Your%20trip%20looks%20awesome%20and%20you%27ve%20clearly%20got%20great%20ideas%20and%20I%20wanna%20hang%20out%20:)'}
+                className="flex items-center justify-center gap-3 px-8 py-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="w-10 h-10 rounded-full bg-hermes-cream flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-hermes-red" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-sm text-gray-600">Wanna come?</div>
+                    <div className="font-medium">Text me yo</div>
+                  </div>
+                
+              </button>
               {hasProperty(info.contact, 'phone') && (
-                <a 
+                <a
                   href={`tel:${info.contact.phone}`}
                   className="flex items-center justify-center gap-3 px-8 py-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div className="w-10 h-10 rounded-full bg-hermes-cream flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-hermes-red" />
-                  </div>
+                  
                   <div className="text-left">
                     <div className="text-sm text-gray-600">Call us at</div>
                     <div className="font-medium">{info.contact.phone}</div>
@@ -154,7 +164,7 @@ export default function TripAdditionalInfo({ trip }) {
               )}
 
               {hasProperty(info.contact, 'email') && (
-                <a 
+                <a
                   href={`mailto:${info.contact.email}`}
                   className="flex items-center justify-center gap-3 px-8 py-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
                 >
