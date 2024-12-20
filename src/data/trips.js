@@ -213,13 +213,44 @@ export const trips = [
       itinerary: [
         {
           day: 1,
-          date: '2025-02-07',
+          date: '2025-02-07T12:00:00',
           title: 'Friday: Arrive in Puerto Rico',
-          description: 'Leave early morning and arrive early afternoon. Settle in and explore the local beach. Dinner on the water?',
-          accommodation: '??',
-          image: 'photos/puerto-rico-2025/shutterstock_2437600577.jpg',
+          description: 'Leave early morning and arrive early afternoon. Explore Isla Verde Beach right outside our hotel and eat dinner at a waterfront restaurant.',
           
-        },
+          // Accommodation with booking link
+          accommodation: 'Courtyard by Marriott Isla Verde Beach Resort',
+          accommodationUrl: 'https://www.marriott.com/en-us/hotels/sjuiv-courtyard-isla-verde-beach-resort/',
+          
+          // Multiple activities with relevant links
+          activities: [
+            'Isla Verde Beach',
+            'Beach Club Access'
+          ],
+          activityUrls: [
+            'https://www.discoverpuertorico.com/profile/isla-verde-beach/9457',
+            'https://www.marriott.com/en-us/hotels/sjuiv-courtyard-isla-verde-beach-resort/experiences/'
+          ],
+          
+          // Restaurant options for meals
+          meals: [
+            'Lunch on the plane',
+            'Dinner at Ocean Lab Brewing Co.'
+          ],
+          mealUrls: [
+            null,  // Airport restaurant, no URL needed
+            'https://oceanlabbrewery.com/'
+          ],
+        
+          // Better icon choices for the type of activities
+          iconIndex: {
+            accommodation: "Building2",    // Modern hotel building
+            meals: "Utensils",            // Food
+            activities: "Waves"           // Beach theme
+          },
+          
+          // Multiple images showing different aspects of day 1
+          image:'photos/puerto-rico-2025/shutterstock_2437600577.jpg'
+                },
         {
           day: 2,
           date: '2025-02-08',
