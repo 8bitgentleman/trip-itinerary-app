@@ -127,7 +127,7 @@ export default function TripItinerary({ trip }) {
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12' : 'pl-12'}`}>
                   <p className="text-gray-500 mb-2">DAY {day.day}</p>
                   {day.date && (
-                    <p className="text-gray-400 text-sm mb-2">{new Date(day.date).toLocaleDateString()}</p>
+                    <p className="text-gray-400 text-sm mb-2">{new Date(day.date + 'T12:00:00').toLocaleDateString()}</p>
                   )}
                   <h3 className="text-2xl font-serif mb-4">{day.title}</h3>
 

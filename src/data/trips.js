@@ -213,7 +213,7 @@ export const trips = [
       itinerary: [
         {
           day: 1,
-          date: '2025-02-08',
+          date: '2025-02-07',
           title: 'Friday: Arrive in Puerto Rico',
           description: 'Leave early morning and arrive early afternoon. Settle in and explore the local beach. Dinner on the water?',
           accommodation: '??',
@@ -222,7 +222,7 @@ export const trips = [
         },
         {
           day: 2,
-          date: '2025-02-09',
+          date: '2025-02-08',
           title: 'Saturday: Explore Old San Juan',
           description: 'Explore the historic streets of Old San Juan, visit the forts, and take a boat tour of the surrounding bay.',
           accommodation: '??',
@@ -231,7 +231,7 @@ export const trips = [
         },
         {
           day: 3,
-          date: '2025-02-10',
+          date: '2025-02-09',
           title: 'Sunday: Drive to El Yunque National Forest',
           description: 'Rent a car and drive to El Yunque National Forest (~1hr). Hike to La Mina Falls through the rainforest. Drive to Rincón and stay for the night.',
           accommodation: '??',
@@ -240,7 +240,7 @@ export const trips = [
         },
         {
           day: 4,
-          date: '2025-02-11',
+          date: '2025-02-10',
           title: 'Monday: ',
           description: 'Surf lesson or scuba diving in Rincón. Drive back to San Juan for the night.',
           accommodation: '??',
@@ -249,7 +249,7 @@ export const trips = [
         },
         {
           day: 5,
-          date: '2025-02-12',
+          date: '2025-02-11',
           title: 'Tuesday: Fly back to NYC',
           description: 'Sleep in and enjoy a leisurely breakfast. Return the rental car and fly back to NYC.',
           accommodation: '??',
@@ -260,7 +260,7 @@ export const trips = [
       dates: [
         {
           startDate: '2025-02-07',
-          endDate: '2025-02-10',
+          endDate: '2025-02-11',
           available: true
         }
       ],

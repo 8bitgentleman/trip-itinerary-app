@@ -4,8 +4,8 @@ const CalendarButton = ({ date }) => {
   const handleCalendarClick = () => {
     if (!date) return;
     
-    // Convert the date to Year/Month/Day format for Google Calendar
-    const d = date instanceof Date ? date : new Date(date);
+    // Add T12:00:00 to ensure consistent date handling
+    const d = date instanceof Date ? date : new Date(date + 'T12:00:00');
     const year = d.getFullYear();
     const month = d.getMonth() + 1; // getMonth() returns 0-11
     const day = d.getDate();
