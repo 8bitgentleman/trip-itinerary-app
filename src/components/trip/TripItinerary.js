@@ -304,42 +304,7 @@ export default function TripItinerary({ trip }) {
                     <h3 className="text-2xl font-serif">{day.title}</h3>
                   </div>
 
-                  {/* Image Container */}
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pl-12' : 'pr-12'} h-64`}>
-                    {day.images ? (
-                      <div className="grid grid-cols-2 gap-2 h-full">
-                        {day.images.map((image, imgIndex) => (
-                          <div
-                            key={imgIndex}
-                            className="relative w-full h-full cursor-pointer overflow-hidden rounded-lg"
-                            onClick={() => setSelectedImage(image)}
-                          >
-                            <img
-                              src={image}
-                              alt={`${day.title} - ${imgIndex + 1}`}
-                              className="absolute inset-0 h-full w-full object-cover transition-transform hover:scale-105"
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    ) : day.image && (
-                      <div
-                        className="relative w-full h-full cursor-pointer overflow-hidden rounded-lg"
-                        onClick={() => setSelectedImage(day.image)}
-                      >
-                        <img
-                          src={day.image}
-                          alt={day.imageAlt || day.title}
-                          className="absolute inset-0 h-full w-full object-cover transition-transform hover:scale-105"
-                        />
-                        {day.imageAlt && (
-                          <p className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-sm p-2">
-                            {day.imageAlt}
-                          </p>
-                        )}
-                      </div>
-                    )}
-                  </div>
+                  
 
                   {/* Mobile Layout Image Section */}
                   {day.images ? (

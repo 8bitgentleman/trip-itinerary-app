@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu as MenuIcon, X } from 'lucide-react';
+import { Menu as MenuIcon, X, ArrowLeft } from 'lucide-react';
 import { useLocation, Link } from 'react-router-dom';
 import { trips } from '../../data/trips';
 import CalendarButton from '../trip/CalendarButton';
@@ -26,16 +26,19 @@ export default function Navigation() {
     ];
 
   return (
+
     <div className="fixed bottom-0 z-20 w-full bg-white/50 shadow-[4px_0_4px_4px_rgba(64,64,64,0.03)] backdrop-blur md:sticky md:bottom-auto md:top-0">
       <div className="container mx-auto flex h-20 px-4 md:justify-between">
         {/* Logo/Home Link */}
         <Link to="/" className="flex items-center">
           {currentTrip ? (
-            <span className="font-serif text-xl">← ‎‎ ‎ Back to all trips</span>
+            <div className="font-serif text-xl flex items-center gap-2">
+              <ArrowLeft size={24} />
+              <span>All Trips</span>
+            </div>
           ) : (
             <span className="font-serif text-xl">Trips</span>
           )}
-
         </Link>
 
         {/* Mobile menu button */}
