@@ -35,7 +35,7 @@ const TripPage = () => {
       <TripOverview trip={trip} />
       {/* <TripHighlights trip={trip} /> */}
       <TripItinerary trip={trip} />
-      {/* <TripGallery trip={trip} /> */}
+      <TripGallery trip={trip} />
       <TripInfo trip={trip} />
       <TripAdditionalInfo trip={trip} />
     </>

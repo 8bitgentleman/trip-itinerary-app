@@ -214,8 +214,7 @@ export const trips = [
       },
       heroImage: '/photos/puerto-rico-2025/Puente-de-Piedra-Cabo-Rojo.jpg',
       gallery: [
-        '/photos/seattle-2024/PXL_20230203_215820437.jpg',
-        'https://placehold.co/800x800'
+        '/photos/puerto-rico-2025/driving-map.jpg',
       ],
       itinerary: [
         {
@@ -318,15 +317,17 @@ export const trips = [
           day: 4,
           date: '2025-02-10',
           title: 'Monday: ',
-          description: 'Scuba diving in Rincón with Taino Divers. About a 3 hour experience, meet with your Instructor in the morning to learn about the equipment and then take a dive in the Tres Palmas Marine Reserve. Drive back to San Juan for the night.',
+          description: 'Scuba diving in Rincón with Taino Divers. About a 3 hour experience, meet with your Instructor in the morning to learn about the equipment and then take a dive in the Tres Palmas Marine Reserve. Drive back to San Juan for the night hitting the Cascada Gozalandia waterfalls on the way.',
           accommodation: '2 Beds in Carolina, Puerto Rico | $165',
           accommodationUrl: 'https://www.airbnb.com/rooms/1135665969493390057?adults=3&search_mode=regular_search&check_in=2025-02-10&check_out=2025-02-11&source_impression_id=p3_1735310444_P3PSlwCJ7QZv3JP_&previous_page_section_name=1000&federated_search_id=5283ca99-a41d-4f92-9561-c9b4b9510a25',
           image: 'photos/puerto-rico-2025/rincon-diving-153181.jpg',
           activities: [
-            ' Taino Divers - Discover Scuba Dive - $125',
+            'Taino Divers - Discover Scuba Dive - $125',
+            'Hike the Cascada Gozalandia waterfalls'
           ],
           activityUrls: [
-            'https://www.tainodivers.com/discoverscubadive'
+            'https://www.tainodivers.com/discoverscubadive',
+            'https://www.puertoricodaytrips.com/gozalandia-falls/'
           ],
           iconIndex: {
             accommodation: "Building2",    // Modern hotel building
