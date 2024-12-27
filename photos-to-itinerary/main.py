@@ -176,7 +176,7 @@ def generate_trip_json(directory, output_file="trip_itinerary.json"):
 if __name__ == "__main__":
     # Replace with your photos directory path
     # photos_directory = "./trip_photos"
-    photos_directory = '/Users/mtvogel/Downloads/Montreal Eclipse '
+    photos_directory = '/Users/mtvogel/Downloads/Rome & Italy 2024'
     # photos_directory = "/Users/mtvogel/Downloads/Forest and Friends/"
 
     # Create JSON filename based on directory name

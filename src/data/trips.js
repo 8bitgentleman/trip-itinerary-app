@@ -455,6 +455,18 @@ export const trips = [
         "image":        "/photos/italy-2024/PXL_20240913_120833899(1).jpg",
       },
       {
+        "day": 15,
+        "date": "2024-09-13",
+        "title": "Journey through Ancient Rome - FORO DI CESARE - ROMA ",
+        "description": "Took a guided tour of the Roman Forum at night",
+        "activities": ["Walking"],
+        "images": [
+          "/photos/italy-2024/PXL_20240915_202526909.jpg",
+          "/photos/italy-2024/PXL_20240915_202626316.jpg",
+          "/photos/italy-2024/PXL_20240915_205800551.jpg",
+        ],
+      },
+      {
         "day": 17,
         "date": "2024-09-15",
         "title": "Villa Gregoriana - Tivoli",
@@ -483,6 +495,38 @@ export const trips = [
           "/photos/italy-2024/PXL_20240916_171151474~2.jpg",
 
         ]
+      },
+      {
+        "day": 22,
+        "date": "2024-09-20",
+        "title": "Appian Way E-bike Tour with Catacombs, Aqueducts & Food",
+        "description": "Took an e-bike trip along the Appia Antica, one of the ancient roads around Rome. We visited the Catacombs of Saint Callixtus, the Mausoleum of Cecilia Metella and and the Villa of Massenzio. We biked the Ancient Roman water lines of the Parco degli Acquedotti and ended with typical roman aperitive at teh Quo Vadis Sporting Club.",
+        "activities": ["Biking"],
+        "images": [
+          "/photos/italy-2024/PXL_20240920_145942786.jpg",
+          "/photos/italy-2024/PXL_20240920_145627165~3(1).jpg",
+          "/photos/italy-2024/PXL_20240920_155821161.jpg",
+          "/photos/italy-2024/PXL_20240920_161337455.MP.jpg",
+
+        ],
+        iconIndex: {
+          activities: "Bike"
+        },
+      },
+      {
+        "day": 24,
+        "date": "2024-09-22",
+        "title": "Took trains and a Hydrofoil to Ponza",
+        "description": "Took a train to Anzio and then a hydrofoil to Ponza. Ended up staying at a little BnB on the north tip of the island.",
+        "activities": ["Travel"],
+        "images": [
+          "/photos/italy-2024/PXL_20240922_120807428.MP.jpg",
+          "/photos/italy-2024/PXL_20240922_143859987~2.jpg",
+          "/photos/italy-2024/PXL_20240922_154110395.jpg",
+        ],
+        iconIndex: {
+          activities: "Ship"
+        },
       },
     ],
     dates: [
