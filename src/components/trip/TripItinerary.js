@@ -102,6 +102,88 @@ export default function TripItinerary({ trip }) {
     return defaultIcons[defaultType] || ImageIcon;
   };
 
+  const renderDetailsSection = (day) => (
+    <div className="mt-4 space-y-2">
+      {/* Accommodation */}
+      {day.accommodation && (
+        <div className="flex items-center gap-2 text-gray-500">
+          {React.createElement(getIcon(day.iconIndex?.accommodation, 'accommodation'), { className: "w-5 h-5" })}
+          {day.accommodationUrl ? (
+            <a
+              href={day.accommodationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 hover:text-hermes-red"
+            >
+              <span>{day.accommodation}</span>
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          ) : (
+            <span>{day.accommodation}</span>
+          )}
+        </div>
+      )}
+
+      {/* Meals */}
+      {day.meals?.length > 0 && (
+        <div className="flex gap-2 text-gray-500">
+          {React.createElement(getIcon(day.iconIndex?.meals, 'meals'), { className: "w-5 h-5 mt-1.5" })}
+          <div className="flex flex-col space-y-1">
+            {day.meals.map((meal, mealIndex) => {
+              const mealUrl = day.mealUrls?.[mealIndex];
+              return (
+                <div key={mealIndex}>
+                  {mealUrl ? (
+                    <a
+                      href={mealUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 hover:text-hermes-red"
+                    >
+                      {meal}
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  ) : (
+                    meal
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Activities */}
+      {day.activities?.length > 0 && (
+        <div className="flex gap-2 text-gray-500">
+          {React.createElement(getIcon(day.iconIndex?.activities, 'activities'), { className: "w-5 h-5 mt-1.5" })}
+          <div className="flex flex-col space-y-1">
+            {day.activities.map((activity, actIndex) => {
+              const activityUrl = day.activityUrls?.[actIndex];
+              return (
+                <div key={actIndex}>
+                  {activityUrl ? (
+                    <a
+                      href={activityUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 hover:text-hermes-red"
+                    >
+                      {activity}
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  ) : (
+                    activity
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+
   return (
     <section id="itinerary" className="relative py-16">
       <div className="text-center mb-16">
@@ -119,8 +201,7 @@ export default function TripItinerary({ trip }) {
           {trip.itinerary.map((day, index) => (
             <div key={index}>
               {/* Desktop Layout */}
-              <div className={`relative hidden md:flex mb-24 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-                }`}>
+              <div className={`relative hidden md:flex mb-24 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                 {/* Timeline Dot */}
                 <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-hermes-teal rounded-full" />
 
@@ -136,7 +217,7 @@ export default function TripItinerary({ trip }) {
                     <p className={expandedDay === index ? '' : 'line-clamp-3'}>
                       {day.description}
                     </p>
-                    {day.description.length > 150 && (
+                    {day.description.length > 250 && (
                       <button
                         onClick={() => setExpandedDay(expandedDay === index ? null : index)}
                         className="text-hermes-red hover:text-hermes-red-dark"
@@ -146,96 +227,13 @@ export default function TripItinerary({ trip }) {
                     )}
                   </div>
 
-                  {/* Details Section */}
-                  <div className="mt-4 space-y-2">
-                    {/* Accommodation with optional link */}
-                    {day.accommodation && (
-                      <div className="flex items-center gap-2 text-gray-500">
-                        {React.createElement(getIcon(day.iconIndex?.accommodation, 'accommodation'), { className: "w-5 h-5" })}
-                        {day.accommodationUrl ? (
-                          <a
-                            href={day.accommodationUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-1 hover:text-hermes-red"
-                          >
-                            <span>{day.accommodation}</span>
-                            <ExternalLink className="w-4 h-4" />
-                          </a>
-                        ) : (
-                          <span>{day.accommodation}</span>
-                        )}
-                      </div>
-                    )}
-                    {/* Meals with optional links */}
-                    {day.meals?.length > 0 && (
-                      <div className="flex items-center gap-2 text-gray-500">
-                        {React.createElement(getIcon(day.iconIndex?.meals, 'meals'), { className: "w-5 h-5" })}
-                        <span>
-                          {day.meals.map((meal, mealIndex) => {
-                            const mealUrl = day.mealUrls?.[mealIndex];
-
-                            return (
-                              <React.Fragment key={mealIndex}>
-                                {mealIndex > 0 && ', '}
-                                {mealUrl ? (
-                                  <a
-                                    href={mealUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-1 hover:text-hermes-red"
-                                  >
-                                    {meal}
-                                    <ExternalLink className="w-3 h-3" />
-                                  </a>
-                                ) : (
-                                  meal
-                                )}
-                              </React.Fragment>
-                            );
-                          })}
-                        </span>
-                      </div>
-                    )}
-                    {/* Activities with optional links */}
-                    {day.activities?.length > 0 && (
-                      <div className="flex items-center gap-2 text-gray-500">
-                        {React.createElement(getIcon(day.iconIndex?.activities, 'activities'), { className: "w-5 h-5" })}
-                        <span>
-                          {day.activities.map((activity, actIndex) => {
-                            // Check if this activity has a corresponding URL
-                            const activityUrl = day.activityUrls?.[actIndex];
-
-                            return (
-                              <React.Fragment key={actIndex}>
-                                {actIndex > 0 && ', '}
-                                {activityUrl ? (
-                                  <a
-                                    href={activityUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-1 hover:text-hermes-red"
-                                  >
-                                    {activity}
-                                    <ExternalLink className="w-3 h-3" />
-                                  </a>
-                                ) : (
-                                  activity
-                                )}
-                              </React.Fragment>
-                            );
-                          })}
-                        </span>
-                      </div>
-                    )}
-                  </div>
+                  {renderDetailsSection(day)}
                 </div>
 
                 {/* Image Container */}
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pl-12' : 'pr-12'}`}>
                   {day.images ? (
                     day.images.length === 1 ? (
-                      // Single image from images array - use same layout as day.image
                       <div
                         className="cursor-pointer"
                         onClick={() => setSelectedImage(day.images[0])}
@@ -250,7 +248,6 @@ export default function TripItinerary({ trip }) {
                         )}
                       </div>
                     ) : (
-                      // Multiple images - use grid layout
                       <div className="grid grid-cols-2 gap-2">
                         {day.images.map((image, imgIndex) => (
                           <div
@@ -268,7 +265,6 @@ export default function TripItinerary({ trip }) {
                       </div>
                     )
                   ) : day.image && (
-                    // Single image from day.image
                     <div
                       className="cursor-pointer"
                       onClick={() => setSelectedImage(day.image)}
@@ -303,8 +299,6 @@ export default function TripItinerary({ trip }) {
                     )}
                     <h3 className="text-2xl font-serif">{day.title}</h3>
                   </div>
-
-                  
 
                   {/* Mobile Layout Image Section */}
                   {day.images ? (
@@ -359,91 +353,7 @@ export default function TripItinerary({ trip }) {
                       )}
                     </div>
 
-                    {/* Details Section */}
-                    <div className="mt-4 space-y-2">
-                      {/* Accommodation with optional link */}
-                      {day.accommodation && (
-                        <div className="flex items-center gap-2 text-gray-500">
-                          {React.createElement(getIcon(day.iconIndex?.accommodation, 'accommodation'), { className: "w-5 h-5" })}
-                          {day.accommodationUrl ? (
-                            <a
-                              href={day.accommodationUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="flex items-center gap-1 hover:text-hermes-red"
-                            >
-                              <span>{day.accommodation}</span>
-                              <ExternalLink className="w-4 h-4" />
-                            </a>
-                          ) : (
-                            <span>{day.accommodation}</span>
-                          )}
-                        </div>
-                      )}
-
-                      {/* Meals with optional links */}
-                      {day.meals?.length > 0 && (
-                        <div className="flex items-center gap-2 text-gray-500">
-                          {React.createElement(getIcon(day.iconIndex?.meals, 'meals'), { className: "w-5 h-5" })}
-                          <span>
-                            {day.meals.map((meal, mealIndex) => {
-                              const mealUrl = day.mealUrls?.[mealIndex];
-
-                              return (
-                                <React.Fragment key={mealIndex}>
-                                  {mealIndex > 0 && ', '}
-                                  {mealUrl ? (
-                                    <a
-                                      href={mealUrl}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="inline-flex items-center gap-1 hover:text-hermes-red"
-                                    >
-                                      {meal}
-                                      <ExternalLink className="w-3 h-3" />
-                                    </a>
-                                  ) : (
-                                    meal
-                                  )}
-                                </React.Fragment>
-                              );
-                            })}
-                          </span>
-                        </div>
-                      )}
-
-                      {/* Activities with optional links */}
-                      {day.activities?.length > 0 && (
-                        <div className="flex items-center gap-2 text-gray-500">
-                          {React.createElement(getIcon(day.iconIndex?.activities, 'activities'), { className: "w-5 h-5" })}
-                          <span>
-                            {day.activities.map((activity, actIndex) => {
-                              // Check if this activity has a corresponding URL
-                              const activityUrl = day.activityUrls?.[actIndex];
-
-                              return (
-                                <React.Fragment key={actIndex}>
-                                  {actIndex > 0 && ', '}
-                                  {activityUrl ? (
-                                    <a
-                                      href={activityUrl}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="inline-flex items-center gap-1 hover:text-hermes-red"
-                                    >
-                                      {activity}
-                                      <ExternalLink className="w-3 h-3" />
-                                    </a>
-                                  ) : (
-                                    activity
-                                  )}
-                                </React.Fragment>
-                              );
-                            })}
-                          </span>
-                        </div>
-                      )}
-                    </div>
+                    {renderDetailsSection(day)}
                   </div>
                 </div>
               </div>

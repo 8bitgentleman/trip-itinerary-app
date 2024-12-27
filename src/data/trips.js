@@ -197,12 +197,19 @@ export const trips = [
       title: 'Puerto Rico',
       subtitle: 'Get some real Caribbean sun in the dead of winter',
       destination: 'Puerto Rico',
+      highlights: [
+        'Explore Old San Juan & watch the Dragon Boat Racing Festival',
+        'Take a tour of the old Castillo San Felipe del Morro fort',
+        'Hike through El Yunque National Forest waterfalls and natural pools',
+        'Drive & eat along the Pork Highway',
+        'Scuba diving in Rincón with Taino Divers'
+      ],
       duration: {
         days: 5,
         nights: 4
       },
       price: {
-        amount: 300,
+        amount: 500,
         currency: 'USD'
       },
       heroImage: '/photos/puerto-rico-2025/Puente-de-Piedra-Cabo-Rojo.jpg',
@@ -215,26 +222,24 @@ export const trips = [
           day: 1,
           date: '2025-02-07T12:00:00',
           title: 'Friday: Arrive in Puerto Rico',
-          description: 'Leave early morning and arrive early afternoon. Explore Isla Verde Beach right outside our hotel and eat dinner at a waterfront restaurant.',
+          description: 'Leave early morning and arrive early afternoon. Explore Isla Verde Beach and eat dinner at a waterfront restaurant.',
           
           // Accommodation with booking link
-          accommodation: 'Courtyard by Marriott Isla Verde Beach Resort',
-          accommodationUrl: 'https://www.marriott.com/en-us/hotels/sjuiv-courtyard-isla-verde-beach-resort/',
+          accommodation: 'Airbnb in San Juan | 2 Nights | $200-$350 Total TBD',
+          accommodationUrl: 'https://www.airbnb.com/s/San-Juan--Puerto-Rico--United-States/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-01-01&monthly_length=3&monthly_end_date=2025-04-01&price_filter_input_type=2&channel=EXPLORE&query=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&date_picker_type=calendar&checkin=2025-02-07&checkout=2025-02-09&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=2&adults=3&zoom_level=12.981820179932287&place_id=ChIJbxlo4m9oA4wR3FqTXA9_a60&search_mode=regular_search&ne_lat=18.510993130117786&ne_lng=-66.04821826343937&sw_lat=18.37906697408331&sw_lng=-66.13548369107741&zoom=12.981820179932287&search_by_map=true',
           
           // Multiple activities with relevant links
           activities: [
             'Isla Verde Beach',
-            'Beach Club Access'
           ],
           activityUrls: [
             'https://www.discoverpuertorico.com/profile/isla-verde-beach/9457',
-            'https://www.marriott.com/en-us/hotels/sjuiv-courtyard-isla-verde-beach-resort/experiences/'
           ],
           
           // Restaurant options for meals
           meals: [
-            'Lunch on the plane',
-            'Dinner at Ocean Lab Brewing Co.'
+            'Lunch: on the plane',
+            'Dinner: Ocean Lab Brewing Co.'
           ],
           mealUrls: [
             null,  // Airport restaurant, no URL needed
@@ -245,45 +250,95 @@ export const trips = [
           iconIndex: {
             accommodation: "Building2",    // Modern hotel building
             meals: "Utensils",            // Food
-            activities: "Waves"           // Beach theme
+            activities: "TreePalm"           // Beach theme
           },
           
-          // Multiple images showing different aspects of day 1
           image:'photos/puerto-rico-2025/shutterstock_2437600577.jpg'
                 },
         {
           day: 2,
           date: '2025-02-08',
           title: 'Saturday: Explore Old San Juan',
-          description: 'Explore the historic streets of Old San Juan, visit the forts, and take a boat tour of the surrounding bay.',
-          accommodation: '??',
-          image: 'photos/puerto-rico-2025/San-Juan.jpg',
+          description: 'Explore the historic streets & eats of Old San Juan, visit the Castillo San Felipe del Morro fort, and watch the Dragon Boat Racing Festival in the surrounding bay. Try the mofongo!',
+          accommodation: 'Same Airbnb in San Juan | 2nd Night |TBD',
+          accommodationUrl: 'https://www.airbnb.com/s/San-Juan--Puerto-Rico--United-States/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-01-01&monthly_length=3&monthly_end_date=2025-04-01&price_filter_input_type=2&channel=EXPLORE&query=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&date_picker_type=calendar&checkin=2025-02-07&checkout=2025-02-09&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=2&adults=3&zoom_level=12.981820179932287&place_id=ChIJbxlo4m9oA4wR3FqTXA9_a60&search_mode=regular_search&ne_lat=18.510993130117786&ne_lng=-66.04821826343937&sw_lat=18.37906697408331&sw_lng=-66.13548369107741&zoom=12.981820179932287&search_by_map=true',
           
+          image: 'photos/puerto-rico-2025/San-Juan.jpg',
+          activities: [
+            'Visit Castillo San Felipe del Morro fort - $10',
+            '2025 Puerto Rico Dragon Boat Festival'
+          ],
+          activityUrls: [
+            'https://www.discoverpuertorico.com/article/exploring-castillo-san-felipe-del-morro-old-san-juan',
+            'https://www.youtube.com/watch?v=zrPaWhRghhw'
+          ],
+          meals: [
+            'Lunch: Chocobar Cortés?',
+            'Dinner: ??'
+          ],
+          mealUrls: [
+            'https://www.discoverpuertorico.com/profile/chocobar-cortes/3654',
+            null
+          ],
+          iconIndex: {
+            accommodation: "Building2",    // Modern hotel building
+            meals: "Utensils",            // Food
+            activities: "Castle"           // Beach theme
+          },
         },
         {
           day: 3,
           date: '2025-02-09',
           title: 'Sunday: Drive to El Yunque National Forest',
-          description: 'Rent a car and drive to El Yunque National Forest (~1hr). Hike to La Mina Falls through the rainforest. Drive to Rincón and stay for the night.',
-          accommodation: '??',
+          description: 'Rent a car and drive to El Yunque National Forest (~1hr). Hike to La Mina Falls through the rainforest (or others if closed) . Drive the Pork Highway through Cayey eating slow spit-roasted pork along the way. End up in Rincón and stay for the night.',
           image: 'photos/puerto-rico-2025/El-Yunque.jpg',
-          
+          meals: [
+            'Lunch: ??',
+            'Dinner: The Pork Highway in Cayey'
+          ],
+          mealUrls: [
+            null,
+            'https://www.discoverpuertorico.com/rutas-del-lechon-puerto-rico'
+          ],
+          accommodation: 'Lazy Parrot Inn | 2 Full Beds | $170',
+          accommodationUrl: 'https://www.airbnb.com/rooms/650098888502634330?adults=3&location=Rincon%2C%20Puerto%20Rico%2C%20United%20States&search_mode=regular_search&check_in=2025-02-09&check_out=2025-02-10&source_impression_id=p3_1735310130_P3E6vfySGHmUxWcY&previous_page_section_name=1001&federated_search_id=73113699-245f-472f-b813-11398abeb21d',
+          activities: [
+            'Hike to waterfalls & pools in El Yunque National Forest',
+          ],
+          activityUrls: [
+            'https://www.discoverpuertorico.com/article/most-beautiful-waterfalls-puerto-rico',
+          ],
+          iconIndex: {
+            accommodation: "Building2",    // Modern hotel building
+            meals: "Utensils",            // Food
+            activities: "Footprints"           
+          },
         },
         {
           day: 4,
           date: '2025-02-10',
           title: 'Monday: ',
-          description: 'Surf lesson or scuba diving in Rincón. Drive back to San Juan for the night.',
-          accommodation: '??',
+          description: 'Scuba diving in Rincón with Taino Divers. About a 3 hour experience, meet with your Instructor in the morning to learn about the equipment and then take a dive in the Tres Palmas Marine Reserve. Drive back to San Juan for the night.',
+          accommodation: '2 Beds in Carolina, Puerto Rico | $165',
+          accommodationUrl: 'https://www.airbnb.com/rooms/1135665969493390057?adults=3&search_mode=regular_search&check_in=2025-02-10&check_out=2025-02-11&source_impression_id=p3_1735310444_P3PSlwCJ7QZv3JP_&previous_page_section_name=1000&federated_search_id=5283ca99-a41d-4f92-9561-c9b4b9510a25',
           image: 'photos/puerto-rico-2025/rincon-diving-153181.jpg',
-          
+          activities: [
+            ' Taino Divers - Discover Scuba Dive - $125',
+          ],
+          activityUrls: [
+            'https://www.tainodivers.com/discoverscubadive'
+          ],
+          iconIndex: {
+            accommodation: "Building2",    // Modern hotel building
+            meals: "Utensils",            // Food
+            activities: "Waves"           
+          },
         },
         {
           day: 5,
           date: '2025-02-11',
           title: 'Tuesday: Fly back to NYC',
           description: 'Sleep in and enjoy a leisurely breakfast. Return the rental car and fly back to NYC.',
-          accommodation: '??',
           image: 'photos/puerto-rico-2025/San-Juan.jpg',
           
         },
