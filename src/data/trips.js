@@ -2,6 +2,7 @@ export const trips = [
   // // MARK: Egypt 2027
   {
     id: 'egypt-2027',
+    status: 'planning',
     title: 'Total Solar Eclipse over the Temple of Luxor: Hidden Tombs, Ancient Pyramids & Old Cairo',
     subtitle: 'Explore pyramids, tombs, and local cuisine with an Egyptologist guide',
     destination: 'Egypt',

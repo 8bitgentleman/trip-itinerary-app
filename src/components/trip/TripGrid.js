@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { trips } from '../../data/trips';
 import { hasProperty, getProperty } from '../../utils/data-helpers';
+import StatusRibbon from './StatusRibbon';
 
 const TripGrid = () => {
   return (
@@ -9,12 +10,12 @@ const TripGrid = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {trips.map((trip) => {
             const isAvailable = trip.dates?.[0]?.available ?? true;
-            
+
             return (
               <Link
                 key={trip.id}
                 to={`/${trip.id}`}
-                className="group block overflow-hidden rounded hover:shadow-sm transition-all duration-300"
+                className="group block overflow-hidden rounded hover:shadow-sm transition-all duration-300 relative" // Added relative here
               >
                 <div className="aspect-[3/4] overflow-hidden bg-gray-100">
                   {hasProperty(trip, 'heroImage') && (
@@ -25,8 +26,9 @@ const TripGrid = () => {
                         ${!isAvailable ? 'grayscale hover:grayscale-0' : ''}`}
                     />
                   )}
+                  {trip.status === 'planning' && <StatusRibbon />}
                 </div>
-                
+
                 <div className="p-3">
                   <div className="flex flex-col gap-0.5 mb-1.5">
                     <span className="text-[11px] font-medium tracking-wider uppercase text-gray-600">
@@ -41,11 +43,11 @@ const TripGrid = () => {
                       </span>
                     )}
                   </div>
-                  
+
                   <h2 className="text-sm font-medium leading-snug mb-2 line-clamp-2">
                     {trip.title}
                   </h2>
-                  
+
                   <div className="text-xs font-medium text-hermes-red group-hover:text-hermes-red-dark">
                     {isAvailable ? 'View trip →' : 'Trip completed →'}
                   </div>
