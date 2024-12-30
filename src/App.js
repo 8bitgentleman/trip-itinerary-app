@@ -52,13 +52,18 @@ const TripPage = () => {
         <meta property="og:title" content={trip.title} />
         <meta property="og:description" content={trip.subtitle} />
         <meta property="og:image" content={imageUrl} />
+        <meta property="og:image:secure_url" content={imageUrl} />
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={trip.title} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={`${baseUrl}/${trip.id}`} />
         <meta name="twitter:title" content={trip.title} />
         <meta name="twitter:description" content={trip.subtitle} />
         <meta name="twitter:image" content={imageUrl} />
+        <meta name="description" content={trip.subtitle} />
+        <title>{trip.title} Trip</title>
       </Helmet>
       <div>
         <TripOverview trip={trip} />
