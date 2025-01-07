@@ -2,6 +2,14 @@
 
 A React-based web application for displaying and sharing travel itineraries with interactive maps, photo galleries, and detailed day-by-day breakdowns. Built with React, Tailwind CSS, and hosted on Netlify.
 
+## Screenshots
+
+<div align="center">
+  <img src="Screenshot_trip_grid.png" alt="Trip Grid View" width="400"/>
+  <img src="Screenshot_trip_1.png" alt="Trip Detail View 1" width="400"/>
+  <img src="Screenshot_trip_2.png" alt="Trip Detail View 2" width="400"/>
+</div>
+
 ## Features
 
 - 📍 Interactive trip maps showing travel routes and key locations
