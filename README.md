@@ -1,89 +1,79 @@
 # Trip Itinerary App
 
-A React-based web application for creating and displaying trip itineraries with an elegant, modern interface. Built with React 18, React Router, and styled using Tailwind CSS.
+A React-based web application for displaying and sharing travel itineraries with interactive maps, photo galleries, and detailed day-by-day breakdowns. Built with React, Tailwind CSS, and hosted on Netlify.
 
 ## Features
 
-- Interactive trip grid display
-- Detailed trip pages with:
-  - Trip overview
-  - Detailed itinerary
-  - Trip information
-  - Additional trip details
-- Responsive navigation
-- Mobile-friendly design
+- 📍 Interactive trip maps showing travel routes and key locations
+- 📅 Day-by-day itinerary breakdowns
+- 🖼️ Photo galleries with metadata cleaning
+- 💰 Trip cost breakdowns and budgeting
+- 📱 Responsive design for mobile and desktop viewing
+- 🌙 Dark mode support
 
 ## Tech Stack
 
-- React 18.3.1
-- React Router 6.27.0
-- Tailwind CSS 3.4.14
-- HeadlessUI for UI components
-- Lucide React for icons
-- React Simple Maps for map visualizations
+- React
+- Tailwind CSS
+- React Router
+- Lucide React (for icons)
+- React Simple Maps
+- React Helmet (for SEO)
 
-## Getting Started
+## Local Development
 
-### Prerequisites
-
-- Node.js (latest LTS version recommended)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
+1. Clone the repository:
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/8bitgentleman/trip-itinerary-app.git
 cd trip-itinerary-app
 ```
 
-2. Install dependencies
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Start the development server
+3. Start the development server:
 ```bash
 npm start
 ```
 
-The application will be available at `http://localhost:3000`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-### Building for Production
+## Photo Management
 
+The project includes a Python script (`clean_metadata.py`) for cleaning EXIF data from photos before they're added to the site. To use it:
+
+1. Place new photos in the `public/photos` directory
+2. Run the script:
 ```bash
-npm run build
+python clean_metadata.py
 ```
+
+## Deployment
+
+The site is configured for deployment on Netlify with continuous deployment from the main branch. The `netlify.toml` file includes the necessary build settings and redirects for the React router.
 
 ## Project Structure
 
 ```
 trip-itinerary-app/
 ├── public/
+│   └── photos/         # Trip photos (with cleaned metadata)
 ├── src/
-│   ├── components/
-│   │   ├── layout/      # Layout components (Navigation, Footer)
-│   │   └── trip/        # Trip-related components
-│   ├── data/           # Trip data and configurations
-│   ├── styles/         # CSS and styling files
-│   ├── utils/          # Utility functions
-│   └── App.js          # Main application component
-├── package.json
-└── tailwind.config.js  # Tailwind CSS configuration
+│   ├── components/     # React components
+│   │   ├── layout/     # Layout components (header, footer, etc.)
+│   │   └── trip/       # Trip-specific components
+│   ├── data/          # Trip data and configuration
+│   ├── styles/        # CSS and Tailwind styles
+│   └── utils/         # Helper functions and utilities
+└── clean_metadata.py  # Photo metadata cleaning script
 ```
 
-## Deployment
+## Contributing
 
-The application can be deployed to platforms like Netlify or Vercel. For Netlify deployments, make sure to:
+Feel free to open issues or submit pull requests if you have suggestions for improvements or find any bugs.
 
-1. Configure build settings:
-   - Build command: `npm run build`
-   - Publish directory: `build`
+## Contact
 
-2. Set environment variables if needed
-
-## Development
-
-- `npm start` - Runs the app in development mode
-- `npm test` - Launches the test runner
-- `npm run build` - Builds the app for production
+Created by [Matt Vogel](https://github.com/8bitgentleman) based on the [Atlas Obscura](https://www.atlasobscura.com/adventures/trips) trips site.
