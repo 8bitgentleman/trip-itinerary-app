@@ -217,13 +217,24 @@ export const trips = [
     gallery: [
       '/photos/puerto-rico-2025/driving-map.jpg',
     ],
+    routeOverride: [
+      [-66.049168, 18.451267], // San Juan
+      [-66.1185, 18.4671], // Old San Juan
+      [-66.049168, 18.451267], // San Juan
+      [-65.7850, 18.3156], // El Yunque
+      [-65.840390, 18.156075],  // Custom waypoint
+      [-66.034797, 18.240223], // Custom waypoint
+      [-66.613787, 17.987377], // Custom waypoint
+      [-67.2508, 18.3404], // Rincon
+      [-66.049168, 18.451267], // San Juan
+    ],
     itinerary: [
       {
         day: 1,
         date: '2025-02-07T12:00:00',
         title: 'Friday: Arrive in Puerto Rico',
         description: 'Leave early morning and arrive early afternoon. Explore Isla Verde Beach and eat dinner at a waterfront restaurant.',
-        location: [-66.0072, 18.4375],
+        location: [-66.049168, 18.451267],
         locationName: 'Isla Verde, San Juan',
         accommodation: 'Airbnb in San Juan | 2 Nights | $218.01 Total',
         accommodationUrl: 'https://www.airbnb.com/s/San-Juan--Puerto-Rico--United-States/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-01-01&monthly_length=3&monthly_end_date=2025-04-01&price_filter_input_type=2&channel=EXPLORE&query=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&date_picker_type=calendar&checkin=2025-02-07&checkout=2025-02-09&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=2&adults=3&zoom_level=12.981820179932287&place_id=ChIJbxlo4m9oA4wR3FqTXA9_a60&search_mode=regular_search&ne_lat=18.510993130117786&ne_lng=-66.04821826343937&sw_lat=18.37906697408331&sw_lng=-66.13548369107741&zoom=12.981820179932287&search_by_map=true',
@@ -330,7 +341,7 @@ export const trips = [
         date: '2025-02-11',
         title: 'Tuesday: Fly back to NYC',
         description: 'Sleep in and enjoy a leisurely breakfast. Return the rental car and fly back to NYC.',
-        location: [-66.0072, 18.4375],
+        location: [-66.049168, 18.451267],
         locationName: 'San Juan International Airport',
         image: 'photos/puerto-rico-2025/San-Juan.jpg',
       }

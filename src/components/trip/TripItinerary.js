@@ -125,13 +125,13 @@ export default function TripItinerary({ trip }) {
               <div className={`relative hidden md:flex mb-24 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                 {/* Timeline Dot */}
                 <div 
-                  className={`absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-hermes-teal rounded-full 
+                  className={`absolute left-1/2 -translate-x-1/2 w-4 h-4 left-0.5 border-2 bg-white border-hermes-teal rounded-full 
                     ${day.location ? 'cursor-pointer hover:scale-125' : ''} transition-all duration-200`}
                   onClick={() => day.location && setActiveDay(activeDay === day.day ? null : day.day)}
                 >
-                  {day.location && (
-                    <MapPin className="w-3 h-3 absolute top-0.5 left-0.5 text-white" />
-                  )}
+                  {/* {day.location && (
+                    <MapPin className="w-3 h-3 absolute top-0.5 left-0.5 text-hermes-teal" />
+                  )} */}
                 </div>
 
                 {/* Content Container */}
@@ -226,13 +226,13 @@ export default function TripItinerary({ trip }) {
                   <div className="absolute top-1/2 left-0 right-0 h-px border-t-2 border-dotted border-hermes-teal" />
                   <div 
                     className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 
-                      bg-hermes-teal rounded-full ${day.location ? 'cursor-pointer hover:scale-125' : ''} 
+                      border-2 bg-white border-hermes-teal rounded-full ${day.location ? 'cursor-pointer hover:scale-125' : ''} 
                       transition-all duration-200`}
                     onClick={() => day.location && setActiveDay(activeDay === day.day ? null : day.day)}
                   >
-                    {day.location && (
+                    {/* {day.location && (
                       <MapPin className="w-3 h-3 absolute top-0.5 left-0.5 text-white" />
-                    )}
+                    )} */}
                   </div>
                 </div>
 
@@ -246,7 +246,12 @@ export default function TripItinerary({ trip }) {
                     )}
                     <h3 className="text-2xl font-serif">{day.title}</h3>
                   </div>
-
+                    {/* Map for Mobile */}
+                    {activeDay === day.day && day.location && (
+                      <div className="mt-4">
+                        <TripMap trip={trip} activeDay={activeDay} />
+                      </div>
+                    )}
                   {/* Mobile Image Section */}
                   {day.images ? (
                     <div className="grid grid-cols-2 gap-2 h-48 mb-6">
@@ -302,12 +307,7 @@ export default function TripItinerary({ trip }) {
 
                     {renderDetailsSection(day)}
                     
-                    {/* Map for Mobile */}
-                    {activeDay === day.day && day.location && (
-                      <div className="mt-4">
-                        <TripMap trip={trip} activeDay={activeDay} />
-                      </div>
-                    )}
+                    
                   </div>
                 </div>
               </div>

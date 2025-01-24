@@ -2,8 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
-const getRouteCoordinates = async (points) => {
-  const coordinates = points.map(p => p.join(',')).join(';');
+const getRouteCoordinates = async (points, routeOverride) => {
+  const coordinatesToRoute = routeOverride || points;
+  const coordinates = coordinatesToRoute.map(p => p.join(',')).join(';');
   const response = await fetch(`https://router.project-osrm.org/route/v1/driving/${coordinates}?geometries=geojson`);
   const data = await response.json();
   return data.routes[0].geometry.coordinates;
@@ -58,10 +59,15 @@ const TripMap = ({ trip, activeDay }) => {
             type: 'raster',
             source: 'osm',
             paint: {
-              'raster-opacity': 0.7,
-              'raster-saturation': -0.9,
-              'raster-contrast': 0.1
-            }
+              'raster-opacity': 0.7,  // Reduce opacity further
+              // 'raster-saturation': -1, // Maximum desaturation
+              'raster-contrast': 0,    // Reduce contrast
+              'raster-brightness-min': 0.5 // Lighten the map
+            },
+            layout: {
+              'visibility': 'visible'
+            },
+            // minzoom: 10, // Only show at higher zoom levels
           }]
         },
         bounds: [
@@ -102,7 +108,7 @@ const TripMap = ({ trip, activeDay }) => {
         });
 
         try {
-          const routeCoords = await getRouteCoordinates(locations.map(loc => loc.location));
+          const routeCoords = await getRouteCoordinates(locations.map(loc => loc.location), trip.routeOverride);
           map.current.getSource('route').setData({
             type: 'Feature',
             properties: {},
