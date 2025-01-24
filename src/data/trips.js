@@ -39,7 +39,7 @@ export const trips = [
     ],
     notIncluded: [
       'Flights to and from destination',
-      'Pre/Post trip accommodations', 
+      'Pre/Post trip accommodations',
       'Travel insurance',
       'Visas and passport fees',
       'Meals outside of those described'
@@ -192,171 +192,171 @@ export const trips = [
       }
     }
   },
-    // // MARK: Puerto Rico 2025
-    {
-      id: 'puerto-rico-2025',
-      title: 'Puerto Rico',
-      subtitle: 'Get some real Caribbean sun in the dead of winter',
-      destination: 'Puerto Rico',
-      highlights: [
-        'Explore Old San Juan & watch the Dragon Boat Racing Festival',
-        'Take a tour of the old Castillo San Felipe del Morro fort',
-        'Hike through El Yunque National Forest waterfalls and natural pools',
-        'Drive & eat along the Pork Highway',
-        'Scuba diving in Rincón with Taino Divers'
-      ],
-      duration: {
-        days: 5,
-        nights: 4
-      },
-      price: {
-        amount: 500,
-        currency: 'USD'
-      },
-      heroImage: '/photos/puerto-rico-2025/Puente-de-Piedra-Cabo-Rojo.jpg',
-      gallery: [
-        '/photos/puerto-rico-2025/driving-map.jpg',
-      ],
-      itinerary: [
-        {
-          day: 1,
-          date: '2025-02-07T12:00:00',
-          title: 'Friday: Arrive in Puerto Rico',
-          description: 'Leave early morning and arrive early afternoon. Explore Isla Verde Beach and eat dinner at a waterfront restaurant.',
-          
-          // Accommodation with booking link
-          accommodation: 'Airbnb in San Juan | 2 Nights | $200-$350 Total TBD',
-          accommodationUrl: 'https://www.airbnb.com/s/San-Juan--Puerto-Rico--United-States/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-01-01&monthly_length=3&monthly_end_date=2025-04-01&price_filter_input_type=2&channel=EXPLORE&query=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&date_picker_type=calendar&checkin=2025-02-07&checkout=2025-02-09&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=2&adults=3&zoom_level=12.981820179932287&place_id=ChIJbxlo4m9oA4wR3FqTXA9_a60&search_mode=regular_search&ne_lat=18.510993130117786&ne_lng=-66.04821826343937&sw_lat=18.37906697408331&sw_lng=-66.13548369107741&zoom=12.981820179932287&search_by_map=true',
-          
-          // Multiple activities with relevant links
-          activities: [
-            'Isla Verde Beach',
-          ],
-          activityUrls: [
-            'https://www.discoverpuertorico.com/profile/isla-verde-beach/9457',
-          ],
-          
-          // Restaurant options for meals
-          meals: [
-            'Lunch: on the plane',
-            'Dinner: Ocean Lab Brewing Co.'
-          ],
-          mealUrls: [
-            null,  // Airport restaurant, no URL needed
-            'https://oceanlabbrewery.com/'
-          ],
-        
-          // Better icon choices for the type of activities
-          iconIndex: {
-            accommodation: "Building2",    // Modern hotel building
-            meals: "Utensils",            // Food
-            activities: "TreePalm"           // Beach theme
-          },
-          
-          image:'photos/puerto-rico-2025/shutterstock_2437600577.jpg'
-                },
-        {
-          day: 2,
-          date: '2025-02-08',
-          title: 'Saturday: Explore Old San Juan',
-          description: 'Explore the historic streets & eats of Old San Juan, visit the Castillo San Felipe del Morro fort, and watch the Dragon Boat Racing Festival in the surrounding bay. Try the mofongo!',
-          accommodation: 'Same Airbnb in San Juan | 2nd Night |TBD',
-          accommodationUrl: 'https://www.airbnb.com/s/San-Juan--Puerto-Rico--United-States/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-01-01&monthly_length=3&monthly_end_date=2025-04-01&price_filter_input_type=2&channel=EXPLORE&query=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&date_picker_type=calendar&checkin=2025-02-07&checkout=2025-02-09&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=2&adults=3&zoom_level=12.981820179932287&place_id=ChIJbxlo4m9oA4wR3FqTXA9_a60&search_mode=regular_search&ne_lat=18.510993130117786&ne_lng=-66.04821826343937&sw_lat=18.37906697408331&sw_lng=-66.13548369107741&zoom=12.981820179932287&search_by_map=true',
-          
-          image: 'photos/puerto-rico-2025/San-Juan.jpg',
-          activities: [
-            'Visit Castillo San Felipe del Morro fort - $10',
-            '2025 Puerto Rico Dragon Boat Festival'
-          ],
-          activityUrls: [
-            'https://www.discoverpuertorico.com/article/exploring-castillo-san-felipe-del-morro-old-san-juan',
-            'https://www.youtube.com/watch?v=zrPaWhRghhw'
-          ],
-          meals: [
-            'Lunch: Chocobar Cortés?',
-            'Dinner: ??'
-          ],
-          mealUrls: [
-            'https://www.discoverpuertorico.com/profile/chocobar-cortes/3654',
-            null
-          ],
-          iconIndex: {
-            accommodation: "Building2",    // Modern hotel building
-            meals: "Utensils",            // Food
-            activities: "Castle"           // Beach theme
-          },
-        },
-        {
-          day: 3,
-          date: '2025-02-09',
-          title: 'Sunday: Drive to El Yunque National Forest',
-          description: 'Rent a car and drive to El Yunque National Forest (~1hr). Hike to La Mina Falls through the rainforest (or others if closed) . Drive the Pork Highway through Cayey eating slow spit-roasted pork along the way. End up in Rincón and stay for the night.',
-          image: 'photos/puerto-rico-2025/El-Yunque.jpg',
-          meals: [
-            'Lunch: ??',
-            'Dinner: The Pork Highway in Cayey'
-          ],
-          mealUrls: [
-            null,
-            'https://www.discoverpuertorico.com/rutas-del-lechon-puerto-rico'
-          ],
-          accommodation: 'Lazy Parrot Inn | 2 Full Beds | $170',
-          accommodationUrl: 'https://www.airbnb.com/rooms/650098888502634330?adults=3&location=Rincon%2C%20Puerto%20Rico%2C%20United%20States&search_mode=regular_search&check_in=2025-02-09&check_out=2025-02-10&source_impression_id=p3_1735310130_P3E6vfySGHmUxWcY&previous_page_section_name=1001&federated_search_id=73113699-245f-472f-b813-11398abeb21d',
-          activities: [
-            'Hike to waterfalls & pools in El Yunque National Forest',
-          ],
-          activityUrls: [
-            'https://www.discoverpuertorico.com/article/most-beautiful-waterfalls-puerto-rico',
-          ],
-          iconIndex: {
-            accommodation: "Building2",    // Modern hotel building
-            meals: "Utensils",            // Food
-            activities: "Footprints"           
-          },
-        },
-        {
-          day: 4,
-          date: '2025-02-10',
-          title: 'Monday: ',
-          description: 'Scuba diving in Rincón with Taino Divers. About a 3 hour experience, meet with your Instructor in the morning to learn about the equipment and then take a dive in the Tres Palmas Marine Reserve. Drive back to San Juan for the night hitting the Cascada Gozalandia waterfalls on the way.',
-          accommodation: '2 Beds in Carolina, Puerto Rico | $165',
-          accommodationUrl: 'https://www.airbnb.com/rooms/1135665969493390057?adults=3&search_mode=regular_search&check_in=2025-02-10&check_out=2025-02-11&source_impression_id=p3_1735310444_P3PSlwCJ7QZv3JP_&previous_page_section_name=1000&federated_search_id=5283ca99-a41d-4f92-9561-c9b4b9510a25',
-          image: 'photos/puerto-rico-2025/rincon-diving-153181.jpg',
-          activities: [
-            'Taino Divers - Discover Scuba Dive - $125',
-            'Hike the Cascada Gozalandia waterfalls'
-          ],
-          activityUrls: [
-            'https://www.tainodivers.com/discoverscubadive',
-            'https://www.puertoricodaytrips.com/gozalandia-falls/'
-          ],
-          iconIndex: {
-            accommodation: "Building2",    // Modern hotel building
-            meals: "Utensils",            // Food
-            activities: "Waves"           
-          },
-        },
-        {
-          day: 5,
-          date: '2025-02-11',
-          title: 'Tuesday: Fly back to NYC',
-          description: 'Sleep in and enjoy a leisurely breakfast. Return the rental car and fly back to NYC.',
-          image: 'photos/puerto-rico-2025/San-Juan.jpg',
-          
-        },
-      ],
-      dates: [
-        {
-          startDate: '2025-02-07',
-          endDate: '2025-02-11',
-          available: true
-        }
-      ],
-      activity: 'Moderate',
-      groupSize: 2,
-      interest: ['Nature', 'Hiking']
+  // // MARK: Puerto Rico 2025
+  {
+    id: 'puerto-rico-2025',
+    title: 'Puerto Rico',
+    subtitle: 'Get some real Caribbean sun in the dead of winter',
+    destination: 'Puerto Rico',
+    highlights: [
+      'Explore Old San Juan & watch the Dragon Boat Racing Festival',
+      'Take a tour of the old Castillo San Felipe del Morro fort',
+      'Hike through El Yunque National Forest waterfalls and natural pools',
+      'Drive & eat along the Pork Highway',
+      'Scuba diving in Rincón with Taino Divers'
+    ],
+    duration: {
+      days: 5,
+      nights: 4
     },
-// MARK: Rome & Italy 2024
+    price: {
+      amount: 500,
+      currency: 'USD'
+    },
+    heroImage: '/photos/puerto-rico-2025/Puente-de-Piedra-Cabo-Rojo.jpg',
+    gallery: [
+      '/photos/puerto-rico-2025/driving-map.jpg',
+    ],
+    itinerary: [
+      {
+        day: 1,
+        date: '2025-02-07T12:00:00',
+        title: 'Friday: Arrive in Puerto Rico',
+        description: 'Leave early morning and arrive early afternoon. Explore Isla Verde Beach and eat dinner at a waterfront restaurant.',
+
+        // Accommodation with booking link
+        accommodation: 'Airbnb in San Juan | 2 Nights | $218.01 Total',
+        accommodationUrl: 'https://www.airbnb.com/s/San-Juan--Puerto-Rico--United-States/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-01-01&monthly_length=3&monthly_end_date=2025-04-01&price_filter_input_type=2&channel=EXPLORE&query=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&date_picker_type=calendar&checkin=2025-02-07&checkout=2025-02-09&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=2&adults=3&zoom_level=12.981820179932287&place_id=ChIJbxlo4m9oA4wR3FqTXA9_a60&search_mode=regular_search&ne_lat=18.510993130117786&ne_lng=-66.04821826343937&sw_lat=18.37906697408331&sw_lng=-66.13548369107741&zoom=12.981820179932287&search_by_map=true',
+
+        // Multiple activities with relevant links
+        activities: [
+          'Isla Verde Beach',
+        ],
+        activityUrls: [
+          'https://www.discoverpuertorico.com/profile/isla-verde-beach/9457',
+        ],
+
+        // Restaurant options for meals
+        meals: [
+          'Lunch: on the plane',
+          'Dinner: Ocean Lab Brewing Co.'
+        ],
+        mealUrls: [
+          null,  // Airport restaurant, no URL needed
+          'https://oceanlabbrewery.com/'
+        ],
+
+        // Better icon choices for the type of activities
+        iconIndex: {
+          accommodation: "Building2",    // Modern hotel building
+          meals: "Utensils",            // Food
+          activities: "TreePalm"           // Beach theme
+        },
+
+        image: 'photos/puerto-rico-2025/shutterstock_2437600577.jpg'
+      },
+      {
+        day: 2,
+        date: '2025-02-08',
+        title: 'Saturday: Explore Old San Juan',
+        description: 'Explore the historic streets & eats of Old San Juan, visit the Castillo San Felipe del Morro fort, and watch the Dragon Boat Racing Festival in the surrounding bay. Try the mofongo!',
+        accommodation: 'Same Airbnb in San Juan | 2nd Night',
+        accommodationUrl: 'https://www.airbnb.com/s/San-Juan--Puerto-Rico--United-States/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-01-01&monthly_length=3&monthly_end_date=2025-04-01&price_filter_input_type=2&channel=EXPLORE&query=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&date_picker_type=calendar&checkin=2025-02-07&checkout=2025-02-09&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=2&adults=3&zoom_level=12.981820179932287&place_id=ChIJbxlo4m9oA4wR3FqTXA9_a60&search_mode=regular_search&ne_lat=18.510993130117786&ne_lng=-66.04821826343937&sw_lat=18.37906697408331&sw_lng=-66.13548369107741&zoom=12.981820179932287&search_by_map=true',
+
+        image: 'photos/puerto-rico-2025/San-Juan.jpg',
+        activities: [
+          'Visit Castillo San Felipe del Morro fort - $10',
+          '2025 Puerto Rico Dragon Boat Festival'
+        ],
+        activityUrls: [
+          'https://www.discoverpuertorico.com/article/exploring-castillo-san-felipe-del-morro-old-san-juan',
+          'https://www.youtube.com/watch?v=zrPaWhRghhw'
+        ],
+        meals: [
+          'Lunch: Chocobar Cortés?',
+          'Dinner: ??'
+        ],
+        mealUrls: [
+          'https://www.discoverpuertorico.com/profile/chocobar-cortes/3654',
+          null
+        ],
+        iconIndex: {
+          accommodation: "Building2",    // Modern hotel building
+          meals: "Utensils",            // Food
+          activities: "Castle"           // Beach theme
+        },
+      },
+      {
+        day: 3,
+        date: '2025-02-09',
+        title: 'Sunday: Drive to El Yunque National Forest',
+        description: 'Rent a car and drive to El Yunque National Forest (~1hr). Hike to La Mina Falls through the rainforest (or others if closed) . Drive the Pork Highway through Cayey eating slow spit-roasted pork along the way. End up in Rincón and stay for the night.',
+        image: 'photos/puerto-rico-2025/El-Yunque.jpg',
+        meals: [
+          'Lunch: ??',
+          'Dinner: The Pork Highway in Cayey'
+        ],
+        mealUrls: [
+          null,
+          'https://www.discoverpuertorico.com/rutas-del-lechon-puerto-rico'
+        ],
+        accommodation: 'Lazy Parrot Inn | 2 Full Beds | $170',
+        accommodationUrl: 'https://www.airbnb.com/rooms/650098888502634330?adults=3&location=Rincon%2C%20Puerto%20Rico%2C%20United%20States&search_mode=regular_search&check_in=2025-02-09&check_out=2025-02-10&source_impression_id=p3_1735310130_P3E6vfySGHmUxWcY&previous_page_section_name=1001&federated_search_id=73113699-245f-472f-b813-11398abeb21d',
+        activities: [
+          'Hike to waterfalls & pools in El Yunque National Forest',
+        ],
+        activityUrls: [
+          'https://www.discoverpuertorico.com/article/most-beautiful-waterfalls-puerto-rico',
+        ],
+        iconIndex: {
+          accommodation: "Building2",    // Modern hotel building
+          meals: "Utensils",            // Food
+          activities: "Footprints"
+        },
+      },
+      {
+        day: 4,
+        date: '2025-02-10',
+        title: 'Monday: ',
+        description: 'Scuba diving in Rincón with Taino Divers in the morning. About a 3 hour experience, meet with your Instructor in the morning to learn about the equipment and then take a dive in the Tres Palmas Marine Reserve. Drive back to San Juan for the night hitting the Cascada Gozalandia waterfalls on the way.',
+        accommodation: 'Rental unit in San Juan, Puerto Rico | $175',
+        accommodationUrl: 'https://www.airbnb.com/rooms/1184056193676724720?adults=3&location=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&search_mode=regular_search&check_in=2025-02-10&check_out=2025-02-11&source_impression_id=p3_1735870036_P3ZnHs4E-qo8UyiD&previous_page_section_name=1001&federated_search_id=5fad4d6b-13dc-4ee9-8857-6e03d0fe03c5',
+        image: 'photos/puerto-rico-2025/rincon-diving-153181.jpg',
+        activities: [
+          'Taino Divers - Discover Scuba Dive - $125',
+          'Hike the Cascada Gozalandia waterfalls'
+        ],
+        activityUrls: [
+          'https://www.tainodivers.com/discoverscubadive',
+          'https://www.puertoricodaytrips.com/gozalandia-falls/'
+        ],
+        iconIndex: {
+          accommodation: "Building2",    // Modern hotel building
+          meals: "Utensils",            // Food
+          activities: "Waves"
+        },
+      },
+      {
+        day: 5,
+        date: '2025-02-11',
+        title: 'Tuesday: Fly back to NYC',
+        description: 'Sleep in and enjoy a leisurely breakfast. Return the rental car and fly back to NYC.',
+        image: 'photos/puerto-rico-2025/San-Juan.jpg',
+
+      },
+    ],
+    dates: [
+      {
+        startDate: '2025-02-07',
+        endDate: '2025-02-11',
+        available: true
+      }
+    ],
+    activity: 'Moderate',
+    groupSize: 2,
+    interest: ['Nature', 'Hiking']
+  },
+  // MARK: Rome & Italy 2024
   {
     id: 'italy-rome-2024',
     title: 'Italy & Rome 2024',
@@ -392,7 +392,7 @@ export const trips = [
         "description": "",
         "activities": [],
         "image": "/photos/italy-2024/PXL_20240903_101329251.MP~2.jpg",
-        
+
       },
       {
         "day": 6,
@@ -452,7 +452,7 @@ export const trips = [
         "title": "The Colosseum - Rome",
         "description": "Explored the Colosseum, wandering through the gallery and fighting pit.",
         "activities": [],
-        "image":        "/photos/italy-2024/PXL_20240913_120833899(1).jpg",
+        "image": "/photos/italy-2024/PXL_20240913_120833899(1).jpg",
       },
       {
         "day": 15,
@@ -569,7 +569,7 @@ export const trips = [
         description: 'Landed in Seattle',
         accommodation: 'Seattle Airbnb',
         activities: ["Flying"],
-        image:'/photos/Seattle-2024/PXL_20240603_152124315.jpg',
+        image: '/photos/Seattle-2024/PXL_20240603_152124315.jpg',
         iconIndex: {
           accommodation: "Building2",    // Will use the Hotel icon instead of BedDouble
           activities: "Plane"
@@ -582,7 +582,7 @@ export const trips = [
         description: "Worked with the Seattle team from the Seattle office and got dinner and drinks with Pelin",
         activities: ["Working"],
         accommodation: 'Seattle Airbnb',
-        image:'/photos/Seattle-2024/PXL_20240603_165123176.PANO.jpg',
+        image: '/photos/Seattle-2024/PXL_20240603_165123176.PANO.jpg',
         iconIndex: {
           accommodation: "Building2",
           activities: "Laptop2"
@@ -595,7 +595,7 @@ export const trips = [
         description: "Walked around with Pelin exploring the shops, restaurants and Gas Works park of Fremont",
         activities: ["Walking"],
         accommodation: 'Seattle Airbnb',
-        images:[
+        images: [
           '/photos/Seattle-2024/PXL_20240605_212610391.jpg',
           '/photos/Seattle-2024/PXL_20240605_212129482-EFFECTS.jpg'
         ],
@@ -611,7 +611,7 @@ export const trips = [
         description: "Took the FRS Clipper ferry from Seattle to Victoria, CA to meet up with Andrea. Searched for nudibranchs under the docks, saw some crazy clouds and went to a concert.",
         activities: ["Traveling"],
         accommodation: "Andrea's couch",
-        images:[
+        images: [
           '/photos/Seattle-2024/PXL_20240606_201105297~2.jpg',
           '/photos/Seattle-2024/PXL_20240606_191606470.MP.jpg'
         ],
@@ -627,7 +627,7 @@ export const trips = [
         description: "Biked around Victoria and got some ice cream while Andrea swam. Took the afternoon ferry to Port Angeles 🧛🏻 to meet back up with Pelin and Patrick.",
         activities: ["Traveling"],
         accommodation: "Port Angeles Airbnb",
-        images:[
+        images: [
           '/photos/Seattle-2024/PXL_20240607_184003086.jpg'
         ],
         iconIndex: {
@@ -642,7 +642,7 @@ export const trips = [
         description: "Drove to Olympic National Park and hiked through the rainforest with Andrea, Pelin, and Patrick.",
         activities: ["Hiking"],
         accommodation: "Port Angeles Airbnb",
-        images:[
+        images: [
           '/photos/Seattle-2024/PXL_20240608_171604826.jpg',
           '/photos/Seattle-2024/PXL_20240609_000732192.jpg',
           '/photos/Seattle-2024/PXL_20240608_181756744.MP.jpg',
@@ -698,7 +698,7 @@ export const trips = [
       'https://placehold.co/800x800',
       'https://placehold.co/800x800'
     ],
-    
+
     itinerary: [
       {
         day: 1,
@@ -719,7 +719,7 @@ export const trips = [
     activity: 'Easy',
     groupSize: 2,
     interest: ['History, Culture, Astronomy, & Food']
-  }, 
+  },
   // New Zealand 2023
   {
     id: 'new-zealand-adventure-2023',
@@ -829,8 +829,8 @@ export const trips = [
         activities: ['Work and Flight'],
         iconIndex: {
           accommodation: "Building",
-          meals: "Coffee",         
-          activities: "Plane"      
+          meals: "Coffee",
+          activities: "Plane"
         },
       },
       {
@@ -841,8 +841,8 @@ export const trips = [
         accommodation: 'Queenstown hotel',
         iconIndex: {
           accommodation: "Building",
-          meals: "Coffee",         
-          activities: "Plane"      
+          meals: "Coffee",
+          activities: "Plane"
         },
       },
       {
@@ -853,8 +853,8 @@ export const trips = [
         activities: ['Skyline Luge'],
         iconIndex: {
           accommodation: "Building",
-          meals: "Coffee",         
-          activities: "Worm"      
+          meals: "Coffee",
+          activities: "Worm"
         },
       },
       {
@@ -863,11 +863,11 @@ export const trips = [
         title: 'Start Campervan Journey & Blue Pools',
         description: 'Pick up camper van and visit the Blue Pools',
         activities: ['Camper van pickup', 'Blue Pools visit'],
-        accommodation:"Camper van",
+        accommodation: "Camper van",
         iconIndex: {
           accommodation: "Caravan",
-          meals: "Coffee",         
-          activities: "Footprints"      
+          meals: "Coffee",
+          activities: "Footprints"
         },
       },
       {
@@ -957,14 +957,93 @@ export const trips = [
       'https://placehold.co/800x800',
       'https://placehold.co/800x800'
     ],
-    
+
     itinerary: [
       {
         day: 1,
-        title: 'Arrive in Paris',
-        description: 'Meet the group in Paris, begin with a city tour, and get fitted for gear.',
-        meals: ['Dinner'],
-        accommodation: 'Paris city hotel'
+        title: 'Layover in Porto, Portugal',
+        description: 'A surprise 12hr layover in Porto tured out to be one of the highlights of the trip. Locked my bags at the airport and spent the day wandering around the city and ate at the famous Majestic Cafe where JK Rowlings supposedly wrote parts of Harry Potter.',
+        date: "2017-05-20",
+        // meals: ['Dinner'],
+        // accommodation: 'Paris city hotel'
+        images:[
+          'photos/france-climbing-2017/IMG_0920.jpg',
+          'photos/france-climbing-2017/IMG_0918.jpg',
+        ]
+      },
+      {
+        day: 2,
+        title: 'Land in Paris',
+        description: 'Meet Ben in Paris early in the morning and crashed at the airBnB. Started the day with a tour of the Paris catichombs, then walked through the Aarc de Triomphe on the way to the eiffel tower. Ended the day with a picnic on the lawn of the Eiffel Tower.',
+        date: "2017-05-21",
+        //  begin with a city tour, and get fitted for gear.',
+        // meals: ['Dinner'],
+        accommodation: 'Paris apartment airBnB',
+        images:[
+          'photos/france-climbing-2017/IMG_1776.jpg',
+          'photos/france-climbing-2017/IMG_1805.jpg',
+          'photos/france-climbing-2017/PANO_20170521_172618.jpg',
+          'photos/france-climbing-2017/IMG_20170521_183840.jpg',
+        ]
+      },
+      {
+        day: 3,
+        title: 'Land in Paris',
+        description: 'Headed to a climbing shop (not far from the Louve) to get fitted for gear then started what turned out to be an 8hr chaotic saga of trying to rent a car and then drive it through paris 😂. Picked up our stuff from the airBnB and drove to Avon to stay for the night.',
+        date: "2017-05-22",
+        accommodation: 'Extra apartment room in Avon (weird vibes)',
+        images:[
+          'photos/france-climbing-2017/IMG_1830.jpg',
+          'photos/france-climbing-2017/IMG_20170522_120709.jpg',
+          'photos/france-climbing-2017/IMG_20170522_120019.jpg',
+        ]
+      },
+      {
+        day: 4,
+        title: 'Climbing in Fontainebleau',
+        description: 'Hiked into Fontainebleau and bouldered all day. Ended the day in Noisy-sur-Ecole with wine, bread and steak.',
+        date: "2017-05-23",
+        // accommodation: '',
+        images:[
+          'photos/france-climbing-2017/IMG_20170523_140829.jpg',
+          'photos/france-climbing-2017/IMG_20170523_143052.jpg',
+          'photos/france-climbing-2017/IMG_20170523_175648.jpg',
+          'photos/france-climbing-2017/IMG_20170523_193657.jpg'
+        ]
+      },
+      {
+        day: 4,
+        title: 'Climbing in Fontainebleau and driving',
+        description: 'Ate a weird breakfast and climbed a bit before hitting the road north to Normandy.',
+        date: "2017-05-24",
+        // accommodation: 'Normandy airBnB',
+        images:[
+          'photos/france-climbing-2017/IMG_20170524_114124.jpg',
+          'photos/france-climbing-2017/IMG_20170524_153926.jpg'
+        ]
+      },
+      {
+        day: 5,
+        title: 'Normandy Cliffs',
+        description: 'Drove a ton to get up to the cliffs of Normandy. Turned out it was some national holiday in Normandy which made driving interesting... Hiked up and around the cliff then walked down the beach.',
+        date: "2017-05-25",
+        // accommodation: '',
+        images:[
+          'photos/france-climbing-2017/PANO_20170525_180356.jpg'
+        ]
+      },
+      {
+        day: 6,
+        title: 'Mont Saint-Michel',
+        description: '',
+        date: "2017-05-26",
+        // accommodation: '',
+        images:[
+          'photos/france-climbing-2017/IMG_20170526_131518.jpg',
+          'photos/france-climbing-2017/IMG_20170526_131421.jpg',
+          'photos/france-climbing-2017/IMG_20170526_144845.jpg',
+          'photos/france-climbing-2017/IMG_2034.jpg'
+        ]
       },
     ],
     dates: [
@@ -978,6 +1057,6 @@ export const trips = [
     activity: 'Challenging',
     groupSize: 2,
     interest: ['History, Culture, Astronomy, & Food'],
-    
+
   },
 ];
