@@ -223,36 +223,19 @@ export const trips = [
         date: '2025-02-07T12:00:00',
         title: 'Friday: Arrive in Puerto Rico',
         description: 'Leave early morning and arrive early afternoon. Explore Isla Verde Beach and eat dinner at a waterfront restaurant.',
-
-        // Accommodation with booking link
+        location: [-66.0072, 18.4375],
+        locationName: 'Isla Verde, San Juan',
         accommodation: 'Airbnb in San Juan | 2 Nights | $218.01 Total',
         accommodationUrl: 'https://www.airbnb.com/s/San-Juan--Puerto-Rico--United-States/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-01-01&monthly_length=3&monthly_end_date=2025-04-01&price_filter_input_type=2&channel=EXPLORE&query=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&date_picker_type=calendar&checkin=2025-02-07&checkout=2025-02-09&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=2&adults=3&zoom_level=12.981820179932287&place_id=ChIJbxlo4m9oA4wR3FqTXA9_a60&search_mode=regular_search&ne_lat=18.510993130117786&ne_lng=-66.04821826343937&sw_lat=18.37906697408331&sw_lng=-66.13548369107741&zoom=12.981820179932287&search_by_map=true',
-
-        // Multiple activities with relevant links
-        activities: [
-          'Isla Verde Beach',
-        ],
-        activityUrls: [
-          'https://www.discoverpuertorico.com/profile/isla-verde-beach/9457',
-        ],
-
-        // Restaurant options for meals
-        meals: [
-          'Lunch: on the plane',
-          'Dinner: Ocean Lab Brewing Co.'
-        ],
-        mealUrls: [
-          null,  // Airport restaurant, no URL needed
-          'https://oceanlabbrewery.com/'
-        ],
-
-        // Better icon choices for the type of activities
+        activities: ['Isla Verde Beach'],
+        activityUrls: ['https://www.discoverpuertorico.com/profile/isla-verde-beach/9457'],
+        meals: ['Lunch: on the plane', 'Dinner: Ocean Lab Brewing Co.'],
+        mealUrls: [null, 'https://oceanlabbrewery.com/'],
         iconIndex: {
-          accommodation: "Building2",    // Modern hotel building
-          meals: "Utensils",            // Food
-          activities: "TreePalm"           // Beach theme
+          accommodation: "Building2",
+          meals: "Utensils",
+          activities: "TreePalm"
         },
-
         image: 'photos/puerto-rico-2025/shutterstock_2437600577.jpg'
       },
       {
@@ -260,6 +243,8 @@ export const trips = [
         date: '2025-02-08',
         title: 'Saturday: Explore Old San Juan',
         description: 'Explore the historic streets & eats of Old San Juan, visit the Castillo San Felipe del Morro fort, and watch the Dragon Boat Racing Festival in the surrounding bay. Try the mofongo!',
+        location: [-66.1185, 18.4671],
+        locationName: 'Old San Juan',
         accommodation: 'Same Airbnb in San Juan | 2nd Night',
         accommodationUrl: 'https://www.airbnb.com/s/San-Juan--Puerto-Rico--United-States/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-01-01&monthly_length=3&monthly_end_date=2025-04-01&price_filter_input_type=2&channel=EXPLORE&query=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&date_picker_type=calendar&checkin=2025-02-07&checkout=2025-02-09&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=2&adults=3&zoom_level=12.981820179932287&place_id=ChIJbxlo4m9oA4wR3FqTXA9_a60&search_mode=regular_search&ne_lat=18.510993130117786&ne_lng=-66.04821826343937&sw_lat=18.37906697408331&sw_lng=-66.13548369107741&zoom=12.981820179932287&search_by_map=true',
 
@@ -291,6 +276,8 @@ export const trips = [
         date: '2025-02-09',
         title: 'Sunday: Drive to El Yunque National Forest',
         description: 'Rent a car and drive to El Yunque National Forest (~1hr). Hike to La Mina Falls through the rainforest (or others if closed) . Drive the Pork Highway through Cayey eating slow spit-roasted pork along the way. End up in Rincón and stay for the night.',
+        location: [-65.7850, 18.3156],
+        locationName: 'El Yunque National Forest',
         image: 'photos/puerto-rico-2025/El-Yunque.jpg',
         meals: [
           'Lunch: ??',
@@ -317,8 +304,10 @@ export const trips = [
       {
         day: 4,
         date: '2025-02-10',
-        title: 'Monday: ',
+        title: 'Monday: Diving in Rincón',
         description: 'Scuba diving in Rincón with Taino Divers in the morning. About a 3 hour experience, meet with your Instructor in the morning to learn about the equipment and then take a dive in the Tres Palmas Marine Reserve. Drive back to San Juan for the night hitting the Cascada Gozalandia waterfalls on the way.',
+        location: [-67.2508, 18.3404],
+        locationName: 'Rincón',
         accommodation: 'Rental unit in San Juan, Puerto Rico | $175',
         accommodationUrl: 'https://www.airbnb.com/rooms/1184056193676724720?adults=3&location=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&search_mode=regular_search&check_in=2025-02-10&check_out=2025-02-11&source_impression_id=p3_1735870036_P3ZnHs4E-qo8UyiD&previous_page_section_name=1001&federated_search_id=5fad4d6b-13dc-4ee9-8857-6e03d0fe03c5',
         image: 'photos/puerto-rico-2025/rincon-diving-153181.jpg',
@@ -341,9 +330,10 @@ export const trips = [
         date: '2025-02-11',
         title: 'Tuesday: Fly back to NYC',
         description: 'Sleep in and enjoy a leisurely breakfast. Return the rental car and fly back to NYC.',
+        location: [-66.0072, 18.4375],
+        locationName: 'San Juan International Airport',
         image: 'photos/puerto-rico-2025/San-Juan.jpg',
-
-      },
+      }
     ],
     dates: [
       {
