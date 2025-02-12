@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import ImageViewer from './ImageViewer';
 
 export default function TripGallery({ trip }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,19 +16,19 @@ export default function TripGallery({ trip }) {
     document.body.style.overflow = 'unset';
   };
 
-  const nextImage = (e) => {
-    e.stopPropagation();
-    setCurrentImageIndex((prev) => 
-      prev === trip.gallery.length - 1 ? 0 : prev + 1
-    );
-  };
+  // Combine gallery and daily images
+  const allImages = useMemo(() => {
+    const dailyImages = trip.itinerary.reduce((acc, day) => {
+      if (day.images) {
+        return [...acc, ...day.images];
+      } else if (day.image) {
+        return [...acc, day.image];
+      }
+      return acc;
+    }, []);
 
-  const previousImage = (e) => {
-    e.stopPropagation();
-    setCurrentImageIndex((prev) => 
-      prev === 0 ? trip.gallery.length - 1 : prev - 1
-    );
-  };
+    return [...(trip.gallery || []), ...dailyImages];
+  }, [trip]);
 
   return (
     <>
@@ -39,7 +39,7 @@ export default function TripGallery({ trip }) {
           </h2>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {trip.gallery.map((image, index) => (
+            {allImages.map((image, index) => (
               <div 
                 key={index}
                 className="aspect-square cursor-pointer overflow-hidden rounded-lg"
@@ -56,44 +56,12 @@ export default function TripGallery({ trip }) {
         </div>
       </section>
 
-      {/* Lightbox */}
       {isOpen && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90"
-          onClick={closeLightbox}
-        >
-          <button 
-            className="absolute top-4 right-4 text-white hover:text-gray-300"
-            onClick={closeLightbox}
-          >
-            <X size={24} />
-          </button>
-
-          <button
-            className="absolute left-4 text-white hover:text-gray-300"
-            onClick={previousImage}
-          >
-            <ChevronLeft size={40} />
-          </button>
-
-          <img
-            src={trip.gallery[currentImageIndex]}
-            alt={`Gallery image ${currentImageIndex + 1}`}
-            className="max-h-[90vh] max-w-[90vw] object-contain"
-            onClick={(e) => e.stopPropagation()}
-          />
-
-          <button
-            className="absolute right-4 text-white hover:text-gray-300"
-            onClick={nextImage}
-          >
-            <ChevronRight size={40} />
-          </button>
-
-          <div className="absolute bottom-4 text-white">
-            {currentImageIndex + 1} / {trip.gallery.length}
-          </div>
-        </div>
+        <ImageViewer
+          images={allImages}
+          onClose={closeLightbox}
+          startIndex={currentImageIndex}
+        />
       )}
     </>
   );

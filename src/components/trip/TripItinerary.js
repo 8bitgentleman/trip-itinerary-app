@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ImageViewer from './ImageViewer';
 import TripMap from './TripMap';
 import {
   BedDouble, Utensils, Drama, Music4, Map, Bus, Pyramid,
@@ -12,7 +13,13 @@ import {
 
 export default function TripItinerary({ trip }) {
   const [expandedDay, setExpandedDay] = useState(null);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImages, setSelectedImages] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  const handleImageClick = (images, index) => {
+    setSelectedImages(Array.isArray(images) ? images : [images]);
+    setSelectedImageIndex(index || 0);
+  };
   const [activeDay, setActiveDay] = useState(null);
 
   // Previous helper functions here...
@@ -174,7 +181,7 @@ export default function TripItinerary({ trip }) {
                     day.images.length === 1 ? (
                       <div
                         className="cursor-pointer"
-                        onClick={() => setSelectedImage(day.images[0])}
+                        onClick={() => handleImageClick(day.images, 0)}
                       >
                         <img
                           src={day.images[0]}
@@ -191,7 +198,7 @@ export default function TripItinerary({ trip }) {
                           <div
                             key={imgIndex}
                             className="aspect-square cursor-pointer overflow-hidden rounded-lg"
-                            onClick={() => setSelectedImage(image)}
+                            onClick={() => handleImageClick(day.images, imgIndex)}
                           >
                             <img
                               src={image}
@@ -205,7 +212,7 @@ export default function TripItinerary({ trip }) {
                   ) : day.image && (
                     <div
                       className="cursor-pointer"
-                      onClick={() => setSelectedImage(day.image)}
+                      onClick={() => handleImageClick(day.image)}
                     >
                       <img
                         src={day.image}
@@ -259,7 +266,7 @@ export default function TripItinerary({ trip }) {
                         <div
                           key={imgIndex}
                           className="relative w-full h-full cursor-pointer overflow-hidden rounded-lg"
-                          onClick={() => setSelectedImage(image)}
+                          onClick={() => handleImageClick(day.images, imgIndex)}
                         >
                           <img
                             src={image}
@@ -273,7 +280,7 @@ export default function TripItinerary({ trip }) {
                     <div className="relative h-48 mb-6">
                       <div
                         className="relative w-full h-full cursor-pointer overflow-hidden rounded-lg"
-                        onClick={() => setSelectedImage(day.image)}
+                        onClick={() => handleImageClick(day.image)}
                       >
                         <img
                           src={day.image}
@@ -316,25 +323,13 @@ export default function TripItinerary({ trip }) {
         </div>
       </div>
 
-      {/* Lightbox */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90"
-          onClick={() => setSelectedImage(null)}
-        >
-          <button
-            className="absolute top-4 right-4 text-white hover:text-gray-300"
-            onClick={() => setSelectedImage(null)}
-          >
-            <ImageIcon className="w-6 h-6" />
-          </button>
-          <img
-            src={selectedImage}
-            alt="Full size"
-            className="max-h-[90vh] max-w-[90vw] object-contain"
-            onClick={(e) => e.stopPropagation()}
-          />
-        </div>
+      {/* Image Viewer */}
+      {selectedImages && (
+        <ImageViewer
+          images={selectedImages}
+          onClose={() => setSelectedImages(null)}
+          startIndex={selectedImageIndex}
+        />
       )}
     </section>
   );
