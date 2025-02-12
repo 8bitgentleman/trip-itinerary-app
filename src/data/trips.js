@@ -367,7 +367,7 @@ export const trips = [
           meals: "Utensils",
           activities: "Waves"
         },
-        images: ['photos/puerto-rico-2025/IMG_4978.jpeg',
+        images: [
           'photos/puerto-rico-2025/PXL_20250210_125317943.jpg',
           'photos/puerto-rico-2025/PXL_20250210_181349285.jpg',
           'photos/puerto-rico-2025/PXL_20250210_183300144.jpg',
