@@ -196,14 +196,14 @@ export const trips = [
   {
     id: 'puerto-rico-2025',
     title: 'Puerto Rico',
-    subtitle: 'Get some real Caribbean sun in the dead of winter',
+    subtitle: 'Caribbean adventure through rainforests, beaches, and waterfalls',
     destination: 'Puerto Rico',
     highlights: [
-      'Explore Old San Juan & watch the Dragon Boat Racing Festival',
-      'Take a tour of the old Castillo San Felipe del Morro fort',
-      'Hike through El Yunque National Forest waterfalls and natural pools',
-      'Drive & eat along the Pork Highway',
-      'Scuba diving in Rincón with Taino Divers'
+      'Explored Old San Juan & discovered an amazing hidden jazz bar',
+      'Watched Dragon Boat Racing at Laguna Condado',
+      'Hiked through El Yunque National Forest to multiple waterfalls',
+      'Experienced authentic spit-roasted pork on the Pork Highway',
+      'Snorkling in Rincón at Black Eagle Beach and Steps Beach'
     ],
     duration: {
       days: 5,
@@ -213,149 +213,155 @@ export const trips = [
       amount: 500,
       currency: 'USD'
     },
-    heroImage: '/photos/puerto-rico-2025/Puente-de-Piedra-Cabo-Rojo.jpg',
+    heroImage: '/photos/puerto-rico-2025/PXL_20250209_163415275.PORTRAIT.jpg',
     gallery: [
       '/photos/puerto-rico-2025/driving-map.jpg',
     ],
     routeOverride: [
-      [-66.049168, 18.451267], // San Juan
+      [-66.049168, 18.451267], // San Juan Airport
       [-66.1185, 18.4671], // Old San Juan
-      [-66.049168, 18.451267], // San Juan
-      [-65.7850, 18.3156], // El Yunque
-      [-65.840390, 18.156075],  // Custom waypoint
-      [-66.034797, 18.240223], // Custom waypoint
-      [-66.613787, 17.987377], // Custom waypoint
+      [-65.771946, 18.318527], // La Coca Falls
+      [-65.770515, 18.312255], // Torre Yokahú
+      [-65.777845, 18.311896], // Juan Diego Falls
+      [-65.728842, 18.272272], // Las Tinajas Falls
+      [-66.103048, 18.151377], // Lechonera Los Amigos
       [-67.2508, 18.3404], // Rincon
-      [-66.049168, 18.451267], // San Juan
+      [-66.983934, 18.360588], // Cascada Gozalandia
+      [-66.049168, 18.451267], // Back to San Juan Airport
     ],
     itinerary: [
       {
         day: 1,
         date: '2025-02-07T12:00:00',
         title: 'Friday: Arrive in Puerto Rico',
-        description: 'Leave early morning and arrive early afternoon. Explore Isla Verde Beach and eat dinner at a waterfront restaurant.',
+        description: 'Landed in San Juan and headed to Old San Juan for an excessivly large dinner at Cayo Caribe. Explored the streets in the evening rain.',
         location: [-66.049168, 18.451267],
-        locationName: 'Isla Verde, San Juan',
-        accommodation: 'Airbnb in San Juan | 2 Nights | $218.01 Total',
-        accommodationUrl: 'https://www.airbnb.com/s/San-Juan--Puerto-Rico--United-States/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-01-01&monthly_length=3&monthly_end_date=2025-04-01&price_filter_input_type=2&channel=EXPLORE&query=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&date_picker_type=calendar&checkin=2025-02-07&checkout=2025-02-09&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=2&adults=3&zoom_level=12.981820179932287&place_id=ChIJbxlo4m9oA4wR3FqTXA9_a60&search_mode=regular_search&ne_lat=18.510993130117786&ne_lng=-66.04821826343937&sw_lat=18.37906697408331&sw_lng=-66.13548369107741&zoom=12.981820179932287&search_by_map=true',
-        activities: ['Isla Verde Beach'],
-        activityUrls: ['https://www.discoverpuertorico.com/profile/isla-verde-beach/9457'],
-        meals: ['Lunch: on the plane', 'Dinner: Ocean Lab Brewing Co.'],
-        mealUrls: [null, 'https://oceanlabbrewery.com/'],
+        locationName: 'Old San Juan',
+        accommodation: 'Airbnb in San Juan | 2 Nights',
+        meals: ['Dinner: Cayo Caribe - Epic feast in Old San Juan'],
+        activities: ['Evening walk through Old San Juan in the rain'],
         iconIndex: {
           accommodation: "Building2",
           meals: "Utensils",
           activities: "TreePalm"
         },
-        image: 'photos/puerto-rico-2025/shutterstock_2437600577.jpg'
+        image: 'photos/puerto-rico-2025/PXL_20250208_025815887.NIGHT.jpg'
       },
       {
         day: 2,
         date: '2025-02-08',
-        title: 'Saturday: Explore Old San Juan',
-        description: 'Explore the historic streets & eats of Old San Juan, visit the Castillo San Felipe del Morro fort, and watch the Dragon Boat Racing Festival in the surrounding bay. Try the mofongo!',
+        title: 'Saturday: Dragon Boats & Beaches',
+        description: 'Full day exploring San Juan\'s attractions - from watching dragon boat races to swimming at multiple beaches, topped off with an unexpected discovery of an amazing jazz bar.',
         location: [-66.1185, 18.4671],
-        locationName: 'Old San Juan',
+        locationName: 'San Juan',
         accommodation: 'Same Airbnb in San Juan | 2nd Night',
-        accommodationUrl: 'https://www.airbnb.com/s/San-Juan--Puerto-Rico--United-States/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-01-01&monthly_length=3&monthly_end_date=2025-04-01&price_filter_input_type=2&channel=EXPLORE&query=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&date_picker_type=calendar&checkin=2025-02-07&checkout=2025-02-09&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=2&adults=3&zoom_level=12.981820179932287&place_id=ChIJbxlo4m9oA4wR3FqTXA9_a60&search_mode=regular_search&ne_lat=18.510993130117786&ne_lng=-66.04821826343937&sw_lat=18.37906697408331&sw_lng=-66.13548369107741&zoom=12.981820179932287&search_by_map=true',
-
-        image: 'photos/puerto-rico-2025/San-Juan.jpg',
         activities: [
-          'Visit Castillo San Felipe del Morro fort - $10',
-          '2025 Puerto Rico Dragon Boat Festival'
-        ],
-        activityUrls: [
-          'https://www.discoverpuertorico.com/article/exploring-castillo-san-felipe-del-morro-old-san-juan',
-          'https://www.youtube.com/watch?v=zrPaWhRghhw'
+          'Dragon Boat Festival at Public Park Laguna Condado',
+          'Swimming at Escambron Beach cove',
+          'Relaxing at Playa Ocean Park',
+          'Discovered an incredible jazz bar near the Cannon Club'
         ],
         meals: [
-          'Lunch: Chocobar Cortés?',
-          'Dinner: ??'
-        ],
-        mealUrls: [
-          'https://www.discoverpuertorico.com/profile/chocobar-cortes/3654',
-          null
+          'Breakfast: Lela\'s Eatery',
+          'Lunch: Panuchos',
+          'Snack: Ice cream'
         ],
         iconIndex: {
-          accommodation: "Building2",    // Modern hotel building
-          meals: "Utensils",            // Food
-          activities: "Castle"           // Beach theme
+          accommodation: "Building2",
+          meals: "Utensils",
+          activities: "Waves"
         },
+        images: ['photos/puerto-rico-2025/PXL_20250208_152704161.jpg',
+          'photos/puerto-rico-2025/PXL_20250208_155347803.jpg',
+          'photos/puerto-rico-2025/PXL_20250208_200537120.jpg',
+          'photos/puerto-rico-2025/PXL_20250208_233642078.MP.jpg'
+        ],
       },
       {
         day: 3,
         date: '2025-02-09',
-        title: 'Sunday: Drive to El Yunque National Forest',
-        description: 'Rent a car and drive to El Yunque National Forest (~1hr). Hike to La Mina Falls through the rainforest (or others if closed) . Drive the Pork Highway through Cayey eating slow spit-roasted pork along the way. End up in Rincón and stay for the night.',
+        title: 'Sunday: El Yunque & Pork Highway Adventure',
+        description: 'Epic day of waterfall exploration in El Yunque National Forest, including the impressive La Coca Falls and Juan Diego Falls. Ended the day with authentic spit-roasted pork before the drive to Rincón.',
         location: [-65.7850, 18.3156],
         locationName: 'El Yunque National Forest',
-        image: 'photos/puerto-rico-2025/El-Yunque.jpg',
-        meals: [
-          'Lunch: ??',
-          'Dinner: The Pork Highway in Cayey'
-        ],
-        mealUrls: [
-          null,
-          'https://www.discoverpuertorico.com/rutas-del-lechon-puerto-rico'
-        ],
-        accommodation: 'Lazy Parrot Inn | 2 Full Beds | $170',
-        accommodationUrl: 'https://www.airbnb.com/rooms/650098888502634330?adults=3&location=Rincon%2C%20Puerto%20Rico%2C%20United%20States&search_mode=regular_search&check_in=2025-02-09&check_out=2025-02-10&source_impression_id=p3_1735310130_P3E6vfySGHmUxWcY&previous_page_section_name=1001&federated_search_id=73113699-245f-472f-b813-11398abeb21d',
+        accommodation: 'Airbnb in Rincón',
         activities: [
-          'Hike to waterfalls & pools in El Yunque National Forest',
+          'La Coca Falls viewpoint',
+          'Torre Yokahú Observation tower',
+          'Swimming at Juan Diego Falls',
+          '(mis)Adventures at Las Tinajas Falls',
+          'Drive along the Pork Highway'
         ],
-        activityUrls: [
-          'https://www.discoverpuertorico.com/article/most-beautiful-waterfalls-puerto-rico',
+        meals: [
+          'Breakfast: Cafe con Ce',
+          'Dinner: Lechonera Los Amigos - Authentic spit-roasted pork, rice, beans, and blood sausage'
         ],
         iconIndex: {
-          accommodation: "Building2",    // Modern hotel building
-          meals: "Utensils",            // Food
+          accommodation: "Building2",
+          meals: "Utensils",
           activities: "Footprints"
         },
+        images: ['photos/puerto-rico-2025/IMG_4978.jpeg',
+          'photos/puerto-rico-2025/PXL_20250209_163420293.MP.jpg',
+          'photos/puerto-rico-2025/PXL_20250209_164842400.MP.jpg',
+          'photos/puerto-rico-2025/PXL_20250209_171235986.MP.jpg',
+          'photos/puerto-rico-2025/PXL_20250209_212740584.jpg',
+          'photos/puerto-rico-2025/PXL_20250209_221708976.jpg'
+        ],
       },
       {
         day: 4,
         date: '2025-02-10',
-        title: 'Monday: Diving in Rincón',
-        description: 'Scuba diving in Rincón with Taino Divers in the morning. About a 3 hour experience, meet with your Instructor in the morning to learn about the equipment and then take a dive in the Tres Palmas Marine Reserve. Drive back to San Juan for the night hitting the Cascada Gozalandia waterfalls on the way.',
+        title: 'Monday: Rincón Scuba & Cascada Gozalandia',
+        description: 'Incredible day of snorkling at multiple beaches in Rincón, seeing colorful fish and even a shark! Ended the day with an amazing experience at Cascada Gozalandia.',
         location: [-67.2508, 18.3404],
         locationName: 'Rincón',
-        accommodation: 'Rental unit in San Juan, Puerto Rico | $175',
-        accommodationUrl: 'https://www.airbnb.com/rooms/1184056193676724720?adults=3&location=San%20Juan%2C%20Puerto%20Rico%2C%20United%20States&search_mode=regular_search&check_in=2025-02-10&check_out=2025-02-11&source_impression_id=p3_1735870036_P3ZnHs4E-qo8UyiD&previous_page_section_name=1001&federated_search_id=5fad4d6b-13dc-4ee9-8857-6e03d0fe03c5',
-        image: 'photos/puerto-rico-2025/rincon-diving-153181.jpg',
+        accommodation: 'Airbnb in San Juan',
         activities: [
-          'Taino Divers - Discover Scuba Dive - $125',
-          'Hike the Cascada Gozalandia waterfalls'
+          'Snorkling at Black Eagle Beach (shark sighting!)',
+          'Snorkeling among the reef at Steps Beach',
+          'Swimming and rope climbing at Cascada Gozalandia'
         ],
-        activityUrls: [
-          'https://www.tainodivers.com/discoverscubadive',
-          'https://www.puertoricodaytrips.com/gozalandia-falls/'
+        meals: [
+          'Breakfast: The Beach House',
+          'Lunch: Jack\'s Shack - Beach taco spot',
+          'Late Dinner: Late night tacos in San Juan'
         ],
         iconIndex: {
-          accommodation: "Building2",    // Modern hotel building
-          meals: "Utensils",            // Food
+          accommodation: "Building2",
+          meals: "Utensils",
           activities: "Waves"
         },
+        images: ['photos/puerto-rico-2025/IMG_4978.jpeg',
+          'photos/puerto-rico-2025/PXL_20250210_125317943.jpg',
+          'photos/puerto-rico-2025/PXL_20250210_181349285.jpg',
+          'photos/puerto-rico-2025/PXL_20250210_183300144.jpg',
+          'photos/puerto-rico-2025/IMG_5037.jpeg',
+          'photos/puerto-rico-2025/PXL_20250210_203842988.jpg'
+        ],
       },
       {
         day: 5,
         date: '2025-02-11',
-        title: 'Tuesday: Fly back to NYC',
-        description: 'Sleep in and enjoy a leisurely breakfast. Return the rental car and fly back to NYC.',
+        title: 'Tuesday: Return to NYC',
+        description: 'Final morning in San Juan with a coffee shop breakfast and beach walk before rush to catch our flight!',
         location: [-66.049168, 18.451267],
         locationName: 'San Juan International Airport',
-        image: 'photos/puerto-rico-2025/San-Juan.jpg',
+        meals: ['Breakfast: La Coffeetera'],
+        activities: ['Morning beach walk'],
+        // image: 'photos/puerto-rico-2025/San-Juan.jpg'
       }
     ],
     dates: [
       {
         startDate: '2025-02-07',
         endDate: '2025-02-11',
-        available: true
+        available: false
       }
     ],
-    activity: 'Moderate',
+    activity: 'Active',
     groupSize: 2,
-    interest: ['Nature', 'Hiking']
+    interest: ['Nature', 'Adventure', 'Food']
   },
   // MARK: Rome & Italy 2024
   {
