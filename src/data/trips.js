@@ -239,6 +239,7 @@ export const trips = [
         locationName: 'Old San Juan',
         accommodation: 'Airbnb in San Juan | 2 Nights',
         meals: ['Dinner: Cayo Caribe - Old San Juan'],
+        mealUrls: ['https://g.co/kgs/6AMJT5P'],
         activities: ['Evening meander through Old San Juan in the rain'],
         iconIndex: {
           accommodation: "Building2",
@@ -261,10 +262,23 @@ export const trips = [
           'Relaxing at Playa Ocean Park',
           'Discovered an incredible jazz bar near the Cannon Club'
         ],
+        activityUrls: [
+          'https://maps.app.goo.gl/QrPvYdM1RQPH1Aam6',
+          'https://maps.app.goo.gl/vEnt6buxBZbPRSa46',
+          'https://maps.app.goo.gl/7TZbvvo15PjG73KF7',
+          'https://maps.app.goo.gl/3jwsYRAgv6jjsoWRA'
+        ],
         meals: [
           'Breakfast: Lela\'s Eatery',
           'Lunch: Panuchos',
-          'Snack: La Heladería Funkyberry Ice Cream'
+          'Snack: La Heladería Funkyberry Ice Cream',
+          'Dinner: The Cannon Club'
+        ],
+        mealUrls: [
+          'https://maps.app.goo.gl/AQYNDcZNfC5TFh5u7',
+          'https://maps.app.goo.gl/wphKAnzZ5XfgNRh27',
+          'https://maps.app.goo.gl/C7jTYBgV1ZVMBi6x5',
+          'https://maps.app.goo.gl/3jwsYRAgv6jjsoWRA'
         ],
         iconIndex: {
           accommodation: "Building2",
@@ -292,9 +306,20 @@ export const trips = [
           '(mis)Adventures at Las Tinajas Falls',
           'Drive along the Pork Highway'
         ],
+        activityUrls: [
+          'https://maps.app.goo.gl/vpCzkYCzRwuypNjL8',
+          'https://maps.app.goo.gl/nNDHVNvRaLRoVQ8V6',
+          'https://maps.app.goo.gl/nZquKisb1cspCxJYA',
+          null,
+          'https://www.discoverpuertorico.com/rutas-del-lechon-puerto-rico'
+        ],
         meals: [
           'Brunch: Cafe con Ce',
           'Dinner: Lechonera Los Amigos - Authentic spit-roasted pork, rice, beans, and blood sausage'
+        ],
+        mealUrls: [
+          'https://maps.app.goo.gl/mHfKos9eNwtyumxo8',
+          'https://maps.app.goo.gl/HdDFxwJZLh2UnGMW7'
         ],
         iconIndex: {
           accommodation: "Building2",
@@ -322,10 +347,20 @@ export const trips = [
           'Snorkeling among the reef at Steps Beach',
           'Swimming and cliff diving at Cascada Gozalandia'
         ],
+        activityUrls: [
+          'https://maps.app.goo.gl/mbszfttmncRGYdFs9',
+          'https://maps.app.goo.gl/UV4erCthxNuiGyGd8',
+          'https://maps.app.goo.gl/WiMXcnLBEH5P24dm9'
+        ],
         meals: [
           'Breakfast: The Beach House',
           'Lunch: Jack\'s Shack - Beach taco spot',
           'Late Dinner: Late night tacos in San Juan'
+        ],
+        mealUrls: [
+          'https://maps.app.goo.gl/etGQaUAs3YRNVJydA',
+          'https://maps.app.goo.gl/pWfSzyYAL4ZYcCTa7',
+          null
         ],
         iconIndex: {
           accommodation: "Building2",
@@ -348,6 +383,9 @@ export const trips = [
         location: [-66.049168, 18.451267],
         locationName: 'San Juan International Airport',
         meals: ['Breakfast: La Coffeetera'],
+        mealUrls: [
+          'https://maps.app.goo.gl/nDLpHfKCKAo1xJex8'
+        ],
         activities: ['Morning beach walk'],
         // image: 'photos/puerto-rico-2025/San-Juan.jpg'
       }
