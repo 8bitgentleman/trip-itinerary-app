@@ -238,8 +238,8 @@ export const trips = [
         location: [-66.049168, 18.451267],
         locationName: 'Old San Juan',
         accommodation: 'Airbnb in San Juan | 2 Nights',
-        meals: ['Dinner: Cayo Caribe - Epic feast in Old San Juan'],
-        activities: ['Evening walk through Old San Juan in the rain'],
+        meals: ['Dinner: Cayo Caribe - Old San Juan'],
+        activities: ['Evening meander through Old San Juan in the rain'],
         iconIndex: {
           accommodation: "Building2",
           meals: "Utensils",
@@ -251,7 +251,7 @@ export const trips = [
         day: 2,
         date: '2025-02-08',
         title: 'Saturday: Dragon Boats & Beaches',
-        description: 'Full day exploring San Juan\'s attractions - from watching dragon boat races to swimming at multiple beaches, topped off with an unexpected discovery of an amazing jazz bar.',
+        description: 'Full day exploring San Juan\'s attractions - from watching dragon boat races to swimming and relaxing at multiple beaches, topped off with an unexpected discovery of an amazing jazz bar.',
         location: [-66.1185, 18.4671],
         locationName: 'San Juan',
         accommodation: 'Same Airbnb in San Juan | 2nd Night',
@@ -264,7 +264,7 @@ export const trips = [
         meals: [
           'Breakfast: Lela\'s Eatery',
           'Lunch: Panuchos',
-          'Snack: Ice cream'
+          'Snack: La Heladería Funkyberry Ice Cream'
         ],
         iconIndex: {
           accommodation: "Building2",
@@ -281,7 +281,7 @@ export const trips = [
         day: 3,
         date: '2025-02-09',
         title: 'Sunday: El Yunque & Pork Highway Adventure',
-        description: 'Epic day of waterfall exploration in El Yunque National Forest, including the impressive La Coca Falls and Juan Diego Falls. Ended the day with authentic spit-roasted pork before the drive to Rincón.',
+        description: 'Epic day of waterfall exploration in El Yunque National Rainforest, including La Coca Falls, Juan Diego Falls and (mis)adventures at Las Tinajas Falls. Ended the day with authentic spit-roasted pork before the long night drive to Rincón.',
         location: [-65.7850, 18.3156],
         locationName: 'El Yunque National Forest',
         accommodation: 'Airbnb in Rincón',
@@ -293,7 +293,7 @@ export const trips = [
           'Drive along the Pork Highway'
         ],
         meals: [
-          'Breakfast: Cafe con Ce',
+          'Brunch: Cafe con Ce',
           'Dinner: Lechonera Los Amigos - Authentic spit-roasted pork, rice, beans, and blood sausage'
         ],
         iconIndex: {
@@ -313,14 +313,14 @@ export const trips = [
         day: 4,
         date: '2025-02-10',
         title: 'Monday: Rincón Scuba & Cascada Gozalandia',
-        description: 'Incredible day of snorkling at multiple beaches in Rincón, seeing colorful fish and even a shark! Ended the day with an amazing experience at Cascada Gozalandia.',
+        description: 'Incredible day of snorkling at multiple beaches in Rincón, seeing colorful schools of fish (and even a shark). Ended the day jumping off cliffs into a waterfall pool at Cascada Gozalandia.',
         location: [-67.2508, 18.3404],
         locationName: 'Rincón',
         accommodation: 'Airbnb in San Juan',
         activities: [
           'Snorkling at Black Eagle Beach (shark sighting!)',
           'Snorkeling among the reef at Steps Beach',
-          'Swimming and rope climbing at Cascada Gozalandia'
+          'Swimming and cliff diving at Cascada Gozalandia'
         ],
         meals: [
           'Breakfast: The Beach House',
@@ -344,7 +344,7 @@ export const trips = [
         day: 5,
         date: '2025-02-11',
         title: 'Tuesday: Return to NYC',
-        description: 'Final morning in San Juan with a coffee shop breakfast and beach walk before rush to catch our flight!',
+        description: 'Final morning in San Juan with a coffee shop breakfast and beach walk before a rush to catch our flight.',
         location: [-66.049168, 18.451267],
         locationName: 'San Juan International Airport',
         meals: ['Breakfast: La Coffeetera'],
