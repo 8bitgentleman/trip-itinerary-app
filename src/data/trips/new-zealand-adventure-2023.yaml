@@ -1,0 +1,210 @@
+id: new-zealand-adventure-2023
+title: New Zealand North & South Island Adventure
+subtitle: Urban exploration in Auckland and campervan journey through the South Island
+destination: New Zealand
+
+duration:
+  days: 46
+  nights: 45
+
+price:
+  amount: 3200
+  currency: USD
+
+heroImage: /photos/NZ-2023/PXL_20230314_194303657.jpg
+
+gallery:
+  - /photos/NZ-2023/PXL_20230203_215820437.jpg
+  - https://placehold.co/800x800
+
+itinerary:
+  - day: 1
+    date: 2023-02-01
+    title: Arrive in Auckland
+    description: Land in Auckland and begin New Zealand adventure
+    accommodation: Auckland apartment
+    images:
+      - /photos/NZ-2023/PXL_20230203_215820437.jpg
+      - https://placehold.co/800x600
+
+  - day: 6
+    date: 2023-02-06
+    title: Hobbiton & Rotorua Tour
+    description: Guided tour of the famous Hobbiton Movie Set and visit to Rotorua
+    activities:
+      - Hobbiton Tour
+      - Rotorua Visit
+    accommodation: Auckland apartment
+    images:
+      - https://placehold.co/800x600
+      - https://placehold.co/800x600
+    iconIndex:
+      accommodation: Building2
+      meals: Coffee
+      activities: Bus
+
+  - day: 9
+    date: 2023-02-09
+    title: Mission Bay Beach
+    description: E-scooter adventure to Mission Bay Beach after work
+    activities:
+      - E-scooter riding
+      - Beach visit
+    image: https://placehold.co/800x600
+    accommodation: Auckland apartment
+    iconIndex:
+      accommodation: Building2
+      meals: Coffee
+      activities: Bike
+
+  - day: 15
+    date: 2023-02-15
+    title: Maungauika North Head Historic Reserve
+    description: Took a boat to the North Head island and Hiked the mountain and historic fort
+    activities:
+      - Hiking
+    iconIndex:
+      accommodation: Building2
+      meals: Coffee
+      activities: Footprints
+
+  - day: 25
+    date: 2023-02-25
+    title: Tapapa Hike
+    description: Hiking experience in Tapapa, Waikato region
+    activities:
+      - Hiking
+    iconIndex:
+      accommodation: Building2
+      meals: Coffee
+      activities: Footprints
+
+  - day: 26
+    date: 2023-02-26
+    title: Waiheke Island
+    description: Day trip to Waiheke Island
+    activities:
+      - Island exploration
+    iconIndex:
+      accommodation: Building2
+      meals: Coffee
+      activities: Ship
+
+  - day: 27
+    date: 2023-02-27
+    title: Christchurch
+    description: Flew to Christchurch for work and explored the city
+    duration: 3 days
+    endDate: 2023-03-01
+    accommodation: Weird pizza hotel
+    activities:
+      - Work and Flight
+    iconIndex:
+      accommodation: Building
+      meals: Coffee
+      activities: Plane
+
+  - day: 31
+    date: 2023-03-03
+    title: Queenstown Arrival
+    description: Fly to Queenstown
+    accommodation: Queenstown hotel
+    iconIndex:
+      accommodation: Building
+      meals: Coffee
+      activities: Plane
+
+  - day: 32
+    date: 2023-03-04
+    title: Queenstown Activities
+    description: Experience the Queenstown Skyline Luge
+    activities:
+      - Skyline Luge
+    iconIndex:
+      accommodation: Building
+      meals: Coffee
+      activities: Worm
+
+  - day: 35
+    date: 2023-03-07
+    title: Start Campervan Journey & Blue Pools
+    description: Pick up camper van and visit the Blue Pools
+    activities:
+      - Camper van pickup
+      - Blue Pools visit
+    accommodation: Camper van
+    iconIndex:
+      accommodation: Caravan
+      meals: Coffee
+      activities: Footprints
+
+  - day: 36
+    date: 2023-03-08
+    title: Lavender Fields & Mt Sefton
+    description: Visit lavender fields and Mt Sefton Glacier
+    activities:
+      - Lavender field visit
+      - Glacier viewing
+
+  - day: 37
+    date: 2023-03-09
+    title: Arthur's Pass & Motukiekie Beach
+    description: Hiking in Arthur's Pass and visit to Motukiekie Beach
+    activities:
+      - Hiking
+      - Beach visit
+
+  - day: 38
+    date: 2023-03-10
+    title: Punakaiki Pancake Rocks
+    description: Visit the famous Pancake Rocks formation
+    activities:
+      - Geological site visit
+
+  - day: 39
+    date: 2023-03-11
+    title: Arthur's Pass Hiking
+    description: Return to Arthur's Pass for more hiking
+    activities:
+      - Hiking
+
+  - day: 41
+    date: 2023-03-13
+    title: Akaroa
+    description: Explore the French-inspired town of Akaroa
+    activities:
+      - Town exploration
+
+  - day: 42
+    date: 2023-03-14
+    title: Tunnel Beach
+    description: Visit the unique Tunnel Beach in Dunedin
+    activities:
+      - Beach visit
+
+  - day: 43
+    date: 2023-03-15
+    title: Milford Sound
+    description: Cruise through the magnificent Milford Sound
+    activities:
+      - Scenic cruise
+
+  - day: 46
+    date: 2023-03-18
+    title: Queenstown Finale
+    description: Final day in Queenstown
+    accommodation: Queenstown accommodation
+
+dates:
+  - startDate: 2023-02-01
+    endDate: 2023-03-18
+    available: false
+
+activity: Moderate
+groupSize: 1
+interest:
+  - Nature
+  - Hiking
+  - Adventure
+  - Cultural Sites
+  - Road Trip

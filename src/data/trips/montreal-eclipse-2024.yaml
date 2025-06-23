@@ -1,0 +1,37 @@
+id: montreal-eclipse-2024
+title: 2024 Total Eclipse in Montreal
+subtitle: Experience the total eclipse and explore Montreal's culture
+destination: Canada
+
+duration:
+  days: 14
+  nights: 13
+
+price:
+  amount: 3200
+  currency: USD
+
+heroImage: /photos/eclipse-2024/PXL_20240408_172324899.jpg
+
+gallery:
+  - https://placehold.co/800x800
+  - https://placehold.co/800x800
+
+itinerary:
+  - day: 1
+    title: Arrive in Montreal
+    description: Welcome dinner and evening city tour.
+    meals:
+      - Dinner
+    accommodation: Montreal downtown hotel
+
+dates:
+  - startDate: 2025-02-05
+    endDate: 2025-02-15
+    price: 4825
+    available: false
+
+activity: Easy
+groupSize: 2
+interest:
+  - History, Culture, Astronomy, & Food

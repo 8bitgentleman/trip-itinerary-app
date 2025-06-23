@@ -1,0 +1,202 @@
+id: puerto-rico-2025
+title: Puerto Rico
+subtitle: Caribbean adventure through rainforests, beaches, and waterfalls
+destination: Puerto Rico
+
+highlights:
+  - Explored Old San Juan & discovered an amazing hidden jazz bar
+  - Watched Dragon Boat Racing at Laguna Condado
+  - Hiked through El Yunque National Forest to multiple waterfalls
+  - Experienced authentic spit-roasted pork on the Pork Highway
+  - Snorkling in Rincón at Black Eagle Beach and Steps Beach
+
+duration:
+  days: 5
+  nights: 4
+
+price:
+  amount: 500
+  currency: USD
+
+heroImage: /photos/puerto-rico-2025/PXL_20250209_163415275.PORTRAIT.jpg
+
+gallery:
+  - /photos/puerto-rico-2025/driving-map.jpg
+
+routeOverride:
+  - [-66.049168, 18.451267]  # San Juan Airport
+  - [-66.1185, 18.4671]      # Old San Juan
+  - [-65.771946, 18.318527]  # La Coca Falls
+  - [-65.770515, 18.312255]  # Torre Yokahú
+  - [-65.777845, 18.311896]  # Juan Diego Falls
+  - [-65.728842, 18.272272]  # Las Tinajas Falls
+  - [-66.103048, 18.151377]  # Lechonera Los Amigos
+  - [-67.2508, 18.3404]      # Rincon
+  - [-66.983934, 18.360588]  # Cascada Gozalandia
+  - [-66.049168, 18.451267]  # Back to San Juan Airport
+
+itinerary:
+  - day: 1
+    date: 2025-02-07T12:00:00
+    title: "Friday: Arrive in Puerto Rico"
+    description: >
+      Landed in San Juan and headed to Old San Juan for an excessivly large 
+      dinner at Cayo Caribe. Explored the streets in the evening rain.
+    location: [-66.049168, 18.451267]
+    locationName: Old San Juan
+    accommodation: Airbnb in San Juan | 2 Nights
+    meals:
+      - "Dinner: Cayo Caribe - Old San Juan"
+    mealUrls:
+      - https://g.co/kgs/6AMJT5P
+    activities:
+      - Evening meander through Old San Juan in the rain
+    iconIndex:
+      accommodation: Building2
+      meals: Utensils
+      activities: TreePalm
+    image: photos/puerto-rico-2025/PXL_20250208_025815887.NIGHT.jpg
+
+  - day: 2
+    date: 2025-02-08
+    title: "Saturday: Dragon Boats & Beaches"
+    description: >
+      Full day exploring San Juan's attractions - from watching dragon boat 
+      races to swimming and relaxing at multiple beaches, topped off with an 
+      unexpected discovery of an amazing jazz bar.
+    location: [-66.1185, 18.4671]
+    locationName: San Juan
+    accommodation: Same Airbnb in San Juan | 2nd Night
+    activities:
+      - Dragon Boat Festival at Public Park Laguna Condado
+      - Swimming at Escambron Beach cove
+      - Relaxing at Playa Ocean Park
+      - Discovered an incredible jazz bar near the Cannon Club
+    activityUrls:
+      - https://maps.app.goo.gl/QrPvYdM1RQPH1Aam6
+      - https://maps.app.goo.gl/vEnt6buxBZbPRSa46
+      - https://maps.app.goo.gl/7TZbvvo15PjG73KF7
+      - https://maps.app.goo.gl/3jwsYRAgv6jjsoWRA
+    meals:
+      - "Breakfast: Lela's Eatery"
+      - "Lunch: Panuchos"
+      - "Snack: La Heladería Funkyberry Ice Cream"
+      - "Dinner: The Cannon Club"
+    mealUrls:
+      - https://maps.app.goo.gl/AQYNDcZNfC5TFh5u7
+      - https://maps.app.goo.gl/wphKAnzZ5XfgNRh27
+      - https://maps.app.goo.gl/C7jTYBgV1ZVMBi6x5
+      - https://maps.app.goo.gl/3jwsYRAgv6jjsoWRA
+    iconIndex:
+      accommodation: Building2
+      meals: Utensils
+      activities: Waves
+    images:
+      - photos/puerto-rico-2025/PXL_20250208_152704161.jpg
+      - photos/puerto-rico-2025/PXL_20250208_155347803.jpg
+      - photos/puerto-rico-2025/PXL_20250208_200537120.jpg
+      - photos/puerto-rico-2025/PXL_20250208_233642078.MP.jpg
+
+  - day: 3
+    date: 2025-02-09
+    title: "Sunday: El Yunque & Pork Highway Adventure"
+    description: >
+      Epic day of waterfall exploration in El Yunque National Rainforest, including 
+      La Coca Falls, Juan Diego Falls and (mis)adventures at Las Tinajas Falls. 
+      Ended the day with authentic spit-roasted pork before the long night drive to Rincón.
+    location: [-65.7850, 18.3156]
+    locationName: El Yunque National Forest
+    accommodation: Airbnb in Rincón
+    activities:
+      - La Coca Falls viewpoint
+      - Torre Yokahú Observation tower
+      - Swimming at Juan Diego Falls
+      - (mis)Adventures at Las Tinajas Falls
+      - Drive along the Pork Highway
+    activityUrls:
+      - https://maps.app.goo.gl/vpCzkYCzRwuypNjL8
+      - https://maps.app.goo.gl/nNDHVNvRaLRoVQ8V6
+      - https://maps.app.goo.gl/nZquKisb1cspCxJYA
+      - null
+      - https://www.discoverpuertorico.com/rutas-del-lechon-puerto-rico
+    meals:
+      - "Brunch: Cafe con Ce"
+      - "Dinner: Lechonera Los Amigos - Authentic spit-roasted pork, rice, beans, and blood sausage"
+    mealUrls:
+      - https://maps.app.goo.gl/mHfKos9eNwtyumxo8
+      - https://maps.app.goo.gl/HdDFxwJZLh2UnGMW7
+    iconIndex:
+      accommodation: Building2
+      meals: Utensils
+      activities: Footprints
+    images:
+      - photos/puerto-rico-2025/IMG_4978.jpeg
+      - photos/puerto-rico-2025/PXL_20250209_163420293.MP.jpg
+      - photos/puerto-rico-2025/PXL_20250209_164842400.MP.jpg
+      - photos/puerto-rico-2025/PXL_20250209_171235986.MP.jpg
+      - photos/puerto-rico-2025/PXL_20250209_212740584.jpg
+      - photos/puerto-rico-2025/PXL_20250209_221708976.jpg
+
+  - day: 4
+    date: 2025-02-10
+    title: "Monday: Rincón Scuba & Cascada Gozalandia"
+    description: >
+      Incredible day of snorkling at multiple beaches in Rincón, seeing colorful 
+      schools of fish (and even a shark). Ended the day jumping off cliffs into 
+      a waterfall pool at Cascada Gozalandia.
+    location: [-67.2508, 18.3404]
+    locationName: Rincón
+    accommodation: Airbnb in San Juan
+    activities:
+      - Snorkling at Black Eagle Beach (shark sighting!)
+      - Snorkeling among the reef at Steps Beach
+      - Swimming and cliff diving at Cascada Gozalandia
+    activityUrls:
+      - https://maps.app.goo.gl/mbszfttmncRGYdFs9
+      - https://maps.app.goo.gl/UV4erCthxNuiGyGd8
+      - https://maps.app.goo.gl/WiMXcnLBEH5P24dm9
+    meals:
+      - "Breakfast: The Beach House"
+      - "Lunch: Jack's Shack - Beach taco spot"
+      - "Late Dinner: Late night tacos in San Juan"
+    mealUrls:
+      - https://maps.app.goo.gl/etGQaUAs3YRNVJydA
+      - https://maps.app.goo.gl/pWfSzyYAL4ZYcCTa7
+      - null
+    iconIndex:
+      accommodation: Building2
+      meals: Utensils
+      activities: Waves
+    images:
+      - photos/puerto-rico-2025/PXL_20250210_125317943.jpg
+      - photos/puerto-rico-2025/PXL_20250210_181349285.jpg
+      - photos/puerto-rico-2025/PXL_20250210_183300144.jpg
+      - photos/puerto-rico-2025/IMG_5037.jpeg
+      - photos/puerto-rico-2025/PXL_20250210_203842988.jpg
+
+  - day: 5
+    date: 2025-02-11
+    title: "Tuesday: Return to NYC"
+    description: >
+      Final morning in San Juan with a coffee shop breakfast and beach walk 
+      before a rush to catch our flight.
+    location: [-66.049168, 18.451267]
+    locationName: San Juan International Airport
+    meals:
+      - "Breakfast: La Coffeetera"
+    mealUrls:
+      - https://maps.app.goo.gl/nDLpHfKCKAo1xJex8
+    activities:
+      - Morning beach walk
+
+dates:
+  - startDate: 2025-02-07
+    endDate: 2025-02-11
+    available: false
+
+activity: Active
+groupSize: 2
+interest:
+  - Nature
+  - Adventure
+  - Food

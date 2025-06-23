@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "js-yaml": "^4.1.0",
     "lucide-react": "^0.454.0",
     "maplibre-gl": "^5.0.1",
     "react": "^18.3.1",
@@ -19,8 +20,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run build:trips && react-scripts start",
+    "build": "npm run build:trips && react-scripts build",
+    "build:trips": "node scripts/build-trips.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

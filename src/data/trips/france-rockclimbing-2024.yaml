@@ -1,0 +1,105 @@
+id: france-rockclimbing-2024
+title: Rock Climbing Through France
+subtitle: Scaled the cliffs of Normandy, and drove through the rugged terrain of Southern France
+destination: France
+
+duration:
+  days: 15
+  nights: 14
+
+price:
+  amount: 3200
+  currency: USD
+
+heroImage: /photos/france-climbing-2017/IMG_2212.JPG
+
+gallery:
+  - https://placehold.co/800x800
+  - https://placehold.co/800x800
+
+itinerary:
+  - day: 1
+    title: Layover in Porto, Portugal
+    description: >
+      A surprise 12hr layover in Porto tured out to be one of the highlights of the trip. 
+      Locked my bags at the airport and spent the day wandering around the city and ate at 
+      the famous Majestic Cafe where JK Rowlings supposedly wrote parts of Harry Potter.
+    date: 2017-05-20
+    images:
+      - photos/france-climbing-2017/IMG_0920.jpg
+      - photos/france-climbing-2017/IMG_0918.jpg
+
+  - day: 2
+    title: Land in Paris
+    description: >
+      Meet Ben in Paris early in the morning and crashed at the airBnB. Started the day 
+      with a tour of the Paris catichombs, then walked through the Aarc de Triomphe on 
+      the way to the eiffel tower. Ended the day with a picnic on the lawn of the Eiffel Tower.
+    date: 2017-05-21
+    accommodation: Paris apartment airBnB
+    images:
+      - photos/france-climbing-2017/IMG_1776.jpg
+      - photos/france-climbing-2017/IMG_1805.jpg
+      - photos/france-climbing-2017/PANO_20170521_172618.jpg
+      - photos/france-climbing-2017/IMG_20170521_183840.jpg
+
+  - day: 3
+    title: Land in Paris
+    description: >
+      Headed to a climbing shop (not far from the Louve) to get fitted for gear then 
+      started what turned out to be an 8hr chaotic saga of trying to rent a car and 
+      then drive it through paris 😂. Picked up our stuff from the airBnB and drove to Avon to stay for the night.
+    date: 2017-05-22
+    accommodation: Extra apartment room in Avon (weird vibes)
+    images:
+      - photos/france-climbing-2017/IMG_1830.jpg
+      - photos/france-climbing-2017/IMG_20170522_120709.jpg
+      - photos/france-climbing-2017/IMG_20170522_120019.jpg
+
+  - day: 4
+    title: Climbing in Fontainebleau
+    description: Hiked into Fontainebleau and bouldered all day. Ended the day in Noisy-sur-Ecole with wine, bread and steak.
+    date: 2017-05-23
+    images:
+      - photos/france-climbing-2017/IMG_20170523_140829.jpg
+      - photos/france-climbing-2017/IMG_20170523_143052.jpg
+      - photos/france-climbing-2017/IMG_20170523_175648.jpg
+      - photos/france-climbing-2017/IMG_20170523_193657.jpg
+
+  - day: 4
+    title: Climbing in Fontainebleau and driving
+    description: Ate a weird breakfast and climbed a bit before hitting the road north to Normandy.
+    date: 2017-05-24
+    images:
+      - photos/france-climbing-2017/IMG_20170524_114124.jpg
+      - photos/france-climbing-2017/IMG_20170524_153926.jpg
+
+  - day: 5
+    title: Normandy Cliffs
+    description: >
+      Drove a ton to get up to the cliffs of Normandy. Turned out it was some national 
+      holiday in Normandy which made driving interesting... Hiked up and around the cliff then walked down the beach.
+    date: 2017-05-25
+    images:
+      - photos/france-climbing-2017/PANO_20170525_180356.jpg
+
+  - day: 6
+    title: Mont Saint-Michel
+    description: ""
+    date: 2017-05-26
+    images:
+      - photos/france-climbing-2017/IMG_20170526_131518.jpg
+      - photos/france-climbing-2017/IMG_20170526_131421.jpg
+      - photos/france-climbing-2017/IMG_20170526_144845.jpg
+      - photos/france-climbing-2017/IMG_2034.jpg
+
+dates:
+  - startDate: 2017-05-19
+    endDate: 2017-06-02
+    price: 4825
+    available: false
+
+activity: Challenging
+groupSize: 2
+interest:
+  - History, Culture, Astronomy, & Food
