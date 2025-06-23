@@ -216,115 +216,271 @@ export const trips = [
     }
   },
   {
-    "id": "france-rockclimbing-2024",
-    "title": "Rock Climbing Through France",
-    "subtitle": "Scaled the cliffs of Normandy, and drove through the rugged terrain of Southern France",
-    "destination": "France",
+    "id": "puerto-rico-2025",
+    "title": "Puerto Rico",
+    "subtitle": "Caribbean adventure through rainforests, beaches, and waterfalls",
+    "destination": "Puerto Rico",
+    "highlights": [
+      "Explored Old San Juan & discovered an amazing hidden jazz bar",
+      "Watched Dragon Boat Racing at Laguna Condado",
+      "Hiked through El Yunque National Forest to multiple waterfalls",
+      "Experienced authentic spit-roasted pork on the Pork Highway",
+      "Snorkling in Rincón at Black Eagle Beach and Steps Beach"
+    ],
     "duration": {
-      "days": 15,
-      "nights": 14
+      "days": 5,
+      "nights": 4
     },
     "price": {
-      "amount": 3200,
+      "amount": 500,
       "currency": "USD"
     },
-    "heroImage": "/photos/france-climbing-2017/IMG_2212.JPG",
+    "heroImage": "/photos/puerto-rico-2025/PXL_20250209_163415275.PORTRAIT.jpg",
     "gallery": [
-      "https://placehold.co/800x800",
-      "https://placehold.co/800x800"
+      "/photos/puerto-rico-2025/driving-map.jpg"
+    ],
+    "routeOverride": [
+      [
+        -66.049168,
+        18.451267
+      ],
+      [
+        -66.1185,
+        18.4671
+      ],
+      [
+        -65.771946,
+        18.318527
+      ],
+      [
+        -65.770515,
+        18.312255
+      ],
+      [
+        -65.777845,
+        18.311896
+      ],
+      [
+        -65.728842,
+        18.272272
+      ],
+      [
+        -66.103048,
+        18.151377
+      ],
+      [
+        -67.2508,
+        18.3404
+      ],
+      [
+        -66.983934,
+        18.360588
+      ],
+      [
+        -66.049168,
+        18.451267
+      ]
     ],
     "itinerary": [
       {
         "day": 1,
-        "title": "Layover in Porto, Portugal",
-        "description": "A surprise 12hr layover in Porto tured out to be one of the highlights of the trip.  Locked my bags at the airport and spent the day wandering around the city and ate at  the famous Majestic Cafe where JK Rowlings supposedly wrote parts of Harry Potter.\n",
-        "date": "2017-05-20T00:00:00.000Z",
-        "images": [
-          "photos/france-climbing-2017/IMG_0920.jpg",
-          "photos/france-climbing-2017/IMG_0918.jpg"
-        ]
+        "date": "2025-02-07T12:00:00.000Z",
+        "title": "Friday: Arrive in Puerto Rico",
+        "description": "Landed in San Juan and headed to Old San Juan for an excessivly large  dinner at Cayo Caribe. Explored the streets in the evening rain.\n",
+        "location": [
+          -66.049168,
+          18.451267
+        ],
+        "locationName": "Old San Juan",
+        "accommodation": "Airbnb in San Juan | 2 Nights",
+        "meals": [
+          "Dinner: Cayo Caribe - Old San Juan"
+        ],
+        "mealUrls": [
+          "https://g.co/kgs/6AMJT5P"
+        ],
+        "activities": [
+          "Evening meander through Old San Juan in the rain"
+        ],
+        "iconIndex": {
+          "accommodation": "Building2",
+          "meals": "Utensils",
+          "activities": "TreePalm"
+        },
+        "image": "photos/puerto-rico-2025/PXL_20250208_025815887.NIGHT.jpg"
       },
       {
         "day": 2,
-        "title": "Land in Paris",
-        "description": "Meet Ben in Paris early in the morning and crashed at the airBnB. Started the day  with a tour of the Paris catichombs, then walked through the Aarc de Triomphe on  the way to the eiffel tower. Ended the day with a picnic on the lawn of the Eiffel Tower.\n",
-        "date": "2017-05-21T00:00:00.000Z",
-        "accommodation": "Paris apartment airBnB",
+        "date": "2025-02-08T00:00:00.000Z",
+        "title": "Saturday: Dragon Boats & Beaches",
+        "description": "Full day exploring San Juan's attractions - from watching dragon boat  races to swimming and relaxing at multiple beaches, topped off with an  unexpected discovery of an amazing jazz bar.\n",
+        "location": [
+          -66.1185,
+          18.4671
+        ],
+        "locationName": "San Juan",
+        "accommodation": "Same Airbnb in San Juan | 2nd Night",
+        "activities": [
+          "Dragon Boat Festival at Public Park Laguna Condado",
+          "Swimming at Escambron Beach cove",
+          "Relaxing at Playa Ocean Park",
+          "Discovered an incredible jazz bar near the Cannon Club"
+        ],
+        "activityUrls": [
+          "https://maps.app.goo.gl/QrPvYdM1RQPH1Aam6",
+          "https://maps.app.goo.gl/vEnt6buxBZbPRSa46",
+          "https://maps.app.goo.gl/7TZbvvo15PjG73KF7",
+          "https://maps.app.goo.gl/3jwsYRAgv6jjsoWRA"
+        ],
+        "meals": [
+          "Breakfast: Lela's Eatery",
+          "Lunch: Panuchos",
+          "Snack: La Heladería Funkyberry Ice Cream",
+          "Dinner: The Cannon Club"
+        ],
+        "mealUrls": [
+          "https://maps.app.goo.gl/AQYNDcZNfC5TFh5u7",
+          "https://maps.app.goo.gl/wphKAnzZ5XfgNRh27",
+          "https://maps.app.goo.gl/C7jTYBgV1ZVMBi6x5",
+          "https://maps.app.goo.gl/3jwsYRAgv6jjsoWRA"
+        ],
+        "iconIndex": {
+          "accommodation": "Building2",
+          "meals": "Utensils",
+          "activities": "Waves"
+        },
         "images": [
-          "photos/france-climbing-2017/IMG_1776.jpg",
-          "photos/france-climbing-2017/IMG_1805.jpg",
-          "photos/france-climbing-2017/PANO_20170521_172618.jpg",
-          "photos/france-climbing-2017/IMG_20170521_183840.jpg"
+          "photos/puerto-rico-2025/PXL_20250208_152704161.jpg",
+          "photos/puerto-rico-2025/PXL_20250208_155347803.jpg",
+          "photos/puerto-rico-2025/PXL_20250208_200537120.jpg",
+          "photos/puerto-rico-2025/PXL_20250208_233642078.MP.jpg"
         ]
       },
       {
         "day": 3,
-        "title": "Land in Paris",
-        "description": "Headed to a climbing shop (not far from the Louve) to get fitted for gear then  started what turned out to be an 8hr chaotic saga of trying to rent a car and  then drive it through paris 😂. Picked up our stuff from the airBnB and drove to Avon to stay for the night.\n",
-        "date": "2017-05-22T00:00:00.000Z",
-        "accommodation": "Extra apartment room in Avon (weird vibes)",
+        "date": "2025-02-09T00:00:00.000Z",
+        "title": "Sunday: El Yunque & Pork Highway Adventure",
+        "description": "Epic day of waterfall exploration in El Yunque National Rainforest, including  La Coca Falls, Juan Diego Falls and (mis)adventures at Las Tinajas Falls.  Ended the day with authentic spit-roasted pork before the long night drive to Rincón.\n",
+        "location": [
+          -65.785,
+          18.3156
+        ],
+        "locationName": "El Yunque National Forest",
+        "accommodation": "Airbnb in Rincón",
+        "activities": [
+          "La Coca Falls viewpoint",
+          "Torre Yokahú Observation tower",
+          "Swimming at Juan Diego Falls",
+          "(mis)Adventures at Las Tinajas Falls",
+          "Drive along the Pork Highway"
+        ],
+        "activityUrls": [
+          "https://maps.app.goo.gl/vpCzkYCzRwuypNjL8",
+          "https://maps.app.goo.gl/nNDHVNvRaLRoVQ8V6",
+          "https://maps.app.goo.gl/nZquKisb1cspCxJYA",
+          null,
+          "https://www.discoverpuertorico.com/rutas-del-lechon-puerto-rico"
+        ],
+        "meals": [
+          "Brunch: Cafe con Ce",
+          "Dinner: Lechonera Los Amigos - Authentic spit-roasted pork, rice, beans, and blood sausage"
+        ],
+        "mealUrls": [
+          "https://maps.app.goo.gl/mHfKos9eNwtyumxo8",
+          "https://maps.app.goo.gl/HdDFxwJZLh2UnGMW7"
+        ],
+        "iconIndex": {
+          "accommodation": "Building2",
+          "meals": "Utensils",
+          "activities": "Footprints"
+        },
         "images": [
-          "photos/france-climbing-2017/IMG_1830.jpg",
-          "photos/france-climbing-2017/IMG_20170522_120709.jpg",
-          "photos/france-climbing-2017/IMG_20170522_120019.jpg"
+          "photos/puerto-rico-2025/IMG_4978.jpeg",
+          "photos/puerto-rico-2025/PXL_20250209_163420293.MP.jpg",
+          "photos/puerto-rico-2025/PXL_20250209_164842400.MP.jpg",
+          "photos/puerto-rico-2025/PXL_20250209_171235986.MP.jpg",
+          "photos/puerto-rico-2025/PXL_20250209_212740584.jpg",
+          "photos/puerto-rico-2025/PXL_20250209_221708976.jpg"
         ]
       },
       {
         "day": 4,
-        "title": "Climbing in Fontainebleau",
-        "description": "Hiked into Fontainebleau and bouldered all day. Ended the day in Noisy-sur-Ecole with wine, bread and steak.",
-        "date": "2017-05-23T00:00:00.000Z",
+        "date": "2025-02-10T00:00:00.000Z",
+        "title": "Monday: Rincón Scuba & Cascada Gozalandia",
+        "description": "Incredible day of snorkling at multiple beaches in Rincón, seeing colorful  schools of fish (and even a shark). Ended the day jumping off cliffs into  a waterfall pool at Cascada Gozalandia.\n",
+        "location": [
+          -67.2508,
+          18.3404
+        ],
+        "locationName": "Rincón",
+        "accommodation": "Airbnb in San Juan",
+        "activities": [
+          "Snorkling at Black Eagle Beach (shark sighting!)",
+          "Snorkeling among the reef at Steps Beach",
+          "Swimming and cliff diving at Cascada Gozalandia"
+        ],
+        "activityUrls": [
+          "https://maps.app.goo.gl/mbszfttmncRGYdFs9",
+          "https://maps.app.goo.gl/UV4erCthxNuiGyGd8",
+          "https://maps.app.goo.gl/WiMXcnLBEH5P24dm9"
+        ],
+        "meals": [
+          "Breakfast: The Beach House",
+          "Lunch: Jack's Shack - Beach taco spot",
+          "Late Dinner: Late night tacos in San Juan"
+        ],
+        "mealUrls": [
+          "https://maps.app.goo.gl/etGQaUAs3YRNVJydA",
+          "https://maps.app.goo.gl/pWfSzyYAL4ZYcCTa7",
+          null
+        ],
+        "iconIndex": {
+          "accommodation": "Building2",
+          "meals": "Utensils",
+          "activities": "Waves"
+        },
         "images": [
-          "photos/france-climbing-2017/IMG_20170523_140829.jpg",
-          "photos/france-climbing-2017/IMG_20170523_143052.jpg",
-          "photos/france-climbing-2017/IMG_20170523_175648.jpg",
-          "photos/france-climbing-2017/IMG_20170523_193657.jpg"
-        ]
-      },
-      {
-        "day": 4,
-        "title": "Climbing in Fontainebleau and driving",
-        "description": "Ate a weird breakfast and climbed a bit before hitting the road north to Normandy.",
-        "date": "2017-05-24T00:00:00.000Z",
-        "images": [
-          "photos/france-climbing-2017/IMG_20170524_114124.jpg",
-          "photos/france-climbing-2017/IMG_20170524_153926.jpg"
+          "photos/puerto-rico-2025/PXL_20250210_125317943.jpg",
+          "photos/puerto-rico-2025/PXL_20250210_181349285.jpg",
+          "photos/puerto-rico-2025/PXL_20250210_183300144.jpg",
+          "photos/puerto-rico-2025/IMG_5037.jpeg",
+          "photos/puerto-rico-2025/PXL_20250210_203842988.jpg"
         ]
       },
       {
         "day": 5,
-        "title": "Normandy Cliffs",
-        "description": "Drove a ton to get up to the cliffs of Normandy. Turned out it was some national  holiday in Normandy which made driving interesting... Hiked up and around the cliff then walked down the beach.\n",
-        "date": "2017-05-25T00:00:00.000Z",
-        "images": [
-          "photos/france-climbing-2017/PANO_20170525_180356.jpg"
-        ]
-      },
-      {
-        "day": 6,
-        "title": "Mont Saint-Michel",
-        "description": "",
-        "date": "2017-05-26T00:00:00.000Z",
-        "images": [
-          "photos/france-climbing-2017/IMG_20170526_131518.jpg",
-          "photos/france-climbing-2017/IMG_20170526_131421.jpg",
-          "photos/france-climbing-2017/IMG_20170526_144845.jpg",
-          "photos/france-climbing-2017/IMG_2034.jpg"
+        "date": "2025-02-11T00:00:00.000Z",
+        "title": "Tuesday: Return to NYC",
+        "description": "Final morning in San Juan with a coffee shop breakfast and beach walk  before a rush to catch our flight.\n",
+        "location": [
+          -66.049168,
+          18.451267
+        ],
+        "locationName": "San Juan International Airport",
+        "meals": [
+          "Breakfast: La Coffeetera"
+        ],
+        "mealUrls": [
+          "https://maps.app.goo.gl/nDLpHfKCKAo1xJex8"
+        ],
+        "activities": [
+          "Morning beach walk"
         ]
       }
     ],
     "dates": [
       {
-        "startDate": "2017-05-19T00:00:00.000Z",
-        "endDate": "2017-06-02T00:00:00.000Z",
-        "price": 4825,
+        "startDate": "2025-02-07T00:00:00.000Z",
+        "endDate": "2025-02-11T00:00:00.000Z",
         "available": false
       }
     ],
-    "activity": "Challenging",
+    "activity": "Active",
     "groupSize": 2,
     "interest": [
-      "History, Culture, Astronomy, & Food"
+      "Nature",
+      "Adventure",
+      "Food"
     ]
   },
   {
@@ -519,6 +675,156 @@ export const trips = [
     ]
   },
   {
+    "id": "seattle-vancouver-2024",
+    "title": "Seattle & Vancouver",
+    "subtitle": "Hike through a rainforest with friends",
+    "destination": "Seattle",
+    "duration": {
+      "days": 8,
+      "nights": 7
+    },
+    "price": {
+      "amount": 1200,
+      "currency": "USD"
+    },
+    "heroImage": "/photos/seattle-2024/PXL_20240608_201346171.jpg",
+    "gallery": [],
+    "itinerary": [
+      {
+        "day": 1,
+        "date": "2024-06-02T00:00:00.000Z",
+        "title": "Arrive in Seattle",
+        "description": "Landed in Seattle",
+        "accommodation": "Seattle Airbnb",
+        "activities": [
+          "Flying"
+        ],
+        "image": "/photos/Seattle-2024/PXL_20240603_152124315.jpg",
+        "iconIndex": {
+          "accommodation": "Building2",
+          "activities": "Plane"
+        }
+      },
+      {
+        "day": 2,
+        "date": "2024-06-03T00:00:00.000Z",
+        "title": "Studio hop",
+        "description": "Worked with the Seattle team from the Seattle office and got dinner and drinks with Pelin",
+        "activities": [
+          "Working"
+        ],
+        "accommodation": "Seattle Airbnb",
+        "image": "/photos/Seattle-2024/PXL_20240603_165123176.PANO.jpg",
+        "iconIndex": {
+          "accommodation": "Building2",
+          "activities": "Laptop2"
+        }
+      },
+      {
+        "day": 4,
+        "date": "2024-06-05T00:00:00.000Z",
+        "title": "Explored Fremont",
+        "description": "Walked around with Pelin exploring the shops, restaurants and Gas Works park of Fremont",
+        "activities": [
+          "Walking"
+        ],
+        "accommodation": "Seattle Airbnb",
+        "images": [
+          "/photos/Seattle-2024/PXL_20240605_212610391.jpg",
+          "/photos/Seattle-2024/PXL_20240605_212129482-EFFECTS.jpg"
+        ],
+        "iconIndex": {
+          "accommodation": "Building2",
+          "activities": "Footprints"
+        }
+      },
+      {
+        "day": 5,
+        "date": "2024-06-06T00:00:00.000Z",
+        "title": "Ferry to Victoria",
+        "description": "Took the FRS Clipper ferry from Seattle to Victoria, CA to meet up with Andrea.  Searched for nudibranchs under the docks, saw some crazy clouds and went to a concert.\n",
+        "activities": [
+          "Traveling"
+        ],
+        "accommodation": "Andrea's couch",
+        "images": [
+          "/photos/Seattle-2024/PXL_20240606_201105297~2.jpg",
+          "/photos/Seattle-2024/PXL_20240606_191606470.MP.jpg"
+        ],
+        "iconIndex": {
+          "accommodation": "House",
+          "activities": "Ship"
+        }
+      },
+      {
+        "day": 5,
+        "date": "2024-06-07T00:00:00.000Z",
+        "title": "Explored to Victoria",
+        "description": "Biked around Victoria and got some ice cream while Andrea swam. Took the afternoon  ferry to Port Angeles 🧛🏻 to meet back up with Pelin and Patrick.\n",
+        "activities": [
+          "Traveling"
+        ],
+        "accommodation": "Port Angeles Airbnb",
+        "images": [
+          "/photos/Seattle-2024/PXL_20240607_184003086.jpg"
+        ],
+        "iconIndex": {
+          "accommodation": "House",
+          "activities": "Bike"
+        }
+      },
+      {
+        "day": 7,
+        "date": "2024-06-08T00:00:00.000Z",
+        "title": "Olympic National Park",
+        "description": "Drove to Olympic National Park and hiked through the rainforest with Andrea, Pelin, and Patrick.",
+        "activities": [
+          "Hiking"
+        ],
+        "accommodation": "Port Angeles Airbnb",
+        "images": [
+          "/photos/Seattle-2024/PXL_20240608_171604826.jpg",
+          "/photos/Seattle-2024/PXL_20240609_000732192.jpg",
+          "/photos/Seattle-2024/PXL_20240608_181756744.MP.jpg",
+          "/photos/Seattle-2024/PXL_20240609_032102636~2.jpg"
+        ],
+        "iconIndex": {
+          "accommodation": "House",
+          "activities": "Footprints"
+        }
+      },
+      {
+        "day": 8,
+        "date": "2024-06-09T00:00:00.000Z",
+        "title": "Flew to NYC",
+        "description": "Drove back to Seattle and caught a plane home to New York",
+        "activities": [
+          "Traveling"
+        ],
+        "accommodation": "Home",
+        "iconIndex": {
+          "accommodation": "Building2",
+          "activities": "Plane"
+        }
+      }
+    ],
+    "dates": [
+      {
+        "startDate": "2024-06-02T00:00:00.000Z",
+        "endDate": "2024-06-09T00:00:00.000Z",
+        "available": false
+      }
+    ],
+    "activity": "Moderate",
+    "groupSize": 1,
+    "interest": [
+      "Nature",
+      "Hiking",
+      "Adventure",
+      "Road Trip"
+    ]
+  },
+  {
     "id": "montreal-eclipse-2024",
     "title": "2024 Total Eclipse in Montreal",
     "subtitle": "Experience the total eclipse and explore Montreal's culture",
@@ -549,8 +855,8 @@ export const trips = [
     ],
     "dates": [
       {
-        "startDate": "2025-02-05T00:00:00.000Z",
-        "endDate": "2025-02-15T00:00:00.000Z",
+        "startDate": "2024-04-05T00:00:00.000Z",
+        "endDate": "2024-04-08T00:00:00.000Z",
         "price": 4825,
         "available": false
       }
@@ -820,421 +1126,115 @@ export const trips = [
     ]
   },
   {
-    "id": "puerto-rico-2025",
-    "title": "Puerto Rico",
-    "subtitle": "Caribbean adventure through rainforests, beaches, and waterfalls",
-    "destination": "Puerto Rico",
-    "highlights": [
-      "Explored Old San Juan & discovered an amazing hidden jazz bar",
-      "Watched Dragon Boat Racing at Laguna Condado",
-      "Hiked through El Yunque National Forest to multiple waterfalls",
-      "Experienced authentic spit-roasted pork on the Pork Highway",
-      "Snorkling in Rincón at Black Eagle Beach and Steps Beach"
-    ],
+    "id": "france-rockclimbing-2024",
+    "title": "Rock Climbing Through France",
+    "subtitle": "Scaled the cliffs of Normandy, and drove through the rugged terrain of Southern France",
+    "destination": "France",
     "duration": {
-      "days": 5,
-      "nights": 4
+      "days": 15,
+      "nights": 14
     },
     "price": {
-      "amount": 500,
+      "amount": 3200,
       "currency": "USD"
     },
-    "heroImage": "/photos/puerto-rico-2025/PXL_20250209_163415275.PORTRAIT.jpg",
+    "heroImage": "/photos/france-climbing-2017/IMG_2212.JPG",
     "gallery": [
-      "/photos/puerto-rico-2025/driving-map.jpg"
-    ],
-    "routeOverride": [
-      [
-        -66.049168,
-        18.451267
-      ],
-      [
-        -66.1185,
-        18.4671
-      ],
-      [
-        -65.771946,
-        18.318527
-      ],
-      [
-        -65.770515,
-        18.312255
-      ],
-      [
-        -65.777845,
-        18.311896
-      ],
-      [
-        -65.728842,
-        18.272272
-      ],
-      [
-        -66.103048,
-        18.151377
-      ],
-      [
-        -67.2508,
-        18.3404
-      ],
-      [
-        -66.983934,
-        18.360588
-      ],
-      [
-        -66.049168,
-        18.451267
-      ]
+      "https://placehold.co/800x800",
+      "https://placehold.co/800x800"
     ],
     "itinerary": [
       {
         "day": 1,
-        "date": "2025-02-07T12:00:00.000Z",
-        "title": "Friday: Arrive in Puerto Rico",
-        "description": "Landed in San Juan and headed to Old San Juan for an excessivly large  dinner at Cayo Caribe. Explored the streets in the evening rain.\n",
-        "location": [
-          -66.049168,
-          18.451267
-        ],
-        "locationName": "Old San Juan",
-        "accommodation": "Airbnb in San Juan | 2 Nights",
-        "meals": [
-          "Dinner: Cayo Caribe - Old San Juan"
-        ],
-        "mealUrls": [
-          "https://g.co/kgs/6AMJT5P"
-        ],
-        "activities": [
-          "Evening meander through Old San Juan in the rain"
-        ],
-        "iconIndex": {
-          "accommodation": "Building2",
-          "meals": "Utensils",
-          "activities": "TreePalm"
-        },
-        "image": "photos/puerto-rico-2025/PXL_20250208_025815887.NIGHT.jpg"
+        "title": "Layover in Porto, Portugal",
+        "description": "A surprise 12hr layover in Porto tured out to be one of the highlights of the trip.  Locked my bags at the airport and spent the day wandering around the city and ate at  the famous Majestic Cafe where JK Rowlings supposedly wrote parts of Harry Potter.\n",
+        "date": "2017-05-20T00:00:00.000Z",
+        "images": [
+          "photos/france-climbing-2017/IMG_0920.jpg",
+          "photos/france-climbing-2017/IMG_0918.jpg"
+        ]
       },
       {
         "day": 2,
-        "date": "2025-02-08T00:00:00.000Z",
-        "title": "Saturday: Dragon Boats & Beaches",
-        "description": "Full day exploring San Juan's attractions - from watching dragon boat  races to swimming and relaxing at multiple beaches, topped off with an  unexpected discovery of an amazing jazz bar.\n",
-        "location": [
-          -66.1185,
-          18.4671
-        ],
-        "locationName": "San Juan",
-        "accommodation": "Same Airbnb in San Juan | 2nd Night",
-        "activities": [
-          "Dragon Boat Festival at Public Park Laguna Condado",
-          "Swimming at Escambron Beach cove",
-          "Relaxing at Playa Ocean Park",
-          "Discovered an incredible jazz bar near the Cannon Club"
-        ],
-        "activityUrls": [
-          "https://maps.app.goo.gl/QrPvYdM1RQPH1Aam6",
-          "https://maps.app.goo.gl/vEnt6buxBZbPRSa46",
-          "https://maps.app.goo.gl/7TZbvvo15PjG73KF7",
-          "https://maps.app.goo.gl/3jwsYRAgv6jjsoWRA"
-        ],
-        "meals": [
-          "Breakfast: Lela's Eatery",
-          "Lunch: Panuchos",
-          "Snack: La Heladería Funkyberry Ice Cream",
-          "Dinner: The Cannon Club"
-        ],
-        "mealUrls": [
-          "https://maps.app.goo.gl/AQYNDcZNfC5TFh5u7",
-          "https://maps.app.goo.gl/wphKAnzZ5XfgNRh27",
-          "https://maps.app.goo.gl/C7jTYBgV1ZVMBi6x5",
-          "https://maps.app.goo.gl/3jwsYRAgv6jjsoWRA"
-        ],
-        "iconIndex": {
-          "accommodation": "Building2",
-          "meals": "Utensils",
-          "activities": "Waves"
-        },
+        "title": "Land in Paris",
+        "description": "Meet Ben in Paris early in the morning and crashed at the airBnB. Started the day  with a tour of the Paris catichombs, then walked through the Aarc de Triomphe on  the way to the eiffel tower. Ended the day with a picnic on the lawn of the Eiffel Tower.\n",
+        "date": "2017-05-21T00:00:00.000Z",
+        "accommodation": "Paris apartment airBnB",
         "images": [
-          "photos/puerto-rico-2025/PXL_20250208_152704161.jpg",
-          "photos/puerto-rico-2025/PXL_20250208_155347803.jpg",
-          "photos/puerto-rico-2025/PXL_20250208_200537120.jpg",
-          "photos/puerto-rico-2025/PXL_20250208_233642078.MP.jpg"
+          "photos/france-climbing-2017/IMG_1776.jpg",
+          "photos/france-climbing-2017/IMG_1805.jpg",
+          "photos/france-climbing-2017/PANO_20170521_172618.jpg",
+          "photos/france-climbing-2017/IMG_20170521_183840.jpg"
         ]
       },
       {
         "day": 3,
-        "date": "2025-02-09T00:00:00.000Z",
-        "title": "Sunday: El Yunque & Pork Highway Adventure",
-        "description": "Epic day of waterfall exploration in El Yunque National Rainforest, including  La Coca Falls, Juan Diego Falls and (mis)adventures at Las Tinajas Falls.  Ended the day with authentic spit-roasted pork before the long night drive to Rincón.\n",
-        "location": [
-          -65.785,
-          18.3156
-        ],
-        "locationName": "El Yunque National Forest",
-        "accommodation": "Airbnb in Rincón",
-        "activities": [
-          "La Coca Falls viewpoint",
-          "Torre Yokahú Observation tower",
-          "Swimming at Juan Diego Falls",
-          "(mis)Adventures at Las Tinajas Falls",
-          "Drive along the Pork Highway"
-        ],
-        "activityUrls": [
-          "https://maps.app.goo.gl/vpCzkYCzRwuypNjL8",
-          "https://maps.app.goo.gl/nNDHVNvRaLRoVQ8V6",
-          "https://maps.app.goo.gl/nZquKisb1cspCxJYA",
-          null,
-          "https://www.discoverpuertorico.com/rutas-del-lechon-puerto-rico"
-        ],
-        "meals": [
-          "Brunch: Cafe con Ce",
-          "Dinner: Lechonera Los Amigos - Authentic spit-roasted pork, rice, beans, and blood sausage"
-        ],
-        "mealUrls": [
-          "https://maps.app.goo.gl/mHfKos9eNwtyumxo8",
-          "https://maps.app.goo.gl/HdDFxwJZLh2UnGMW7"
-        ],
-        "iconIndex": {
-          "accommodation": "Building2",
-          "meals": "Utensils",
-          "activities": "Footprints"
-        },
+        "title": "Land in Paris",
+        "description": "Headed to a climbing shop (not far from the Louve) to get fitted for gear then  started what turned out to be an 8hr chaotic saga of trying to rent a car and  then drive it through paris 😂. Picked up our stuff from the airBnB and drove to Avon to stay for the night.\n",
+        "date": "2017-05-22T00:00:00.000Z",
+        "accommodation": "Extra apartment room in Avon (weird vibes)",
         "images": [
-          "photos/puerto-rico-2025/IMG_4978.jpeg",
-          "photos/puerto-rico-2025/PXL_20250209_163420293.MP.jpg",
-          "photos/puerto-rico-2025/PXL_20250209_164842400.MP.jpg",
-          "photos/puerto-rico-2025/PXL_20250209_171235986.MP.jpg",
-          "photos/puerto-rico-2025/PXL_20250209_212740584.jpg",
-          "photos/puerto-rico-2025/PXL_20250209_221708976.jpg"
+          "photos/france-climbing-2017/IMG_1830.jpg",
+          "photos/france-climbing-2017/IMG_20170522_120709.jpg",
+          "photos/france-climbing-2017/IMG_20170522_120019.jpg"
         ]
       },
       {
         "day": 4,
-        "date": "2025-02-10T00:00:00.000Z",
-        "title": "Monday: Rincón Scuba & Cascada Gozalandia",
-        "description": "Incredible day of snorkling at multiple beaches in Rincón, seeing colorful  schools of fish (and even a shark). Ended the day jumping off cliffs into  a waterfall pool at Cascada Gozalandia.\n",
-        "location": [
-          -67.2508,
-          18.3404
-        ],
-        "locationName": "Rincón",
-        "accommodation": "Airbnb in San Juan",
-        "activities": [
-          "Snorkling at Black Eagle Beach (shark sighting!)",
-          "Snorkeling among the reef at Steps Beach",
-          "Swimming and cliff diving at Cascada Gozalandia"
-        ],
-        "activityUrls": [
-          "https://maps.app.goo.gl/mbszfttmncRGYdFs9",
-          "https://maps.app.goo.gl/UV4erCthxNuiGyGd8",
-          "https://maps.app.goo.gl/WiMXcnLBEH5P24dm9"
-        ],
-        "meals": [
-          "Breakfast: The Beach House",
-          "Lunch: Jack's Shack - Beach taco spot",
-          "Late Dinner: Late night tacos in San Juan"
-        ],
-        "mealUrls": [
-          "https://maps.app.goo.gl/etGQaUAs3YRNVJydA",
-          "https://maps.app.goo.gl/pWfSzyYAL4ZYcCTa7",
-          null
-        ],
-        "iconIndex": {
-          "accommodation": "Building2",
-          "meals": "Utensils",
-          "activities": "Waves"
-        },
+        "title": "Climbing in Fontainebleau",
+        "description": "Hiked into Fontainebleau and bouldered all day. Ended the day in Noisy-sur-Ecole with wine, bread and steak.",
+        "date": "2017-05-23T00:00:00.000Z",
         "images": [
-          "photos/puerto-rico-2025/PXL_20250210_125317943.jpg",
-          "photos/puerto-rico-2025/PXL_20250210_181349285.jpg",
-          "photos/puerto-rico-2025/PXL_20250210_183300144.jpg",
-          "photos/puerto-rico-2025/IMG_5037.jpeg",
-          "photos/puerto-rico-2025/PXL_20250210_203842988.jpg"
+          "photos/france-climbing-2017/IMG_20170523_140829.jpg",
+          "photos/france-climbing-2017/IMG_20170523_143052.jpg",
+          "photos/france-climbing-2017/IMG_20170523_175648.jpg",
+          "photos/france-climbing-2017/IMG_20170523_193657.jpg"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Climbing in Fontainebleau and driving",
+        "description": "Ate a weird breakfast and climbed a bit before hitting the road north to Normandy.",
+        "date": "2017-05-24T00:00:00.000Z",
+        "images": [
+          "photos/france-climbing-2017/IMG_20170524_114124.jpg",
+          "photos/france-climbing-2017/IMG_20170524_153926.jpg"
         ]
       },
       {
         "day": 5,
-        "date": "2025-02-11T00:00:00.000Z",
-        "title": "Tuesday: Return to NYC",
-        "description": "Final morning in San Juan with a coffee shop breakfast and beach walk  before a rush to catch our flight.\n",
-        "location": [
-          -66.049168,
-          18.451267
-        ],
-        "locationName": "San Juan International Airport",
-        "meals": [
-          "Breakfast: La Coffeetera"
-        ],
-        "mealUrls": [
-          "https://maps.app.goo.gl/nDLpHfKCKAo1xJex8"
-        ],
-        "activities": [
-          "Morning beach walk"
+        "title": "Normandy Cliffs",
+        "description": "Drove a ton to get up to the cliffs of Normandy. Turned out it was some national  holiday in Normandy which made driving interesting... Hiked up and around the cliff then walked down the beach.\n",
+        "date": "2017-05-25T00:00:00.000Z",
+        "images": [
+          "photos/france-climbing-2017/PANO_20170525_180356.jpg"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Mont Saint-Michel",
+        "description": "",
+        "date": "2017-05-26T00:00:00.000Z",
+        "images": [
+          "photos/france-climbing-2017/IMG_20170526_131518.jpg",
+          "photos/france-climbing-2017/IMG_20170526_131421.jpg",
+          "photos/france-climbing-2017/IMG_20170526_144845.jpg",
+          "photos/france-climbing-2017/IMG_2034.jpg"
         ]
       }
     ],
     "dates": [
       {
-        "startDate": "2025-02-07T00:00:00.000Z",
-        "endDate": "2025-02-11T00:00:00.000Z",
+        "startDate": "2017-05-19T00:00:00.000Z",
+        "endDate": "2017-06-02T00:00:00.000Z",
+        "price": 4825,
         "available": false
       }
     ],
-    "activity": "Active",
+    "activity": "Challenging",
     "groupSize": 2,
     "interest": [
-      "Nature",
-      "Adventure",
-      "Food"
-    ]
-  },
-  {
-    "id": "seattle-vancouver-2024",
-    "title": "Seattle & Vancouver",
-    "subtitle": "Hike through a rainforest with friends",
-    "destination": "Seattle",
-    "duration": {
-      "days": 8,
-      "nights": 7
-    },
-    "price": {
-      "amount": 1200,
-      "currency": "USD"
-    },
-    "heroImage": "/photos/seattle-2024/PXL_20240608_201346171.jpg",
-    "gallery": [],
-    "itinerary": [
-      {
-        "day": 1,
-        "date": "2024-06-02T00:00:00.000Z",
-        "title": "Arrive in Seattle",
-        "description": "Landed in Seattle",
-        "accommodation": "Seattle Airbnb",
-        "activities": [
-          "Flying"
-        ],
-        "image": "/photos/Seattle-2024/PXL_20240603_152124315.jpg",
-        "iconIndex": {
-          "accommodation": "Building2",
-          "activities": "Plane"
-        }
-      },
-      {
-        "day": 2,
-        "date": "2024-06-03T00:00:00.000Z",
-        "title": "Studio hop",
-        "description": "Worked with the Seattle team from the Seattle office and got dinner and drinks with Pelin",
-        "activities": [
-          "Working"
-        ],
-        "accommodation": "Seattle Airbnb",
-        "image": "/photos/Seattle-2024/PXL_20240603_165123176.PANO.jpg",
-        "iconIndex": {
-          "accommodation": "Building2",
-          "activities": "Laptop2"
-        }
-      },
-      {
-        "day": 4,
-        "date": "2024-06-05T00:00:00.000Z",
-        "title": "Explored Fremont",
-        "description": "Walked around with Pelin exploring the shops, restaurants and Gas Works park of Fremont",
-        "activities": [
-          "Walking"
-        ],
-        "accommodation": "Seattle Airbnb",
-        "images": [
-          "/photos/Seattle-2024/PXL_20240605_212610391.jpg",
-          "/photos/Seattle-2024/PXL_20240605_212129482-EFFECTS.jpg"
-        ],
-        "iconIndex": {
-          "accommodation": "Building2",
-          "activities": "Footprints"
-        }
-      },
-      {
-        "day": 5,
-        "date": "2024-06-06T00:00:00.000Z",
-        "title": "Ferry to Victoria",
-        "description": "Took the FRS Clipper ferry from Seattle to Victoria, CA to meet up with Andrea.  Searched for nudibranchs under the docks, saw some crazy clouds and went to a concert.\n",
-        "activities": [
-          "Traveling"
-        ],
-        "accommodation": "Andrea's couch",
-        "images": [
-          "/photos/Seattle-2024/PXL_20240606_201105297~2.jpg",
-          "/photos/Seattle-2024/PXL_20240606_191606470.MP.jpg"
-        ],
-        "iconIndex": {
-          "accommodation": "House",
-          "activities": "Ship"
-        }
-      },
-      {
-        "day": 5,
-        "date": "2024-06-07T00:00:00.000Z",
-        "title": "Explored to Victoria",
-        "description": "Biked around Victoria and got some ice cream while Andrea swam. Took the afternoon  ferry to Port Angeles 🧛🏻 to meet back up with Pelin and Patrick.\n",
-        "activities": [
-          "Traveling"
-        ],
-        "accommodation": "Port Angeles Airbnb",
-        "images": [
-          "/photos/Seattle-2024/PXL_20240607_184003086.jpg"
-        ],
-        "iconIndex": {
-          "accommodation": "House",
-          "activities": "Bike"
-        }
-      },
-      {
-        "day": 7,
-        "date": "2024-06-08T00:00:00.000Z",
-        "title": "Olympic National Park",
-        "description": "Drove to Olympic National Park and hiked through the rainforest with Andrea, Pelin, and Patrick.",
-        "activities": [
-          "Hiking"
-        ],
-        "accommodation": "Port Angeles Airbnb",
-        "images": [
-          "/photos/Seattle-2024/PXL_20240608_171604826.jpg",
-          "/photos/Seattle-2024/PXL_20240609_000732192.jpg",
-          "/photos/Seattle-2024/PXL_20240608_181756744.MP.jpg",
-          "/photos/Seattle-2024/PXL_20240609_032102636~2.jpg"
-        ],
-        "iconIndex": {
-          "accommodation": "House",
-          "activities": "Footprints"
-        }
-      },
-      {
-        "day": 8,
-        "date": "2024-06-09T00:00:00.000Z",
-        "title": "Flew to NYC",
-        "description": "Drove back to Seattle and caught a plane home to New York",
-        "activities": [
-          "Traveling"
-        ],
-        "accommodation": "Home",
-        "iconIndex": {
-          "accommodation": "Building2",
-          "activities": "Plane"
-        }
-      }
-    ],
-    "dates": [
-      {
-        "startDate": "2024-06-02T00:00:00.000Z",
-        "endDate": "2024-06-09T00:00:00.000Z",
-        "available": false
-      }
-    ],
-    "activity": "Moderate",
-    "groupSize": 1,
-    "interest": [
-      "Nature",
-      "Hiking",
-      "Adventure",
-      "Road Trip"
+      "History, Culture, Astronomy, & Food"
     ]
   }
 ];

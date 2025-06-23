@@ -26,8 +26,8 @@ itinerary:
     accommodation: Montreal downtown hotel
 
 dates:
-  - startDate: 2025-02-05
-    endDate: 2025-02-15
+  - startDate: 2024-04-05
+    endDate: 2024-04-08
     price: 4825
     available: false
 
