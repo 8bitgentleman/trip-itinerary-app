@@ -830,8 +830,8 @@ export const trips = [
     "subtitle": "Experience the total eclipse and explore Montreal's culture",
     "destination": "Canada",
     "duration": {
-      "days": 14,
-      "nights": 13
+      "days": 3,
+      "nights": 4
     },
     "price": {
       "amount": 3200,
