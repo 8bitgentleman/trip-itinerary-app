@@ -17,7 +17,7 @@ export const trips = [
       "amount": 4825,
       "currency": "USD"
     },
-    "heroImage": "https://img.atlasobscura.com/69Kopo6hYSGChhernaPcpQECfYd8Kf4DYGSnADo6kf8/rs:fill:370:482:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2V2ZW50/X2ltYWdlcy9lOWVl/Mjg5Yy1jY2I4LTRm/ZjgtOTgxYy1kNmM3/ZWNhNTI0N2YyYjg3/MWUxYWQwYWZmYTk5/MDdfRWd5cHQgMSAt/IEFidSBTaW1iZWwu/cG5n.png",
+    "heroImage": "photos/egypt-2027/egypt-2027.png",
     "gallery": [
       "https://placehold.co/800x800",
       "https://placehold.co/800x800"
@@ -210,6 +210,223 @@ export const trips = [
           "unit": "miles"
         },
         "notes": "This tour has a moderate activity level. Consider four to six miles of walking  each day, with lots of time spent moving around historical sites.\n",
+        "fullDetails": "Complete details about physical requirements and accessibility..."
+      },
+      "contact": {}
+    }
+  },
+  {
+    "id": "uzbekistan-silk-road-2026",
+    "status": "planning",
+    "title": "Silk Road: Uzbekistan",
+    "subtitle": "Rugs, domes, and dunes along the world's most romantic trade route",
+    "destination": "Uzbekistan",
+    "description": "Seven days through the ancient Silk Road: the walled medieval city of Khiva, a night in the Kyzylkum desert, Bukhara's craft workshops, and Samarkand's Registan Square.\n",
+    "duration": {
+      "days": 7,
+      "nights": 6
+    },
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "heroImage": "photos/uzbekistan-silk-road-2026/uzbekistan-silk-road-2026.jpg",
+    "gallery": [
+      "photos/uzbekistan-silk-road-2026/map.png"
+    ],
+    "highlights": [
+      "Sleep under the stars in the Kyzylkum desert after a camel trek into the dunes",
+      "Wander Khiva's Ichan Kala, a medieval walled city so intact it feels like the 15th century hasn't quite ended",
+      "Buy a rug or silk textile in Bukhara's ancient trading domes with a specialist artisan guide",
+      "Walk through working carpet and silk workshops behind the tourist-facing storefronts",
+      "Stand in Registan Square at dawn, before the tour groups arrive",
+      "Travel by private driver across the Kyzylkum desert and Uzbek steppe",
+      "Ride the high-speed train from Bukhara to Samarkand through the ancient heartland"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Transit — New York to Khiva",
+        "description": "Long travel day. Fly Tashkent, connect to Urgench, transfer by car to Khiva. Check into a riad inside the Ichan Kala walls. The city is quiet at night — worth a walk before the tour groups show up tomorrow.\n",
+        "image": "https://placehold.co/800x800",
+        "imageAlt": "Khiva Ichan Kala walls at dusk",
+        "meals": [
+          "Dinner"
+        ],
+        "accommodation": "Orient Star Khiva or similar, Khiva",
+        "location": [
+          60.3583,
+          41.3775
+        ],
+        "locationName": "Khiva, Uzbekistan"
+      },
+      {
+        "day": 2,
+        "title": "Khiva — The Walled World",
+        "description": "Full day inside Ichan Kala. Walk the ramparts, visit the Juma Mosque with its 218 carved wooden columns, climb the Kalta Minor minaret for views over the desert. Khiva is unusually intact — quieter and stranger than most historic cities. Stay out past when the tour groups leave.\n",
+        "image": "https://placehold.co/800x800",
+        "imageAlt": "Kalta Minor minaret and Ichan Kala rooftops, Khiva",
+        "meals": [
+          "Breakfast",
+          "Dinner"
+        ],
+        "accommodation": "Orient Star Khiva or similar, Khiva",
+        "location": [
+          60.3583,
+          41.3775
+        ],
+        "locationName": "Khiva, Uzbekistan",
+        "activities": [
+          "Ichan Kala UNESCO inner walled city",
+          "Juma Mosque — 218 carved wooden columns",
+          "Kalta Minor minaret",
+          "Islam Khodja minaret and mausoleum"
+        ]
+      },
+      {
+        "day": 3,
+        "title": "Into the Kyzylkum",
+        "description": "Drive from Khiva into the Kyzylkum desert. At the dunes, board a camel and ride to camp. Dinner around a fire. The night sky out here is genuinely dark — zero light pollution. This is the centerpiece of the trip.\n",
+        "image": "https://placehold.co/800x800",
+        "imageAlt": "Kyzylkum desert dunes at sunset",
+        "meals": [
+          "Breakfast",
+          "Dinner"
+        ],
+        "accommodation": "Desert dune camp, Kyzylkum Desert",
+        "location": [
+          58.5,
+          41.2
+        ],
+        "locationName": "Kyzylkum Desert, Uzbekistan",
+        "activities": [
+          "Camel trek into the dunes",
+          "Overnight desert camp",
+          "Stargazing — zero light pollution"
+        ]
+      },
+      {
+        "day": 4,
+        "title": "Desert Sunrise → Bukhara",
+        "description": "Up early, watch the sunrise over the dunes, then load up for Bukhara — four to five hours by car through the steppe. Check into a riad in the old city and get oriented. Tomorrow is the main event.\n",
+        "image": "https://placehold.co/800x800",
+        "imageAlt": "Road through the Uzbek steppe toward Bukhara",
+        "meals": [
+          "Breakfast",
+          "Dinner"
+        ],
+        "accommodation": "Minzifa Boutique Hotel or similar, Bukhara",
+        "location": [
+          64.4167,
+          39.7667
+        ],
+        "locationName": "Bukhara, Uzbekistan"
+      },
+      {
+        "day": 5,
+        "title": "Bukhara — The Trading Domes",
+        "description": "This is the main day. A specialist guide with real relationships in the artisan community takes you behind the tourist-facing shops into working carpet and silk workshops. You watch things being made, ask questions, understand how the pieces are priced, and buy directly from the makers. The trading domes where this happens — Toki Sarrafon and Toki Telpakfurushon — are medieval commercial buildings still being used as markets. What you buy here has a traceable origin.\n",
+        "image": "https://placehold.co/800x800",
+        "imageAlt": "Bukhara trading dome interior with artisan workshop",
+        "meals": [
+          "Breakfast",
+          "Dinner"
+        ],
+        "accommodation": "Minzifa Boutique Hotel or similar, Bukhara",
+        "location": [
+          64.4167,
+          39.7667
+        ],
+        "locationName": "Bukhara, Uzbekistan",
+        "activities": [
+          "Toki Sarrafon and Toki Telpakfurushon trading domes",
+          "Working carpet and silk workshops with specialist guide",
+          "Bukhara old city bazaars",
+          "Poi Kalon mosque and minaret complex"
+        ]
+      },
+      {
+        "day": 6,
+        "title": "Bukhara Deep Cut → Evening Train to Samarkand",
+        "description": "Slower morning — the Ark citadel, the Lyabi-Hauz pool, the old streets. Time to go back to anything from yesterday or find one last thing at the market. In the evening, take the high-speed train to Samarkand. About ninety minutes.\n",
+        "image": "https://placehold.co/800x800",
+        "imageAlt": "Lyabi-Hauz pool at dusk, Bukhara",
+        "meals": [
+          "Breakfast",
+          "Dinner"
+        ],
+        "accommodation": "Antica Dimora or similar, Samarkand",
+        "location": [
+          66.9597,
+          39.6542
+        ],
+        "locationName": "Samarkand, Uzbekistan",
+        "activities": [
+          "Ark citadel of Bukhara",
+          "Lyabi-Hauz pool and old city",
+          "High-speed Afrosiyob train Bukhara → Samarkand"
+        ]
+      },
+      {
+        "day": 7,
+        "title": "Registan → Home",
+        "description": "Registan Square first thing, before the crowds. Three madrassas around a single courtyard — it's big in a way that photos don't capture. The Siab Bazaar after: spices, dried fruit, non bread from tandoor ovens. Then airport transfer and a long flight home.\n",
+        "image": "https://placehold.co/800x800",
+        "imageAlt": "Registan Square at dawn, Samarkand",
+        "meals": [
+          "Breakfast"
+        ],
+        "location": [
+          66.9597,
+          39.6542
+        ],
+        "locationName": "Samarkand, Uzbekistan",
+        "activities": [
+          "Registan Square — Ulugh Beg, Sher-Dor, and Tilya-Kori madrassas",
+          "Siab Bazaar",
+          "Shah-i-Zinda necropolis (if time allows)"
+        ]
+      }
+    ],
+    "dates": [
+      {
+        "startDate": "2026-09-15T00:00:00.000Z",
+        "endDate": "2026-09-21T00:00:00.000Z",
+        "price": 0,
+        "available": true
+      }
+    ],
+    "activity": "Moderate",
+    "groupSize": 4,
+    "interest": [
+      "History, Culture & Craft"
+    ],
+    "additionalInfo": {
+      "pricing": {
+        "deposit": "TBD",
+        "depositCurrency": "USD",
+        "balanceDueDays": 90,
+        "notes": "Price per person. Exact costs TBD pending finalized dates and group size.",
+        "fullDetails": "Learn more about our pricing and payment plans..."
+      },
+      "arrivalDeparture": {
+        "airport": {
+          "code": "TAS",
+          "name": "Tashkent International Airport"
+        },
+        "recommendedArrival": "Day 1 before 6:00 PM",
+        "recommendedDeparture": "Day 7 after 12:00 PM",
+        "notes": "Fly into Tashkent (TAS), then connect via domestic flight to Urgench (UGS) — approximately 1.5 hours. Return flights depart from Samarkand (SKD) or connect back through Tashkent. Uzbekistan is currently visa-free for US citizens.\n",
+        "fullDetails": "Detailed arrival and departure information..."
+      },
+      "activityLevel": {
+        "level": "Moderate",
+        "walkingDistance": {
+          "min": 3,
+          "max": 6,
+          "unit": "miles"
+        },
+        "notes": "Moderate activity with significant walking on uneven historic surfaces. The desert overnight involves a camel trek of 1–2 hours each way. No technical hiking required. September can still be warm; October is cooler and ideal for comfort.\n",
         "fullDetails": "Complete details about physical requirements and accessibility..."
       },
       "contact": {}
