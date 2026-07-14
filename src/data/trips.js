@@ -97,8 +97,8 @@ export const trips = [
       },
       {
         "day": 5,
-        "title": "Valley of the Kings",
-        "description": "Visit the Valley of the Kings, including the Tomb of Tutankhamun, and enjoy  exclusive after-hours access. In the evening, relax with a Felucca ride on the Nile.\n",
+        "title": "Valley of the Kings & Total Solar Eclipse",
+        "description": "Eclipse day! Around midday, time totality from the Theban hills as the total solar eclipse passes directly over Luxor — nearly six minutes of daytime darkness, one of the longest totalities of the 21st century and the whole reason for the trip's timing. Also visit the Valley of the Kings, including the Tomb of Tutankhamun, with exclusive after-hours access. In the evening, relax with a Felucca ride on the Nile.\n",
         "image": "https://placehold.co/800x800",
         "imageAlt": "Valley of the Kings",
         "meals": [
@@ -173,8 +173,8 @@ export const trips = [
     ],
     "dates": [
       {
-        "startDate": "2027-02-05T00:00:00.000Z",
-        "endDate": "2027-02-15T00:00:00.000Z",
+        "startDate": "2027-07-29T00:00:00.000Z",
+        "endDate": "2027-08-08T00:00:00.000Z",
         "price": 4825,
         "available": true
       }
@@ -431,6 +431,168 @@ export const trips = [
       },
       "contact": {}
     }
+  },
+  {
+    "id": "catalina-ensenada-cruise-2026",
+    "title": "Catalina & Ensenada Cruise Vacation",
+    "subtitle": "A 4-night Catalina & Ensenada sailing on Quantum of the Seas, bookended by Seattle",
+    "destination": "California & Baja California",
+    "duration": {
+      "days": 7,
+      "nights": 6
+    },
+    "price": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "heroImage": "photos/catalina-ensenada-cruise-2026/hero.jpg",
+    "gallery": [
+      "photos/catalina-ensenada-cruise-2026/day5-avalon-1.jpg",
+      "photos/catalina-ensenada-cruise-2026/day2-bainbridge-3.jpg"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "date": "2026-06-27T00:00:00.000Z",
+        "title": "JFK → Seattle (Arrive at Pelin's)",
+        "description": "Fly JFK → Seattle on Alaska Airlines AS31 (departs 4:29 PM, arrives 8:09 PM). Head to Pelin's place for the night.\n",
+        "location": [
+          -122.3080159,
+          47.4475673
+        ],
+        "locationName": "Seattle, WA",
+        "activities": [
+          "Alaska Airlines AS31 — JFK → SEA"
+        ],
+        "iconIndex": {
+          "activities": "Plane"
+        }
+      },
+      {
+        "day": 2,
+        "date": "2026-06-28T00:00:00.000Z",
+        "title": "Seattle — Explore with Pelin (Bainbridge Island?)",
+        "description": "Ferry from downtown Seattle (Colman Dock) to Bainbridge Island — a 35-minute ride with gorgeous Puget Sound views — and explore Winslow town. Then visit the Bloedel Reserve, a 150-acre private garden reserve with a Japanese garden, moss garden, and reflection pool.\n",
+        "location": [
+          -122.5127565,
+          47.6234248
+        ],
+        "locationName": "Bainbridge Island, WA",
+        "images": [
+          "photos/catalina-ensenada-cruise-2026/day2-bainbridge-1.jpg",
+          "photos/catalina-ensenada-cruise-2026/day2-bainbridge-2.jpg",
+          "photos/catalina-ensenada-cruise-2026/day2-bainbridge-3.jpg"
+        ],
+        "activities": [
+          "Bainbridge Island ferry & Winslow town",
+          "Bloedel Reserve gardens"
+        ],
+        "iconIndex": {
+          "activities": "Ship"
+        }
+      },
+      {
+        "day": 3,
+        "date": "2026-06-29T00:00:00.000Z",
+        "title": "Seattle → LA → Board Quantum of the Seas 🚢",
+        "description": "Early flight SEA → LAX on United UA1692 (departs 6:00 AM, arrives 8:44 AM). Transfer to the Los Angeles World Cruise Center in San Pedro and board Royal Caribbean's Quantum of the Seas — Reservation 3871465, Stateroom 11580 (Ocean View Balcony). My Time Dining.\n",
+        "location": [
+          -118.2775646,
+          33.7449169
+        ],
+        "locationName": "San Pedro (Port of Los Angeles)",
+        "images": [
+          "photos/catalina-ensenada-cruise-2026/day3-embark-1.jpg",
+          "photos/catalina-ensenada-cruise-2026/day3-embark-2.jpg"
+        ],
+        "activities": [
+          "United UA1692 — SEA → LAX",
+          "Embark Quantum of the Seas"
+        ],
+        "iconIndex": {
+          "activities": "Ship"
+        }
+      },
+      {
+        "day": 4,
+        "date": "2026-06-30T00:00:00.000Z",
+        "title": "Cruise Day 2 — At Sea / Catalina",
+        "description": "At sea aboard Quantum of the Seas. Relax and enjoy the ship.\n",
+        "locationName": "At Sea toward Catalina Island"
+      },
+      {
+        "day": 5,
+        "date": "2026-07-01T00:00:00.000Z",
+        "title": "Cruise Day 3 — Ensenada 🇲🇽 (Avalon Scenic Tour)",
+        "description": "Port call at Avalon on Santa Catalina Island. Avalon Scenic Tour (1h 5min) at 8:45 AM.\n",
+        "location": [
+          -118.3272612,
+          33.34221
+        ],
+        "locationName": "Avalon, Catalina Island",
+        "images": [
+          "photos/catalina-ensenada-cruise-2026/day5-avalon-1.jpg"
+        ],
+        "activities": [
+          "Avalon Scenic Tour (1h 5min)"
+        ],
+        "iconIndex": {
+          "activities": "Footprints"
+        }
+      },
+      {
+        "day": 6,
+        "date": "2026-07-02T00:00:00.000Z",
+        "title": "Cruise Day 4 — Ensenada 🎨 (Colors of Ensenada)",
+        "description": "Port call at Ensenada, Mexico. \"Colors of Ensenada — The Artist Inside You\" shore excursion (5h 15min) at 8:15 AM.\n",
+        "location": [
+          -116.602983,
+          31.8658887
+        ],
+        "locationName": "Ensenada, Mexico",
+        "images": [
+          "photos/catalina-ensenada-cruise-2026/day6-ensenada-1.jpg",
+          "photos/catalina-ensenada-cruise-2026/day6-ensenada-2.jpg"
+        ],
+        "activities": [
+          "Colors of Ensenada — The Artist Inside You (5h 15min)"
+        ],
+        "iconIndex": {
+          "activities": "Palette"
+        }
+      },
+      {
+        "day": 7,
+        "date": "2026-07-03T00:00:00.000Z",
+        "title": "Disembark LA → JFK (Home!) ✈️",
+        "description": "Disembark at the Port of Los Angeles early morning, then fly LAX → JFK on JetBlue B60224 (departs 12:35 PM from Terminal 1, arrives 9:25 PM).\n",
+        "location": [
+          -73.779317,
+          40.639447
+        ],
+        "locationName": "New York (JFK)",
+        "activities": [
+          "JetBlue B60224 — LAX → JFK"
+        ],
+        "iconIndex": {
+          "activities": "Plane"
+        }
+      }
+    ],
+    "dates": [
+      {
+        "startDate": "2026-06-27T00:00:00.000Z",
+        "endDate": "2026-07-03T00:00:00.000Z",
+        "available": false
+      }
+    ],
+    "activity": "Easy",
+    "groupSize": 1,
+    "interest": [
+      "Cruise",
+      "Relaxation",
+      "Adventure"
+    ]
   },
   {
     "id": "puerto-rico-2025",

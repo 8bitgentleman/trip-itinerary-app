@@ -90,10 +90,13 @@ itinerary:
     accommodation: Steigenberger Nile Palace or similar, Luxor
 
   - day: 5
-    title: Valley of the Kings
+    title: Valley of the Kings & Total Solar Eclipse
     description: >
-      Visit the Valley of the Kings, including the Tomb of Tutankhamun, and enjoy 
-      exclusive after-hours access. In the evening, relax with a Felucca ride on the Nile.
+      Eclipse day! Around midday, time totality from the Theban hills as the total solar
+      eclipse passes directly over Luxor — nearly six minutes of daytime darkness, one of
+      the longest totalities of the 21st century and the whole reason for the trip's timing.
+      Also visit the Valley of the Kings, including the Tomb of Tutankhamun, with exclusive
+      after-hours access. In the evening, relax with a Felucca ride on the Nile.
     image: https://placehold.co/800x800
     imageAlt: Valley of the Kings
     meals:
@@ -165,8 +168,8 @@ itinerary:
     accommodation: Novotel Cairo El Borg or similar, Cairo
 
 dates:
-  - startDate: 2027-02-05
-    endDate: 2027-02-15
+  - startDate: 2027-07-29
+    endDate: 2027-08-08
     price: 4825
     available: true
 
